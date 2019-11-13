@@ -63,7 +63,6 @@ defaultContentLanguage = "en"           # Default language to use
 
   # site info (optional)
   logoTitle = "RMD theme"        # default: the title value
-  keywords = ["Hugo", "theme","jane"]
   description = "RMD beta site."
   themeName = "RMD theme"
 
