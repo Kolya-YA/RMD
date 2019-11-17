@@ -1,0 +1,53 @@
+# config your menus
+
+[[main]]
+  name = "This is Home"
+  weight = 10
+  identifier = "home"
+  url = "/"
+[[main]]
+  name = "Archives"
+  weight = 20
+  identifier = "archives"
+  url = "/post/"
+[[main]]
+  name = "Tags"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+[[main]]
+  name = "Categories"
+  weight = 40
+  identifier = "categories"
+  url = "/categories/"
+[[main]]
+  name = "external-link"
+  weight = 50
+  url = "https://gohugo.io"
+
+[[footer]]
+  name = "Footer Home"
+  weight = 10
+  identifier = "f-home"
+  url = "/"
+[[footer]]
+  name = "Footer Archives"
+  weight = 20
+  identifier = "f-archives"
+  url = "/post/"
+
+[[law]]
+  name = "Impressum"
+  weight = 10
+  identifier = "impressum"
+  url = "/"
+[[law]]
+  name = "AGB"
+  weight = 20
+  identifier = "agb"
+  url = "/"
+[[law]]
+  name = "Datenschutz"
+  weight = 30
+  identifier = "datenschutz"
+  url = "/"

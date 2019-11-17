@@ -1303,8 +1303,6 @@ h6 {
           fill: #c05b4d; }
   .footer .footer-law__copyright {
     margin: 10px 0;
-    color: #8a8a8a;
-    text-align: center;
     font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
     .footer .footer-law__copyright .hexo-link,
     .footer .footer-law__copyright .theme-link {

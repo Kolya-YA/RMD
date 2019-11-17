@@ -2,7 +2,7 @@
 title: "About"
 date: 2017-08-20T21:38:52+08:00
 lastmod: 2017-08-28T21:41:52+08:00
-menu: "main"
+menu: ["main", "footer"]
 weight: 50
 
 # you can close something for this content if you open it in config.toml.
@@ -22,3 +22,4 @@ It makes use of a variety of open source projects including:
 
 Learn more and contribute on [GitHub](https://github.com/gohugoio).
 
+Emoji we trust :cherries: :shit: :-1: :stuck_out_tongue_winking_eye:

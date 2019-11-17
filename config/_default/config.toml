@@ -1,0 +1,30 @@
+# This is a simple configuration.
+# If you want to see the full configuration, please check `full-config.toml` .
+# And see https://gohugo.io/getting-started/configuration/ .
+
+baseURL = "http://localhost:1313/"
+title = "RMD - New theme RMD Bau"
+enableRobotsTXT = true
+enableEmoji = true
+theme = "rmd-theme"
+
+paginate = 3              # Number of articles displayed on the homepage
+rssLimit = 20             # Limit Entry Count to Rss file
+disqusShortname = ""      # disqus_shortname
+googleAnalytics = ""      # UA-XXXXXXXX-X
+copyright = "RMD Bau City"            # default: author.name ↓ 
+
+# language support # en / zh-cn / other... translations present in i18n/
+defaultContentLanguage = "en"           # Default language to use
+[languages.en]
+  languageCode = "en"
+[languages.de]
+  languageCode = "de"
+
+[author]                  # essential
+  name = "_YA"
+
+[sitemap]                 # essential
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
