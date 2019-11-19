@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode | default "de" }}">
-
-{{ partial "head.html" . }}
-
+  <head>
+    {{ partial "head.html" . }}
+    <title>
+      {{- block "title" . -}}
+      {{ if .IsPage }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}
+      {{- end -}}
+    </title>
+  </head>
 <body>
 
   {{ partial "header/header.html" . }}

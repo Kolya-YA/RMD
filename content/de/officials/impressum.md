@@ -1,6 +1,6 @@
 ---
 title: "Impressum"
-date: 2017-08-20T21:38:52+08:00
+date: 2019-11-01
 
 menu: 
   footer:
@@ -8,16 +8,14 @@ menu:
     weight: 50
 ---
 
-# Impressum
+# Impressum DE
 
-Geschäftsinhaber Andrej Martinovs
-
-Lindenstraße 21A
-12621 Berlin
+Geschäftsinhaber dddfff dfdfdf
+Leidenstraße 211
+222321 Berlin
 
 info@rmd-citybau.de
 
-+49 176 83223125
 
 
 ## Haftungsausschluss:

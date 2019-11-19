@@ -1,10 +1,10 @@
 ---
-title: "Impressum EN"
-date: 2017-08-20T21:38:52+08:00
+title: "Impressum"
+date: 2019-11-01
 
 menu: 
   footer:
-    name: "Impressum EN"
+    name: "Impressum"
     weight: 50
 ---
 

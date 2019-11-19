@@ -1,10 +1,10 @@
 ---
-title: "Datenschutz EN"
+title: "Datenschutz"
 date: 2019-11-01
 
 menu: 
   footer:
-    name: "Datenschut EN"
+    name: "Datenschutz"
     weight: 80
 ---
 

@@ -1,5 +1,3 @@
-<head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
@@ -42,16 +40,16 @@
   
   <!-- Permalink & RSSlink -->
   <link rel="canonical" href="{{ .Permalink }}">
-  {{ with .OutputFormats.Get "RSS" }}<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">{{ end }}
+  {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $.Site.Title }}">{{ end }}
   
-  {{ if .OutputFormats.Get "jsonfeed" }}
+  {{- if .OutputFormats.Get "jsonfeed" -}}
   <link
   href="{{ with .OutputFormats.Get "jsonfeed" }}{{ .Permalink }}{{ end }}"
   rel="alternate" type="application/json" title="{{ .Site.Title }}">
-  {{ end }}
+  {{- end -}}
   
   <!-- Custom Favicon -->
-  {{- partial "custom_favicon.html" . -}}
+  {{ partial "custom_favicon.html" . -}}
   
   <!-- debug -->
   {{- if .Site.Params.debug }}
@@ -60,16 +58,10 @@
   {{- end -}}
   
   <!-- Main style -->
-  <!-- {{- $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }} -->
-  {{- $style := resources.Get "sass/main.scss" | toCSS }}
+  {{/*- $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint -*/}}
+  {{- $style := resources.Get "sass/main.scss" | toCSS -}}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="screen" crossorigin="anonymous">
   <!-- End -->
-    
-  <title>
-    {{- block "title" . -}}
-    {{ if .IsPage }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}
-    {{- end -}}
-  </title>
   
   {{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
   {{- template "_internal/opengraph.html" . -}}
@@ -91,5 +83,3 @@
   {{- if and (not .Site.IsServer) .Site.GoogleAnalytics -}}
   {{ template "_internal/google_analytics_async.html" . }}
   {{- end -}}
-        
-</head>
