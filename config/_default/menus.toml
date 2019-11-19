@@ -1,40 +1,56 @@
-# config your menus
+# config Main menu
 
-[[main]]
-  name = "This is Home"
-  weight = 10
-  identifier = "home"
-  url = "/"
-[[main]]
-  name = "Archives"
-  weight = 20
-  identifier = "archives"
-  url = "/post/"
-[[main]]
-  name = "Tags"
-  weight = 30
-  identifier = "tags"
-  url = "/tags/"
-[[main]]
-  name = "Categories"
-  weight = 40
-  identifier = "categories"
-  url = "/categories/"
-[[main]]
-  name = "external-link"
-  weight = 50
-  url = "https://gohugo.io"
+# [[en.main]]
+#   name = "HomeEN"
+#   weight = 10
+#   identifier = "homeEN"
+#   url = "/en/"
+# [[en.main]]
+#   name = "ArchivesEN"
+#   weight = 20
+#   identifier = "archivesEN"
+#   url = "/en/post/"
+# [[en.main]]
+#   name = "TagsEN"
+#   weight = 30
+#   identifier = "tagsEN"
+#   url = "/en/tags/"
+# [[en.main]]
+#   name = "CategoriesEN"
+#   weight = 40
+#   identifier = "categoriesEN"
+#   url = "/en/categories/"
+
+# [[de.main]]
+#   name = "Home"
+#   weight = 10
+#   identifier = "home"
+#   url = "/de/"
+# [[de.main]]
+#   name = "Archives"
+#   weight = 20
+#   identifier = "archives"
+#   url = "/de/post/"
+# [[de.main]]
+#   name = "Tags"
+#   weight = 30
+#   identifier = "tags"
+#   url = "/de/tags/"
+# [[de.main]]
+#   name = "Categories"
+#   weight = 40
+#   identifier = "categories"
+#   url = "/de/categories/"
+
+# config Footer menu
 
 [[footer]]
   name = "Footer Home"
   weight = 10
   identifier = "f-home"
   url = "/"
-[[footer]]
-  name = "Footer Archives"
-  weight = 20
-  identifier = "f-archives"
-  url = "/post/"
+
+# config MaiLaw footer menu
 
 [[law]]
   name = "Impressum"

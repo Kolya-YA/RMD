@@ -1,15 +1,15 @@
 ---
-title: "Image Preview"
-date: 2018-03-03T16:01:23+08:00
-lastmod: 2018-03-04T16:01:23+08:00
+title: "RMD Service 2"
+date: 2019-11-01
 draft: false
-tags: ["preview", "image", "shortcodes", "tag-7"]
-categories: ["docs", "shortcodes", "index"]
+tags: []
+categories: ["service"]
 
 menu:
   main:
-    parent: "docs"
-    weight: 3
+    parent: "services"
+    name: "RMD Service 2 EN"
+    weight: 2
 ---
 
 Thanks for [liwenyip/hugo-easy-gallery](https://github.com/liwenyip/hugo-easy-gallery) & [Zebradil · Pull Request #48](https://github.com/xianmin/hugo-theme-jane/pull/48) .

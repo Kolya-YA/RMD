@@ -4,6 +4,8 @@
 
 baseURL = "http://localhost:1313/"
 title = "RMD - New theme RMD Bau"
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = true
 enableRobotsTXT = true
 enableEmoji = true
 theme = "rmd-theme"
@@ -13,13 +15,6 @@ rssLimit = 20             # Limit Entry Count to Rss file
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = "RMD Bau City"            # default: author.name ↓ 
-
-# language support # en / zh-cn / other... translations present in i18n/
-defaultContentLanguage = "en"           # Default language to use
-[languages.en]
-  languageCode = "en"
-[languages.de]
-  languageCode = "de"
 
 [author]                  # essential
   name = "_YA"

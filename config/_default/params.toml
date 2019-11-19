@@ -1,20 +1,28 @@
-since = "2001"            # Site creation time
 homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
 rssFullContent = true     # if false, Rss feed instead of the summary
 
-# site info (optional)
+# site info
 logoTitle = "RMD Bau City"        # default: the title value
-description = "RMD beta site."
-themeName = "RMD theme"
+description = "RMD beta site"
+since = "2001"            # Site creation time
+phone = "+49 30 228 08 343"
+fax = "+49 30 228 08 (fax)"
+email = "info@rmd-citybau.de"
+mapApiKey = "AIzaSyCVSQkQMnPD5A_Z9AzN6Frgei4oDgPfYAY"
+mapFooterWidth = "100%"
+mapFooterHeight = "200"
+
+[address]
+  name = "RMD Bau City GmbH"
+  street = "Arndtstraße 13"
+  city = "10965 Berlin"
+
+[opentime]
+  workdays = "MO – FR"
+  workhours = "08:00 – 20:00"
 
 # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
 dateFormatToUse = "01.02.2006"
-
-# 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
-# Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
-toc = true                                                                            # 是否开启目录
-photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
-contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
 [social]
   a-email = "mailto:your@email.com"

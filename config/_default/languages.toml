@@ -1,0 +1,17 @@
+[de]
+  languageCode = "de"
+  languageName = "Deutsch"
+  weight = 1
+  contentDir = "content/de"
+  # default_page_title = ""
+  # default_page_subtitle = ""
+  # description = ""
+
+[en]
+  languageCode = "en"
+  languageName = "English"
+  weight = 2
+  contentDir = "content/en"
+  # default_page_title = ""
+  # default_page_subtitle = ""
+  # description = ""

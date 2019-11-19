@@ -1,11 +1,15 @@
 ---
-title: "Jane-Theme Footnote Preview"
-date: 2018-03-01T16:01:23+08:00
-lastmod: 2018-03-01T16:01:23+08:00
+title: "RMD Service 1"
+date: 2019-11-01
 draft: false
-tags: ["footnote", "markdown", "tag-11"]
-categories: ["docs", "index"]
-author: "xianmin"
+tags: []
+categories: ["service"]
+
+menu:
+  main:
+    parent: "services"
+    name: "RMD Service 1 DE"
+    weight: 1
 ---
 
 Hugo-theme-jane optimized for footnote. When you mouse hover the footnote[^example] , footnote content will be displayed.

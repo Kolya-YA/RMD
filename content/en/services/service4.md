@@ -1,28 +1,15 @@
 ---
-title: "Jane Theme Preview"
-date: 2018-12-05T16:01:23+08:00
-lastmod: 2019-11-01T16:01:23+08:00
+title: "RMD Service 4"
+date: 2019-11-01
 draft: false
-tags: ["preview", "shortcodes", "tag-6"]
-categories: ["docs", "shortcodes", "index"]
-author: "Typora"
-
-weight: 1
-
-# You can also close(false) or open(true) something for this content.
-# P.S. comment can only be closed
-# comment: false
-# toc: false
-
-# You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
-contentCopyright: '<a href="https://github.com/gohugoio/hugoBasicExample" rel="noopener" target="_blank">See origin</a>'
-# reward: false
-mathjax: true
+tags: []
+categories: ["service"]
 
 menu:
   main:
-    parent: "docs"
-    weight: 1
+    parent: "services"
+    name: "RMD Service 4 EN"
+    weight: 4
 ---
 
 **Markdown** is created by [Daring Fireball](http://daringfireball.net/), the original guideline is [here](http://daringfireball.net/projects/markdown/syntax). Its syntax, however, varies between different parsers or editors.
