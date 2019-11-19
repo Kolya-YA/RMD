@@ -7,8 +7,8 @@ categories: ["service"]
 
 menu:
   main:
-    parent: "services"
-    name: "RMD Service 2 DE"
+    parent: "Services"
+    name: "RMD Service 2 EN"
     weight: 2
 ---
 

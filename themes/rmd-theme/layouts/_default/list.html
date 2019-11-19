@@ -1,0 +1,28 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+
+{{ define "content" }}
+<article>
+    <header>
+        <h1>{{ .Title }}</h1>
+    </header>
+    <div>
+      {{ .Content }}
+    </div>
+</article>
+<div>
+  <ul>
+  {{ range .Pages }}
+
+    <li>
+      <a href="{{ .RelPermalink }}">
+          {{ with .Resources.ByType "image" }}{{ . }}
+          {{ end }}
+        <img src="" alt="{{ .Title }}">
+        {{ .Title }}
+      </a>
+    </li>
+  {{ end }}
+  </ul>
+</div>
+
+{{ end }}
