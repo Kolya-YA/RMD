@@ -12,17 +12,8 @@
 <div>
   <ul>
   {{ range .Pages }}
-
-    <li>
-      <a href="{{ .RelPermalink }}">
-          {{ with .Resources.ByType "image" }}{{ . }}
-          {{ end }}
-        <img src="" alt="{{ .Title }}">
-        {{ .Title }}
-      </a>
-    </li>
+    {{ partial "service-teil" . }}
   {{ end }}
   </ul>
 </div>
-
 {{ end }}

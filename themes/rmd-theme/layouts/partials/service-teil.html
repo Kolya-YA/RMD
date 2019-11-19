@@ -1,0 +1,11 @@
+<li>
+  <a href="{{ .RelPermalink }}">
+      {{ with .Resources.ByType "image" }}
+        {{ range . }}
+          {{ $icon := .Fit "50x50" }}
+        <img src="{{ $icon.Permalink }}" alt="{{ $.Title }}">
+        {{ end }}
+      {{ end }}
+    {{ .Title }}
+  </a>
+</li>
