@@ -1,0 +1,8 @@
+<ul class="top-menu__list">
+    {{ $currentPage := . }}
+    {{ range first 10 .Site.Menus.main }}
+      <li {{if  ($currentPage.IsMenuCurrent "main" . ) }}class="active"{{end}}>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+    {{ end }}
+  </ul>

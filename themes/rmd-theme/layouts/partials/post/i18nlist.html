@@ -1,0 +1,10 @@
+
+{{ if .IsTranslated }}
+<h1>GHbhgh</h1>
+<div class="post-meta">
+  {{ range .Translations }}
+  <div>{{ . }}</div>
+  <div><a href="{{ .Permalink }}">{{ i18n (printf "read_%s" .Lang) }}: {{ .Title }}</a></div>
+  {{ end }}
+</div>
+{{ end }}

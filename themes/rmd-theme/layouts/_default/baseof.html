@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "de" }}">
+
+{{ partial "head.html" . }}
+
+<body>
+
+  {{ partial "header/header.html" . }}
+
+  <main class="main">
+    <div class="content-wrapper">
+        {{ block "content" . }}{{ end }}
+    </div>
+  </main>
+    
+  {{ partial "footer/footer.html" . }}    
+  {{ partial "back-to-top.html" . }}
+  {{ partial "scripts.html" . }}
+</body>
+</html>

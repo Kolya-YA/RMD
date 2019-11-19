@@ -1,0 +1,16 @@
+{{ $key := .context.Site.Params.mapApiKey -}}
+{{ $address := replace (print .context.Site.Params.Address.street "," .context.Site.Params.Address.city) " " "+" -}}
+{{ $lng := .context.Site.LanguageCode | default "de" -}}
+{{ $width := .width | default "100%" -}}
+{{ $height := .height | default "300" -}}
+
+<iframe
+  src="https://www.google.com/maps/embed/v1/place?key={{ $key }}&q={{ $address }}"
+  width="{{ $width }}"
+  height="{{ $height }}"
+  language="{{ $lng }}"
+  frameborder="0"
+  style="border:0"
+  allowfullscreen
+>
+</iframe>

@@ -1,0 +1,40 @@
+.top-menu__toggle {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  height: 37px;
+}
+
+.toggle-button {
+  display: block;
+  height: 100%;
+  width: auto;
+  background-color: #C2CEDE;
+  border-radius: 2px;
+}
+
+.toggle-button span {
+  font-size: 0;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #8D9CAF;
+}
+
+.toggle-button.toggle-button--open span {
+  box-shadow: #8D9CAF 0 8px 0 0, #8D9CAF 0 -8px 0 0;
+}
+
+.toggle-button.toggle-button--close span {
+  transform: rotate(35deg);
+}
+
+.toggle-button.toggle-button--close span::after {
+  content: "";
+  font-size: 0;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #8D9CAF;
+  transform: rotate(-70deg);
+}

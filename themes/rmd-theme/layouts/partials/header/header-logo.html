@@ -1,0 +1,20 @@
+{{ $logoTitle := default .Site.Title .Site.Params.logoTitle -}}
+
+<div class="head-logo-wrapper">
+  <div class="header-logo__logo">
+    <a href="{{ "/" | relLangURL }}" class="logo">
+      <div class="header-logo__img">
+        <img src="//rmd-citybau.de/img/logo.png" alt="{{ $logoTitle }}">
+      </div>
+      <div class="header-logo__name">{{ $logoTitle }}</div>
+    </a>
+  </div>
+  <div class="header-logo__contacts">
+    <div class="header-logo__phone">
+      <a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.phone }}">{{ .Site.Params.phone }}</a>
+    </div>
+    <div class="header-logo__email">
+      <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+    </div>
+  </div>
+</div>

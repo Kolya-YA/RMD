@@ -1,0 +1,18 @@
+// ==============================
+// Header
+// ==============================
+
+.header {
+  background: $rmd-color1;
+  background: linear-gradient(120deg, $rmd-color2 48%, $rmd-color1 100%);
+  @import 'header-logo';
+  @import 'header-nav';
+  @import 'header-toggler';
+}
+
+@include max-screen() {
+  .header {
+    padding: 50px 0 0;
+    text-align: center;
+  }
+}

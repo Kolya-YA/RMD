@@ -1,0 +1,28 @@
+<div class="footer-law">
+    <div class="footer-law__links">
+      <ul>
+        {{ range .Site.Menus.law }}
+        <li>
+          <a href="{{ .URL }}" title="{{ .Title }}">
+          {{- .Name -}}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="footer-law__copyright">
+      <div class="copyright-year">
+        {{- $current := now.Format "2006" }}
+        &copy; 
+        {{- if ne .Site.Params.since $current }}
+        {{ .Site.Params.since }}–
+        {{- end }}
+        {{- $current }}
+        {{- if or .Site.Copyright .Site.Author.name -}}
+        <span class="author">
+          {{with .Site.Copyright }}{{ . | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}
+        </span>
+        {{- end -}}
+      </div>
+    </div>
+</div>
