@@ -1,3 +1,8 @@
+$bg-color: $rmd-color2;
+$separator-color: $rmd-color1;
+$hover-color:  #222222;
+$hover-bg-color: #e7e7e7;
+$active-bg-color: rgba(128, 128, 128, .5);
 
 .top-menu {
   position: absolute;
@@ -6,7 +11,9 @@
   z-index: 9;
   width: 320px;
   height: 100%;
-  background-color: #8D9CAF;
+  // background-color: #8D9CAF;
+  background-color: $bg-color;
+  box-shadow: -2px 0 15px 0px $separator-color;
 }
 
 .top-menu--close {
@@ -27,22 +34,22 @@
 }
 
 .top-menu__list li a {
-  padding: 15px 18px;
+  padding: 12px 15px;
   display: block;
-  color: #eeeeee;
+  color: $separator-color;
   text-decoration: none;
   font-size: 1.6em;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid $separator-color;
 }
 
-.top-menu__list .active a {
-  background-color: rgba(128, 128, 128, .5);
+.top-menu__list .active {
+  background-color: $active-bg-color;
 }
 
 
 .top-menu__list li a:hover {
-  color: #222222;
-  background: #e7e7e7;
+  color: $hover-color;
+  background: $hover-bg-color;
 }
 
 @media screen and (min-width: 1935px) {

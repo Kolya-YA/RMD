@@ -1,28 +1,32 @@
+$bg-color: $rmd-color1;
+$el-color: $rmd-color2;
+
 .top-menu__toggle {
   position: absolute;
   top: 5px;
   right: 6px;
-  height: 37px;
+  height: 44px;
 }
 
 .toggle-button {
   display: block;
   height: 100%;
   width: auto;
-  background-color: #C2CEDE;
+  padding: 1px 7px 2px;
+  background-color: $bg-color;
   border-radius: 2px;
 }
 
 .toggle-button span {
   font-size: 0;
   display: block;
-  width: 30px;
+  width: 38px;
   height: 3px;
-  background-color: #8D9CAF;
+  background-color: $el-color;
 }
 
 .toggle-button.toggle-button--open span {
-  box-shadow: #8D9CAF 0 8px 0 0, #8D9CAF 0 -8px 0 0;
+  box-shadow: $el-color 0 9px 0 0, $el-color 0 -9px 0 0;
 }
 
 .toggle-button.toggle-button--close span {
@@ -33,8 +37,8 @@
   content: "";
   font-size: 0;
   display: block;
-  width: 30px;
+  width: 38px;
   height: 3px;
-  background-color: #8D9CAF;
+  background-color: $el-color;
   transform: rotate(-70deg);
 }
