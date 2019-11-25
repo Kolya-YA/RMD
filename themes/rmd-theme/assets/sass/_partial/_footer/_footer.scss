@@ -2,33 +2,49 @@
 
 .footer {
   margin-top: $footer-margin-top;
-  .footer-wrapper {
-    background-color: crimson;
-    max-width: $global-body-width;
-    margin: 0 auto;
-    padding: 1vw;
-    display: flex;
-    flex-direction: column;
-
-    >* {
-      flex: 1;
-      background-color: greenyellow;
-    }
-
-    >*:not(:last-child) {
-      margin-bottom: 1vw;
-    }
-
-    @include min-screen {
-      flex-direction: row;
+  color: $footer-text-color;
+  
+  .footer__top {
+    background: linear-gradient(110deg, $footer-background-color, $footer-background-color-light);
+    // background-image: url("/image/topography.svg");
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
       height: 100%;
-
-      >*:not(:last-child) {
-        margin-bottom: 0;
-        margin-right: 1vw;
-      }
+      width: 100%;
+      // background-image: url('{{"/image/example.jpg" | relURL }}');
+      opacity: .5;
+    //   background: orange;
     }
-
   }
-  @import "social-links", "law";
+  
+  .footer__bottom {
+    background-color: $footer-background-color;    
+  }
+
+  .footer-inner-wrapper {
+    margin: 0 3%;
+    @include wrap-med-screen {
+      margin: 0 4.5%;
+    }
+    @include wrap-max-screen {
+      margin: 0 auto;
+      max-width: 1366px;
+    }
+  }
+
+  a {
+    color: inherit;
+    transition: all .25s ease-in-out;
+    &:hover {
+      color: $rmd-col5;
+      text-decoration: underline;
+    }
+  }
+
+  @import "footer-top", "footer-law";
+
 }

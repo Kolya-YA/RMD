@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size: $global-font-size;
+  font-size: $root-font-size;
 }
 
 *,
@@ -20,6 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: $global-lineheight;
+  font-size: $global-font-size;
   color: $global-font-color;
   background: $global-background;
   scroll-behavior: smooth;

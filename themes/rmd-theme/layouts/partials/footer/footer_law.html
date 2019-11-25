@@ -1,25 +1,26 @@
-<div class="footer-law">
-    {{ partial "lang-selector" . }}
-    <nav class="footer-law__links">
-      <ul>
-        {{ range .Site.Menus.law }}
-        <li>
-          <a href="{{ .URL }}" title="{{ .Title }}">
-          {{- .Name -}}
-          </a>
-        </li>
-        {{ end }}
-      </ul>
-    </nav>
+{{ $current := now.Format "2006" -}}
+<div class="footer__bottom">
+  <div class="footer-inner-wrapper">
+    <div class="footer-law">
+      <nav class="footer-law__links">
+        <ul>
+          {{ range .Site.Menus.law }}
+          <li>
+            <a href="{{ .URL }}" title="{{ .Title }}">
+              {{- .Name -}}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
 
-    <div class="footer-law__copyright">
-      <div class="copyright-year">
-        {{ $current := now.Format "2006" -}}
-        &copy;{{ if ne .Site.Params.since $current }}{{ .Site.Params.since }} – {{ end }}{{ $current }}
+      <div class="footer-law__copyright">
+        &copy; {{ if ne .Site.Params.since $current }}{{ .Site.Params.since }} – {{ end }}{{ $current }}
         {{ with .Site.Copyright }}<span class="author">{{ . | safeHTML }}</span>
         {{- else -}}
         {{ with .Site.Author.name }}<span class="author">{{ . | safeHTML }}</span>{{- end }}
         {{- end }}
       </div>
     </div>
+  </div>
 </div>

@@ -1,0 +1,39 @@
+// Footer law
+
+.footer-law {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: .8rem;
+  font-size: 1.6rem;
+  .footer-law__links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .footer-law__copyright {
+    margin-top: .5rem;
+  }
+  @include wrap-med-screen {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    .footer-law__links ul {
+      flex-direction: row;
+      justify-content: flex-end;
+      li:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+    .footer-law__copyright {
+      margin: 0;
+    }
+  }
+}

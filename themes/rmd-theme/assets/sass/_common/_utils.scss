@@ -21,3 +21,14 @@
      @content;
    }
 }
+
+@mixin wrap-med-screen($min-width: $wrap-med-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}
+@mixin wrap-max-screen($min-width: $wrap-max-width) {
+  @media screen and (min-width: $min-width) {
+    @content;
+  }
+}

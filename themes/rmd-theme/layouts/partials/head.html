@@ -58,8 +58,9 @@
   {{- end -}}
   
   <!-- Main style -->
-  {{/*- $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint -*/}}
-  {{- $style := resources.Get "sass/main.scss" | toCSS -}}
+  {{- $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint -}}
+  {{/*- $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint -*/}}
+
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="screen" crossorigin="anonymous">
   <!-- End -->
   
