@@ -51,19 +51,3 @@
   url = "/"
 
 # config MaiLaw footer menu
-
-[[law]]
-  name = "Impressum"
-  weight = 10
-  identifier = "impressum"
-  url = "/"
-[[law]]
-  name = "AGB"
-  weight = 20
-  identifier = "agb"
-  url = "/"
-[[law]]
-  name = "Datenschutz"
-  weight = 30
-  identifier = "datenschutz"
-  url = "/"

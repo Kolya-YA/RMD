@@ -16,9 +16,9 @@
 
       <div class="footer-law__copyright">
         &copy; {{ if ne .Site.Params.since $current }}{{ .Site.Params.since }} – {{ end }}{{ $current }}
-        {{ with .Site.Copyright }}<span class="author">{{ . | safeHTML }}</span>
+        {{ with .Site.Copyright }}<span class="author">{{ . }}</span>
         {{- else -}}
-        {{ with .Site.Author.name }}<span class="author">{{ . | safeHTML }}</span>{{- end }}
+        {{ with .Site.Author.name }}<span class="author">{{ . }}</span>{{- end }}
         {{- end }}
       </div>
     </div>

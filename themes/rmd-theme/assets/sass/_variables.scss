@@ -59,7 +59,7 @@ $global-font-color: rgba(0, 0, 0, .84) !default;
 
 // Font size attribute applied to '<html>' and '<body>'.
 $root-font-size: 10px;
-$global-font-size: 1.8rem !default;
+$global-font-size: 1.6rem !default;
 
 // Global width of '<body>'.
 $global-body-width: 1080px !default;
@@ -215,7 +215,6 @@ $code-highlight-color: (
 // Color of the code background.
 $code-background: $deputy-color !default;
 
-
 // ========== Pagination ========== //
 // Margin of the pagination.
 $pagination-margin: 2em 0 !default;
@@ -228,8 +227,8 @@ $pagination-font-size: 20px !default;
 $footer-margin-top: auto !default;
 $footer-top-padding: 3rem !default;
 
-// Margin left of the social link.
-$social-link-margin-left: 0.5em !default;
+$lng-bottom-margin: 1rem !default;
+$social-link-margin-right: 1rem !default;
 
 // Font size of the social icon.
 $social-icon-font-size: 1.7em !default;

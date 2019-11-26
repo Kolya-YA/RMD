@@ -1,0 +1,16 @@
+// Footer contacts
+
+.footer-contacts {
+  text-align: center;
+  .footer-contacts__address {
+    margin-bottom: 1rem;
+    .footer-contacts__name {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  @include wrap-med-screen {
+    text-align: left;
+  }
+}

@@ -1,19 +1,17 @@
 <address class="footer-contacts">
   <div class="footer-contacts__address">
       <div class="footer-contacts__name">{{ .Site.Params.Address.name }}</div>
-      <div class="footer-contacts__name">{{ .Site.Params.Address.street }}</div>
-      <div class="footer-contacts__name">{{ .Site.Params.Address.city }}</div>    
+      <div>{{ .Site.Params.Address.street }}, {{ .Site.Params.Address.city }}</div>    
   </div>
   <div class="footer-contacts__map">
     {{ partial "google-map.html" (dict "height" .Site.Params.mapFooterHeight "width" .Site.Params.mapFooterWidth "context" . ) }}
   </div>
   <div class="footer-contacts__phones">
-    <div><a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.phone }}">{{ .Site.Params.phone }}</a></div>
-    <div><a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.fax }}">{{ .Site.Params.fax }}</a></div>
-    <div><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></div>
+    <div>{{ i18n "phone" }}<a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.phone }}">{{ .Site.Params.phone }}</a></div>
+    <div>{{ i18n "fax" }}<a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.fax }}">{{ .Site.Params.fax }}</a></div>
+    <div>{{ i18n "email" }}<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></div>
   </div>
   <div class="footer-contacts__hours">
-      <div class="footer-contacts__wh-days">{{ .Site.Params.Opentime.workdays }}</div>
-      <div class="footer-contacts__wh-hours">{{ .Site.Params.Opentime.workhours }}</div>
+      <div class="footer-contacts__wh-days">{{ .Site.Params.Opentime.workdays }}: {{ .Site.Params.Opentime.workhours }}</div>
   </div>
 </address>

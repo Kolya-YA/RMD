@@ -3,9 +3,9 @@ title: "Datenschutz"
 date: 2019-11-01
 
 menu: 
-  footer:
+  law:
     name: "Datenschutz"
-    weight: 80
+    weight: 30
 ---
 
 # Datenschutz EN

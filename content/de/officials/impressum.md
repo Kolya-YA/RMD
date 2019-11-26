@@ -3,9 +3,9 @@ title: "Impressum"
 date: 2019-11-01
 
 menu: 
-  footer:
+  law:
     name: "Impressum"
-    weight: 50
+    weight: 10
 ---
 
 # Impressum DE

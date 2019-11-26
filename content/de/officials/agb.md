@@ -3,9 +3,9 @@ title: "AGB"
 date: 2019-11-01
 
 menu: 
-  footer:
+  law:
     name: "AGB"
-    weight: 60
+    weight: 20
 ---
 
 # AGB DE

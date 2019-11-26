@@ -1,7 +1,8 @@
 {{ if .IsTranslated }}
 <nav class="lang-nav">
 {{- range .Translations }}
-    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}
+      <span class="lang-nav__br"><br></span><span>{{ i18n "lng_version" }}</span>   </a>
 {{ end -}}
 </nav>
 {{ end }}

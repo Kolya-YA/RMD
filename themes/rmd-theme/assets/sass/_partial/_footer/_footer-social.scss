@@ -1,27 +1,40 @@
-// ==============================
 // Social
-// =============================
 
-// donot use social-links keyword,Otherwise it will be intercepted by Adblock. 
-.footer-social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+.footer-social {
 
-  .iconfont {
-    font-size: $social-icon-font-size;
-
-    & + .iconfont {
-      margin-left: $social-link-margin-left;
-    }
-
-    &:hover {
-      color: $theme-color;
-
-      svg {
-        fill: $theme-color;
+  .lang-nav {
+    margin-bottom: $lng-bottom-margin;
+    text-align: center;
+    .lang-nav__br {
+      display: none;
+      @include wrap-med-screen {
+        display: inline;
       }
     }
+
   }
+  .footer-social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+    .iconfont {
+      font-size: $social-icon-font-size;
+      
+      &:not(:last-child) {
+        margin-right: $social-link-margin-right;
+      }
+      
+      &:hover  svg {
+        // fill: $theme-color;
+      }
+    }
+
+    @include wrap-med-screen {
+      flex-direction: column;
+    }
+  }
+  
 }

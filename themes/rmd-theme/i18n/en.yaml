@@ -1,3 +1,16 @@
+#common
+
+- id: email
+  translation: "Email: "
+
+- id: phone
+  translation: "Phone: "
+
+- id: fax
+  translation: "Fax: "
+- id: lng_version
+  translation: " Version"
+  
 - id: archive
   translation: Archive
 

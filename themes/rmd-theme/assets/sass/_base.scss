@@ -69,6 +69,10 @@ a {
   text-decoration: none;
 }
 
+address {
+  font-style: inherit;
+}
+
 @each $header, $size in $global-headings {
   #{$header} {
     font-size: $size;
