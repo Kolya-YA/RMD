@@ -1,0 +1,21 @@
+// Footer central nav block
+
+.footer-nav {
+  display: flex;
+  padding: 0 4rem;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-nav__first a {
+
+    font-weight: bold;
+  }
+
+  .footer-nav__second {
+    padding-left: 3rem;
+  }
+}

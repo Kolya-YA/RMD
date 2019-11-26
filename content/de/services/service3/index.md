@@ -10,6 +10,9 @@ menu:
     parent: "Leistungen"
     name: "RMD Service 3 DE"
     weight: 3
+  service:
+    name: "Footer RMD Service 3 DE"
+    weight: 3
 ---
 
 

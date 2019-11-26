@@ -44,10 +44,10 @@
 
 # config Footer menu
 
-[[footer]]
-  name = "Footer Home"
-  weight = 10
-  identifier = "f-home"
-  url = "/"
+# [[footer]]
+#   name = "Contact"
+#   weight = 10
+#   identifier = "f-home"
+#   url = "/"
 
 # config MaiLaw footer menu

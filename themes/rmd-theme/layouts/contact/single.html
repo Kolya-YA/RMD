@@ -1,0 +1,27 @@
+{{ define "content" -}}
+  <article class="">
+    <header class="">
+      <h1 class="">{{ .Title }}</h1>
+      {{ .Content }}
+    </header>
+  </article>
+  <section class="contact-form">
+    <form action="">
+      <h2>Contact form</h2>
+      <label for="">Full name:<input type="text"></label>
+      <label for="">Email:<input type="email"></label>
+      <label for="">Phone:<input type="tel"></label>
+      <label for="">Location:<input type="text"></label>
+      <fieldset>
+        <legend>Servises</legend>
+        <label for="">Service #1:<input type="radio"></label>
+        <label for="">Service #2:<input type="radio"></label>
+        <label for="">Service #3:<input type="radio"></label>
+        <label for="">Service #4:<input type="radio"></label>
+        <label for="">Other:<input type="radio"></label>
+      </fieldset>
+      <label for="">Textfield:<textarea></textarea></label>
+    </form>
+  </section>
+
+{{- end }}

@@ -10,6 +10,9 @@ menu:
     parent: "Services"
     name: "RMD Service 4 EN"
     weight: 4
+  service:
+    name: "Footer RMD Service 4"
+    weight: 4
 ---
 
 **Markdown** is created by [Daring Fireball](http://daringfireball.net/), the original guideline is [here](http://daringfireball.net/projects/markdown/syntax). Its syntax, however, varies between different parsers or editors.

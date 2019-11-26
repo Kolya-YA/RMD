@@ -10,6 +10,9 @@ menu:
     parent: "Services"
     name: "RMD Service 2 EN"
     weight: 2
+  service:
+    name: "Footer RMD Service 2"
+    weight: 2
 ---
 
 Thanks for [liwenyip/hugo-easy-gallery](https://github.com/liwenyip/hugo-easy-gallery) & [Zebradil · Pull Request #48](https://github.com/xianmin/hugo-theme-jane/pull/48) .

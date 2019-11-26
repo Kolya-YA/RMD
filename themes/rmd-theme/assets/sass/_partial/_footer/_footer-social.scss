@@ -11,8 +11,27 @@
         display: inline;
       }
     }
-
   }
+
+  .footer-page-nav {
+    margin-bottom: 1rem;
+    &::before {
+      content: "";
+      display: block;
+      margin: 0 auto .75rem;
+      width: 75%;
+      height: 2px;
+      background-color: orangered;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      list-style: none;
+    }
+  }
+
   .footer-social-links {
     display: flex;
     flex-direction: row;

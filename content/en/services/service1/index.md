@@ -10,6 +10,9 @@ menu:
     parent: "Services"
     name: "RMD Service 1 EN"
     weight: 1
+  service:
+    name: "Footer RMD Service 1"
+    weight: 1
 ---
 
 Hugo-theme-jane optimized for footnote. When you mouse hover the footnote[^example] , footnote content will be displayed.
