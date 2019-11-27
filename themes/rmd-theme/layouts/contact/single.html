@@ -13,14 +13,22 @@
       <label for="">Phone:<input type="tel"></label>
       <label for="">Location:<input type="text"></label>
       <fieldset>
-        <legend>Servises</legend>
-        <label for="">Service #1:<input type="radio"></label>
-        <label for="">Service #2:<input type="radio"></label>
-        <label for="">Service #3:<input type="radio"></label>
-        <label for="">Service #4:<input type="radio"></label>
-        <label for="">Other:<input type="radio"></label>
+        <legend>Services</legend>
+        <div class="contact-form__radio">
+          <input id="service1" type="radio" name="service">
+          <label for="service1">Service #1</label>
+          <input id="service2" type="radio" name="service">
+          <label for="service2">Service #2</label>
+          <input id="service3" type="radio" name="service">
+          <label for="service3">Service #3</label>
+          <input id="service4" type="radio" name="service">
+          <label for="service4">Service #4</label>
+          <input id="other" type="radio" name="service">
+          <label for="other">Other</label>
+        </div>
       </fieldset>
       <label for="">Textfield:<textarea></textarea></label>
+      <button type="submit">Send</button>
     </form>
   </section>
 
