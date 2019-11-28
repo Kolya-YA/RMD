@@ -34,7 +34,18 @@ body {
   }
 }
 
-main {
+.root-block-wrapper {
+  margin: 0 3%;
+  @include wrap-med-screen {
+    margin: 0 4.5%;
+  }
+  @include wrap-max-screen {
+    margin: 0 auto;
+    max-width: 1366px;
+  }
+}
+
+.main {
   // flex: 1;
 }
 

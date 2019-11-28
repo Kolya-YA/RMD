@@ -1,6 +1,6 @@
 {{ $logoTitle := default .Site.Title .Site.Params.logoTitle -}}
 
-<div class="head-logo-wrapper">
+<div class="header-logo">
   <div class="header-logo__logo">
     <a href="{{ "/" | relLangURL }}" class="logo">
       <div class="header-logo__img">
@@ -16,5 +16,8 @@
     <div class="header-logo__email">
       <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
     </div>
+    <div>{{ .Site.Params.Address.street }}, {{ .Site.Params.Address.city }}</div>
+    <div>{{ .Site.Params.Opentime.workdays }}: {{ .Site.Params.Opentime.workhours }}</div>
   </div>
+  {{ partial "lang-selector" . }}
 </div>

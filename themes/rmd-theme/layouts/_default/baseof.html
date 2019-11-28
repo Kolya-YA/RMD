@@ -12,11 +12,11 @@
 
   {{ partial "header/header.html" . }}
 
-  <main class="main">
-    <div class="content-wrapper">
-        {{ block "content" . }}{{ end }}
-    </div>
-  </main>
+  <div class="root-block-wrapper">
+    <main class="main">
+      {{ block "content" . }}{{ end }}
+    </main>
+  </div>
     
   {{ partial "footer/footer.html" . }}    
   {{ partial "back-to-top.html" . }}

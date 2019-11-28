@@ -1,6 +1,17 @@
 // Contact form
+.contacts-wrapper {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.contacts-text {
+  flex: 1;
+}
 
 .contact-form {
+  flex: 1;
+  min-width: 460px;
+
   form {
     margin: 1rem;
     padding: 1rem;
@@ -19,6 +30,7 @@
 
   input, textarea {
     display: block;
+    width: 100%;
   }
 
   .contact-form__radio {
@@ -44,6 +56,14 @@
 
     input[type=radio]:checked + label {
       background-color: cyan;
+    }
+  }
+
+  .contact-form__ds-checkbox {
+
+    input {
+      display: inline;
+      width: auto;
     }
   }
 

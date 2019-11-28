@@ -1,35 +1,50 @@
 {{ define "content" -}}
-  <article class="">
-    <header class="">
-      <h1 class="">{{ .Title }}</h1>
+  <div class="contacts-wrapper">
+    <article class="contacts-text">
+      <header class="">
+        <h1 class="">{{ .Title }}</h1>
+      </header>
       {{ .Content }}
-    </header>
-  </article>
-  <section class="contact-form">
-    <form action="">
-      <h2>Contact form</h2>
-      <label for="">Full name:<input type="text"></label>
-      <label for="">Email:<input type="email"></label>
-      <label for="">Phone:<input type="tel"></label>
-      <label for="">Location:<input type="text"></label>
-      <fieldset>
-        <legend>Services</legend>
-        <div class="contact-form__radio">
-          <input id="service1" type="radio" name="service">
-          <label for="service1">Service #1</label>
-          <input id="service2" type="radio" name="service">
-          <label for="service2">Service #2</label>
-          <input id="service3" type="radio" name="service">
-          <label for="service3">Service #3</label>
-          <input id="service4" type="radio" name="service">
-          <label for="service4">Service #4</label>
-          <input id="other" type="radio" name="service">
-          <label for="other">Other</label>
-        </div>
-      </fieldset>
-      <label for="">Textfield:<textarea></textarea></label>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    </article>
+
+    <section class="contact-form">
+      <form action="">
+        <h2>Contact form</h2>
+        <label>Full name:
+          <input type="text" maxlength="100" required>
+        </label>
+        <label>Email:
+          <input type="email" maxlength="100" required>
+        </label>
+        <label>Phone:
+          <input type="tel" maxlength="50">
+        </label>
+        <label>Location:
+          <input type="text" maxlength="100">
+        </label>
+        <fieldset>
+          <legend>Services</legend>
+          <div class="contact-form__radio">
+            <input id="service1" type="radio" name="service">
+            <label for="service1">Service #1</label>
+            <input id="service2" type="radio" name="service">
+            <label for="service2">Service #2</label>
+            <input id="service3" type="radio" name="service">
+            <label for="service3">Service #3</label>
+            <input id="service4" type="radio" name="service">
+            <label for="service4">Service #4</label>
+            <input id="other" type="radio" name="service">
+            <label for="other">Other</label>
+          </div>
+        </fieldset>
+        <label for="">Textfield:<textarea></textarea></label>
+        <label class="contact-form__ds-checkbox" for="ds-agree">
+          <input type="checkbox" name="ds-agreement" id="ds-agree" required>
+          <span>Ich habe die Datenschutzerklärung gelesen</span>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
 
 {{- end }}
