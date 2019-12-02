@@ -3,9 +3,10 @@
 .header-logo {
   display: flex;
   flex-direction: column;
+
+  @include wrap-max-screen {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-
-@include wrap-med-screen {
-  flex-direction: row;
-}
