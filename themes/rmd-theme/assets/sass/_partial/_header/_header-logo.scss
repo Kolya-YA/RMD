@@ -1,0 +1,11 @@
+// Header-logo
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@include wrap-med-screen {
+  flex-direction: row;
+}

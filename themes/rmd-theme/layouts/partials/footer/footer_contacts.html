@@ -4,7 +4,7 @@
       <div>{{ .Site.Params.Address.street }}, {{ .Site.Params.Address.city }}</div>    
   </div>
   <div class="footer-contacts__map">
-    <!-- {{ partial "google-map.html" (dict "height" .Site.Params.mapFooterHeight "width" .Site.Params.mapFooterWidth "context" . ) }} -->
+    {{ partial "google-map.html" (dict "height" .Site.Params.mapFooterHeight "width" .Site.Params.mapFooterWidth "context" . ) }}
   </div>
   <div class="footer-contacts__phones">
     <div>{{ i18n "phone" }}<a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.phone }}">{{ .Site.Params.phone }}</a></div>

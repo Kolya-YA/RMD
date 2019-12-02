@@ -46,28 +46,36 @@ $active-bg-color: rgba(128, 128, 128, .5);
   background-color: $active-bg-color;
 }
 
-
 .top-menu__list li a:hover {
   color: $hover-color;
   background: $hover-bg-color;
 }
 
-@media screen and (min-width: 935px) {
+@include wrap-med-screen {
   .top-menu {
-      position: static;
-      width: auto;
-      height: auto;
-      background-color: transparent;
-      margin-left: 10px;
-      display: flex;
-      flex-direction: row;
-      box-shadow: none;
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+  }
+  
+  .top-menu__nav {
+    margin-right: 1rem;
+    flex: 2;
   }
 
-  .top-menu--close {
-      display: block;
+  .top-menu__img {
+    flex-grow: 3;
+    border: 1px solid lightcyan;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  
   .top-menu__list {
       display: flex;
       list-style-type: none;
@@ -82,13 +90,5 @@ $active-bg-color: rgba(128, 128, 128, .5);
   .top-menu__list li a {
       padding: 14px 18px;
       font-size: 1.1em;
-  }
-
-  .top-menu__list li:not(:first-child) a {
-      margin-left: 4px;
-  }
-
-  .top-menu__list .active a {
-      font-weight: bold;
   }
 }
