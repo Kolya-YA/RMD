@@ -6,7 +6,7 @@ lastmod: 2017-08-28T21:41:52+08:00
 menu: 
   main:
     name: "Uber uns"
-    weight: 20
+    weight: 10
   footer:
     name: "Uber uns"
 ---

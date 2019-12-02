@@ -6,7 +6,7 @@ lastmod: 2017-08-28T21:41:52+08:00
 menu: 
   main:
     name: "About"
-    weight: 50
+    weight: 20
   footer:
     name: "About us"
 ---

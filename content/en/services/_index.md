@@ -5,7 +5,7 @@ date: 2019-11-01
 menu:
   main:
     name: "Services"
-    weight: 100
+    weight: 40
 ---
 
 I decided to start learning Go in March 2017.

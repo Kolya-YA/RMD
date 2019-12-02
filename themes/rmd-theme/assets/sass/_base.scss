@@ -46,7 +46,8 @@ body {
 }
 
 .main {
-  // flex: 1;
+  margin-top: $main-margin-top;
+  margin-bottom: $main-margin-bottom;
 }
 
 ::selection {

@@ -5,7 +5,7 @@ date: 2019-11-01
 menu:
   main:
     name: "Leistungen"
-    weight: 100
+    weight: 40
 ---
 
 # DE DE DE

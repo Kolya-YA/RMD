@@ -1,5 +1,6 @@
 [de]
   languageCode = "de"
+  lanq = "de"
   languageName = "Deutsche"
   weight = 1
   contentDir = "content/de"
@@ -9,6 +10,7 @@
 
 [en]
   languageCode = "en"
+  lanq = "en"
   languageName = "English"
   weight = 2
   contentDir = "content/en"

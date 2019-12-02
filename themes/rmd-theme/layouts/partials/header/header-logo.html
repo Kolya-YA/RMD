@@ -19,5 +19,5 @@
     <div>{{ .Site.Params.Address.street }}, {{ .Site.Params.Address.city }}</div>
     <div>{{ .Site.Params.Opentime.workdays }}: {{ .Site.Params.Opentime.workhours }}</div>
   </div>
-  {{ partial "lang-selector" . }}
+  {{ partial "lang-selector" (dict "context" . "position" "header") }}
 </div>
