@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+  font-size: $root-font-size;
+}
+
+body {
+  font-family: $global-font-family;
+  line-height: $global-line-height;
+  font-weight: $global-font-weight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $global-font-color;
+}
+
+@each $header, $font-size, $line-height, $margin-top, $margin-bottom in $global-headings {
+  #{$header} {
+    font-family: $global-serif-font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+  }
+}
+
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0em;
+  margin-bottom: 1.5em;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+/* Let's make sure all's aligned */
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+
+// a, b, i, strong, em, small, code {
+//   line-height: 0;
+// }
+
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+::selection {
+  background: $theme-color;
+  color: #fff; 
+}
+
+a {
+  color: $global-font-color;
+  text-decoration: none;
+}
+
+address {
+  font-style: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}

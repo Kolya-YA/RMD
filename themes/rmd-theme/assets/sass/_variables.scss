@@ -55,15 +55,25 @@ $dark-gray: #8a8a8a !default;
 
 // ========== Global ========== //
 // Text color of the body.
-$global-font-color: rgba(0, 0, 0, .84) !default;
+$global-font-color: rgba(0, 0, 0, .84);
 
-// Font size attribute applied to '<html>' and '<body>'.
-$root-font-size: 10px;
-$global-font-size: 1.6rem !default;
+// Typo to '<html>' and '<body>'.
+$root-font-size: 18px;
+$global-font-family: sans-serif;
+$global-serif-font-family: serif;
+$global-font-weight: 400;
+$global-line-height: 1.5em;
+// element font-size line-height margin-top margin-bottom
+$global-headings: (
+  h1 4.2222em 1.0657em .3352em .7105em, 
+  h2 2.6111em 1.1489em .5744em .5744em,
+  h3 1.6111em 1.8620em .931em 0,
+  h4 1em 1.5em 1.5em 0,
+  h5 1em 1.5em 1.5em 0
+) !default;
 
 // Global width of '<body>'.
 $global-body-width: 1080px !default;
-
 $wrap-med-width: 768px !default;
 $wrap-max-width: 1640px !default;
 
@@ -71,26 +81,14 @@ $wrap-max-width: 1640px !default;
 $global-container-padding: 0 20px !default;
 
 // Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
-$global-lineheight: 1.8 !default;
 
 // Font family of the site.
-$global-font-family: Open Sans,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
 
 // Serif font family of the site.
-$global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
 
 // Background color of the site.
 $global-background: $white !default;
 
-// Headings font size of the site.
-$global-headings: (
-  h1: 1.6em,
-  h2: 1.5em,
-  h3: 1.3em,
-  h4: 1.2em,
-  h5: 1.1em,
-  h6: 1em
-) !default;
 
 // === Main === //
 $main-margin-top: 2rem;
@@ -236,6 +234,8 @@ $social-link-margin-right: 1rem !default;
 
 // Font size of the social icon.
 $social-icon-font-size: 1.7em !default;
+
+$footer-law-font-size: .9em;
 
 // ========== Archive ========== //
 // Margin of the archive.

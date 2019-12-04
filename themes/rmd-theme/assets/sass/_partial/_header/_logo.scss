@@ -12,7 +12,7 @@
   }
 }
 
-@include max-screen() {
+@include wrap-med-screen {
   .logo-wrapper {
     display: none;
   }
