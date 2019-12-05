@@ -38,8 +38,31 @@ $active-bg-color: rgba(128, 128, 128, .5);
   display: block;
   color: $separator-color;
   text-decoration: none;
-  font-size: 1.6em;
+  // font-size: 1.6em;
   border-bottom: 1px solid $separator-color;
+}
+
+.top-menu__parent {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    top: 12px;
+    top: 1rem;
+    display: block;
+    width: .8rem;
+    height: .8rem;
+    border-right: 2px solid $separator-color;
+    border-bottom: 2px solid $separator-color;
+    transform-origin: center;
+    transform: rotate(-45deg);
+    transition: all 2s;
+  }
+  &.active::after {
+    transform: rotate(45deg);
+    transition: all 2s;
+  }
 }
 
 .top-menu__list .active {
@@ -90,6 +113,6 @@ $active-bg-color: rgba(128, 128, 128, .5);
 
   .top-menu__list li a {
       padding: 14px 18px;
-      font-size: 1.1em;
+      font-size: 1.2rem;
   }
 }

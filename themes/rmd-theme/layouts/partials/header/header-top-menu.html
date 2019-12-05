@@ -3,8 +3,8 @@
   {{ range first 10 .Site.Menus.main }}
     {{ if .HasChildren }}
     <li>
-      <a href="{{ .URL }}" {{if  ($currentPage.HasMenuCurrent "main" . ) }}class="active"{{end}}>{{ .Name }}</a>
-      <ul class="top-menu__sub-list">
+      <a href="{{ .URL }}" class="top-menu__parent {{if  ($currentPage.HasMenuCurrent "main" . ) }}active{{end}}">{{ .Name }}</a>
+      <ul class="top-menu__child-list">
         {{ range .Children }}
         <li>
           <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a>
