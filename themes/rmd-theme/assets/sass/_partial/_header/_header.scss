@@ -1,6 +1,7 @@
 // Header
 
 .header {
+  padding: 50px 0 0; // burger button height
   background: $rmd-color1;
   background: linear-gradient(120deg, $rmd-color2 48%, $rmd-color1 100%);
   @import 'header-logo';
@@ -10,7 +11,6 @@
 
 @include wrap-med-screen {
   .header {
-    padding: 50px 0 0;
-    text-align: center;
+    padding: 0;
   }
 }

@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
 
-  @include wrap-max-screen {
+  @include wrap-med-screen {
     flex-direction: row;
     justify-content: space-between;
   }
