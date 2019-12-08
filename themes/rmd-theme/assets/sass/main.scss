@@ -1,4 +1,5 @@
 // @import '_common/normalize';
+$body-background-img: "{{ .Site.Params.bodyBackGround }}";
 
 @import "_variables";
 

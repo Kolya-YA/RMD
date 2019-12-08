@@ -12,6 +12,7 @@ email = "info@rmd-citybau.de"
 mapApiKey = "AIzaSyCVSQkQMnPD5A_Z9AzN6Frgei4oDgPfYAY"
 mapFooterWidth = "100%"
 mapFooterHeight = "200"
+bodyBackGround = "images/mmpaper.svg"
 
 [address]
   name = "RMD Bau City GmbH"

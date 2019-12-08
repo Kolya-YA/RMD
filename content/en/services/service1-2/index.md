@@ -1,5 +1,5 @@
 ---
-title: "RMD Service 1-2"
+title: "Neubau SubService 1-2 EN"
 date: 2019-11-01
 draft: false
 tags: []
@@ -7,9 +7,9 @@ categories: ["service"]
 
 menu:
   service:
-    parent: "Footer RMD Service 1"
-    name: "Footer RMD SubService 1-2"
+    parent: "Neubau EN"
+    name: "Neubau SubService 1-2 EN"
     weight: 2
 ---
 
-## Service 1-2 EN
+## Neubau SubService 1-2 EN

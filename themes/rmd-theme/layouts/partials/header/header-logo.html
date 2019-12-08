@@ -1,11 +1,9 @@
 {{ $logoTitle := default .Site.Title .Site.Params.logoTitle -}}
 
-
 <div class="header-logo">
   <div class="header-logo__logo">
     <a {{ if not .IsHome }}href="{{ "/" | relLangURL }}"{{ end }} class="logo">
       <div class="header-logo__img">
-        <!-- <img src="//rmd-citybau.de/img/logo.png" alt="{{ $logoTitle }}"> -->
         <img src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ $logoTitle }}">
       </div>
       <h1 class="header-logo__name">{{ $logoTitle }}</h1>
