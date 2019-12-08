@@ -3,7 +3,8 @@
 .header {
   padding: 50px 0 0; // burger button height
   background: $rmd-color1;
-  background: linear-gradient(120deg, $rmd-color2 48%, $rmd-color1 100%);
+  // background: linear-gradient(120deg, $rmd-color2 48%, $rmd-color1 100%);
+  background-image: url($header-background-img);
   @import 'header-logo';
   @import 'header-nav';
   @import 'header-toggler';

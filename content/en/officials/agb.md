@@ -12,4 +12,8 @@ menu:
 
 AGB 
 
-Bla bla bla 
+Bla bla bla  
+
+## Backgrounds & ptiures
+* [Header background](https://pixabay.com/photos/white-painted-concrete-wall-concrete-888895/)
+* [SVG patterns](https://www.heropatterns.com/)

@@ -1,5 +1,5 @@
-$bg-color: $rmd-color2;
-$separator-color: $rmd-color1;
+$bg-color: $rmd-col5;
+$separator-color: $rmd-col1;
 $hover-color:  #222222;
 $hover-bg-color: #e7e7e7;
 $active-bg-color: rgba(128, 128, 128, .5);
@@ -92,8 +92,7 @@ $active-bg-color: rgba(128, 128, 128, .5);
 
   .top-menu__img {
     flex: 3 1 0;
-    border: 1px solid lightcyan;
-    background-color: crimson;
+    background-color: $rmd-col4;
     display: flex;
     flex-direction: column;
     justify-content: center;
