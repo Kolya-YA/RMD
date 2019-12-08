@@ -4,7 +4,8 @@ rssFullContent = true     # if false, Rss feed instead of the summary
 # site info
 logoTitle = "RMD Bau City"        # default: the title value
 description = "RMD beta site"
-since = "2001"            # Site creation time
+logo = "images/logo.png"
+since = "2012"            # Site creation time
 phone = "+49 30 228 08 343"
 fax = "+49 30 228 08 (fax)"
 email = "info@rmd-citybau.de"

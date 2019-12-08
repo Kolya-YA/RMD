@@ -4,9 +4,22 @@
   display: flex;
   flex-direction: column;
 
+  @import "header-logo-contacts";
+  @import "header-logo-logo";
+
+  .lang-nav  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    min-width: 3rem;
+    border: 3px solid lightgrey;
+    border-radius: 4px;
+  }
+
   @include wrap-med-screen {
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
   }
 }
 

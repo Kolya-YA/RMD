@@ -1,23 +1,30 @@
 {{ $logoTitle := default .Site.Title .Site.Params.logoTitle -}}
 
+
 <div class="header-logo">
   <div class="header-logo__logo">
-    <a href="{{ "/" | relLangURL }}" class="logo">
+    <a {{ if not .IsHome }}href="{{ "/" | relLangURL }}"{{ end }} class="logo">
       <div class="header-logo__img">
-        <img src="//rmd-citybau.de/img/logo.png" alt="{{ $logoTitle }}">
+        <!-- <img src="//rmd-citybau.de/img/logo.png" alt="{{ $logoTitle }}"> -->
+        <img src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ $logoTitle }}">
       </div>
-      <div class="header-logo__name">{{ $logoTitle }}</div>
+      <h1 class="header-logo__name">{{ $logoTitle }}</h1>
     </a>
   </div>
+  
   <div class="header-logo__contacts">
-    <div class="header-logo__phone">
-      <a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.phone }}">{{ .Site.Params.phone }}</a>
+    <div class="header-logo__direct-contacts">
+      <div class="header-logo__phone">
+        <a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.phone }}">{{ .Site.Params.phone }}</a>
+      </div>
+      <div class="header-logo__email">
+        <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+      </div>
     </div>
-    <div class="header-logo__email">
-      <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+    <div class="header-logo__address">
+      <div>{{ .Site.Params.Address.street }}, {{ .Site.Params.Address.city }}</div>
+      <div>{{ .Site.Params.Opentime.workdays }}: {{ .Site.Params.Opentime.workhours }}</div>
     </div>
-    <div>{{ .Site.Params.Address.street }}, {{ .Site.Params.Address.city }}</div>
-    <div>{{ .Site.Params.Opentime.workdays }}: {{ .Site.Params.Opentime.workhours }}</div>
   </div>
   {{ partial "lang-selector" (dict "context" . "position" "header") }}
 </div>

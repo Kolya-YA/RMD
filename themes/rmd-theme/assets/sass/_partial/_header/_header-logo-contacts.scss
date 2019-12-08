@@ -1,0 +1,26 @@
+.header-logo__contacts {
+  align-self: center;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  @include wrap-med-screen {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    color: #444444;
+    
+    a {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: inherit;
+      
+    }
+
+    .header-logo__direct-contacts {
+      margin-right: 1rem;
+    }
+  }
+}
+

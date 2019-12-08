@@ -13,7 +13,6 @@ theme = "rmd-theme"
 
 paginate = 3              # Number of articles displayed on the homepage
 rssLimit = 20             # Limit Entry Count to Rss file
-disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = "RMD Bau City"            # default: author.name ↓ 
 
