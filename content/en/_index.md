@@ -14,6 +14,10 @@ headerText:
   - "We're all beautiful!"
   - "Everybody's smarter and more humble than everybody else!"
   - "Exceeding all sorts of praise in perfection!"
+
+# resources:
+#   - name: headerImg
+#     src: himg/def-header.jpg
 ---
 
 # Styge quos repercusso caedis opus sonumque genus

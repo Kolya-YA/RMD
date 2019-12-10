@@ -12,6 +12,13 @@ menu:
   service:
     name: "Neubau EN"
     weight: 1
+
+headerText:
+  - "EFH / MFH"
+  - "Dach"
+  - "Keller"
+  - "Leicht konstruktion bau"
+  - "Einzel werke"
 ---
 
 ## Neubau leistugen EN 

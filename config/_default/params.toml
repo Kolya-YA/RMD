@@ -14,6 +14,7 @@ mapFooterWidth = "100%"
 mapFooterHeight = "200"
 bodyBackGround = "images/mmpaper.svg"
 headerBackGround = "images/whitewall.jpg"
+defHeaderImage = "images/def-header.jpg"
 
 [address]
   name = "RMD Bau City GmbH"

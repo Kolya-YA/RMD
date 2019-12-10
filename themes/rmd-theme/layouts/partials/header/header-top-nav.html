@@ -1,14 +1,26 @@
+
 <div id="nav-wrapper" class="top-menu top-menu--close">
     <nav class="top-menu__nav">
         {{ partial "header/header-top-menu.html" . }}
     </nav>
-    <div class="top-menu__img">
-        {{- with .Page.Params.headerText }}
-            {{- range . }}
-              <p>{{ . }}</p>
-            {{- end }}
-        {{ end -}}
+{{- with .Resources.Match "images/header.jpg" }}
+    {{- range . }}
+        {{- $bgimg := .Resize "1100x q59" }}
+        {{- $bgimg := $bgimg.Filter (images.Hue 40) }}
+        {{- $bgimg := $bgimg.RelPermalink }}
+    <div class="top-menu__img" style='background-image: url("{{ $bgimg }}");'>
+    {{- end }}
+{{ else }}
+    <div class="top-menu__img" style='background-image: url("{{ .Site.Params.defHeaderImage | relURL }}");'>
+{{ end -}}
+
+{{- with $.Page.Params.headerText }}
+    {{- range . }}
+    <p>{{ . }}</p>
+    {{- end }}
+{{ end -}}                
     </div>
+
     <div class="top-menu__toggle">
         <button id="nav-toggle-close" class="toggle-button toggle-button--close" type="button">
             <span>Close navigation</span>
