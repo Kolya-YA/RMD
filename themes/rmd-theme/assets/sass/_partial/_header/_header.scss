@@ -5,6 +5,7 @@
   background: $rmd-color1;
   // background: linear-gradient(120deg, $rmd-color2 48%, $rmd-color1 100%);
   background-image: url($header-background-img);
+  box-shadow: 0 0 5px $main-background-border;
   @import 'header-logo';
   @import 'header-nav';
   @import 'header-toggler';
@@ -12,6 +13,6 @@
 
 @include wrap-med-screen {
   .header {
-    padding: 0;
+    padding: 0;    
   }
 }
