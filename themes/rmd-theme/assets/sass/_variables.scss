@@ -1,6 +1,6 @@
-// ==============================
 // Variables
-// ==============================
+
+// === Colors === //
 
 // ========== Theme Color ========== //
 // Config here to change theme color
@@ -16,6 +16,12 @@ $theme-color-map: (
   'Dark Violet': #9932CC #f5f4fa
 );
 
+$black: #0a0a0a !default;
+$white: #fefefe !default;
+$light-gray: #e6e6e6 !default;
+$gray: #cacaca !default;
+$dark-gray: #8a8a8a !default;
+
 $rmd-color1: #bedd39;
 $rmd-color2: #39bedb;
 $rmd-color3: #db39be;
@@ -26,9 +32,8 @@ $rmd-col3: #40750c;
 $rmd-col4: #2e6b9f;
 $rmd-col5: #a0cfe9;
 
-$footer-background-color: #152935;
-$footer-background-color-light: #223540;
-$footer-text-color: #eee;
+$light-blue: #CFEAF8;
+$light-light-blue: #F8FCFF;
 
 
 // Check theme color config.
@@ -43,15 +48,6 @@ $theme-color: nth($theme-color-list, 1) !default;
 
 // Deputy theme color of the site.
 $deputy-color: nth($theme-color-list, 2) !default;
-
-
-// ========== Color ========== //
-$black: #0a0a0a !default;
-$white: #fefefe !default;
-$light-gray: #e6e6e6 !default;
-$gray: #cacaca !default;
-$dark-gray: #8a8a8a !default;
-
 
 // ========== Global ========== //
 // Text color of the body.
@@ -229,9 +225,14 @@ $pagination-margin: 2em 0 !default;
 $pagination-font-size: 20px !default;
 
 
-// ========== Footer ========== //
-$footer-margin-top: auto !default;
-$footer-top-padding: 3rem !default;
+// === Footer === //
+
+$footer-background-color: #152935;
+$footer-background-color-light: #223540;
+$footer-text-color: #eee;
+
+$footer-margin-top: auto;
+$footer-top-padding: 3rem;
 
 $lng-bottom-margin: 1rem !default;
 $social-link-margin-right: 1rem !default;

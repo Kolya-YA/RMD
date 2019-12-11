@@ -11,33 +11,36 @@
       <form action="">
         <h2>Contact form</h2>
         <label>Full name:
-          <input type="text" maxlength="100" required>
+          <input type="text" maxlength="100" name="msg-name" required>
         </label>
-        <label>Email:
-          <input type="email" maxlength="100" required>
+        <label>{{ i18n "email" }}
+          <input type="email" maxlength="100" name="msg-email" required>
         </label>
-        <label>Phone:
-          <input type="tel" maxlength="50">
+        <label>{{ i18n "phone" }}
+          <input type="tel" maxlength="50" name="msg-phone">
         </label>
         <label>Location:
-          <input type="text" maxlength="100">
+          <input type="text" maxlength="100" name="msg-location">
         </label>
         <fieldset>
           <legend>Services</legend>
           <div class="contact-form__radio">
             <input id="service1" type="radio" name="service">
-            <label for="service1">Service #1</label>
+            <label for="service1">S #1</label>
             <input id="service2" type="radio" name="service">
-            <label for="service2">Service #2</label>
+            <label for="service2">S #2</label>
             <input id="service3" type="radio" name="service">
-            <label for="service3">Service #3</label>
+            <label for="service3">S #3</label>
             <input id="service4" type="radio" name="service">
-            <label for="service4">Service #4</label>
+            <label for="service4">S #4</label>
             <input id="other" type="radio" name="service">
             <label for="other">Other</label>
           </div>
         </fieldset>
-        <label for="">Textfield:<textarea></textarea></label>
+        <label for="">Textfield:
+          <textarea name="msg-body"
+            rows="5" minlength="5" maxlength="1024" required></textarea>
+        </label>
         <label class="contact-form__ds-checkbox" for="ds-agree">
           <input type="checkbox" name="ds-agreement" id="ds-agree" required>
           <span>Ich habe die Datenschutzerklärung gelesen</span>

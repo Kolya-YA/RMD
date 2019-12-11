@@ -5,7 +5,7 @@
 }
 
 .contacts-text {
-  flex: 1;
+  flex: 2;
 }
 
 .contact-form {
@@ -13,9 +13,8 @@
   min-width: 460px;
 
   form {
-    margin: 1rem;
     padding: 1rem;
-    background-color: indianred;
+    background-color: $white;
   }
 
   h2 {
@@ -33,6 +32,21 @@
     width: 100%;
   }
 
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  textarea {
+    padding: 7px 10px;
+    font-size: 1.1rem;
+    background-color: $light-light-blue;
+    border: 1px solid $rmd-col1;
+    border-radius: 2px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
   .contact-form__radio {
 
     display: flex;
@@ -46,7 +60,7 @@
       margin: 0;
       padding: 3px 6px;
       flex: 1;
-      background-color: lightcyan;
+      background-color: $light-blue;
       text-align: center;
       
       &:not(:last-child) {
@@ -55,16 +69,34 @@
     }
 
     input[type=radio]:checked + label {
-      background-color: cyan;
+      background-color: $rmd-col1;
+      color: $white;
     }
   }
 
   .contact-form__ds-checkbox {
-
     input {
       display: inline;
       width: auto;
     }
   }
+
+  button {
+    display: block;
+    margin: 0 auto;
+    min-width: 150px;
+    font-size: 1.1rem;
+    padding: 7px 10px;
+    background-color: $light-blue;
+    border: 2px solid $rmd-col1;
+    border-radius: 2px;
+    &:hover, &:focus {
+      background-color: $rmd-col5;
+    }
+    &:active {
+      background-color: $rmd-col1;
+      color: $white;
+    }
+   }
 
 }
