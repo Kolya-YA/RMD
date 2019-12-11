@@ -16,6 +16,7 @@ body {
   #{$header} {
     font-family: $global-serif-font-family;
     font-size: $font-size;
+    font-weight: $header-font-weight;
     line-height: $line-height;
     margin-top: $margin-top;
     margin-bottom: $margin-bottom;

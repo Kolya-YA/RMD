@@ -55,9 +55,11 @@ $global-font-color: rgba(0, 0, 0, .84);
 
 // Typo to '<html>' and '<body>'.
 $root-font-size: 18px;
-$global-font-family: sans-serif;
-$global-serif-font-family: serif;
+@import url('https://fonts.googleapis.com/css?family=Dosis:300|Montserrat:400,400i,600&display=swap');
+$global-font-family: 'Montserrat', sans-serif;
+$global-serif-font-family: 'Dosis', sans-serif;
 $global-font-weight: 400;
+$header-font-weight: 300;
 $global-line-height: 1.5em;
 
 // element font-size line-height margin-top margin-bottom

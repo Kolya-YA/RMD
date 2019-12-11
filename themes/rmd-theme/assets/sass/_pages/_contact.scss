@@ -6,6 +6,9 @@
 
 .contacts-text {
   flex: 2;
+  @include wrap-med-screen {
+    margin-right: 1rem;
+  }
 }
 
 .contact-form {
