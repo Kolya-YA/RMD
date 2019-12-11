@@ -8,12 +8,11 @@ menu:
     weight: 40
 ---
 
-# DE DE DE
-
-I decided to **start** learning Go in *March* 2017.
+## {{< param title >}}
+I decided to **start** buildig houses in *March* 2019.
 
 * 111
 * 222
 * 333
 
-Follow my journey through this new blog.
+Follow me and enjoy.

@@ -1,0 +1,27 @@
+.service-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+
+  .service-list__item {
+    // display: block;
+    
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+      padding: 1rem;
+      background-color: $light-gray;
+    }
+
+    .service-list__icon {
+        display: block;
+    }
+
+  }
+}

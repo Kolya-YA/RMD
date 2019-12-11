@@ -1,11 +1,11 @@
-<li>
+<li class="service-list__item">
   <a href="{{ .RelPermalink }}">
-      {{ with .Resources.ByType "image" }}
-        {{ range . }}
-          {{ $icon := .Fit "50x50" }}
-        <img src="{{ $icon.Permalink }}" alt="{{ .Title }}">
-        {{ end }}
-      {{ end }}
     {{ .Title }}
+    {{ with .Resources.ByType "image" }}
+      {{ range . }}
+        {{ $icon := .Fit "50x50" }}
+      <img class="service-list__icon" src="{{ $icon.Permalink }}" alt="{{ .Title }}">
+      {{ end }}
+    {{ end }}
   </a>
 </li>
