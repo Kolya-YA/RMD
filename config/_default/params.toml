@@ -12,8 +12,9 @@ email = "info@rmd-citybau.de"
 mapApiKey = "AIzaSyCVSQkQMnPD5A_Z9AzN6Frgei4oDgPfYAY"
 mapFooterWidth = "100%"
 mapFooterHeight = "200"
+headerBackGround = "images/header-bcg.svg"
 bodyBackGround = "images/mmpaper.svg"
-headerBackGround = "images/whitewall.jpg"
+# headerBackGround = "images/whitewall.jpg"
 defHeaderImage = "images/def-header.jpg"
 
 [address]

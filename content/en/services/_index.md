@@ -8,6 +8,6 @@ menu:
     weight: 40
 ---
 
-I decided to start learning Go in March 2017.
+## {{< param title >}}
 
-Follow my journey through this new blog.
+Follow my journey through this new hole.

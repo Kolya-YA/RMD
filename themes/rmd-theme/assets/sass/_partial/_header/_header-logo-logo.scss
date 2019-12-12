@@ -2,6 +2,11 @@
   display: block;
   position: relative;
   overflow: hidden;
+
+  a {
+    display: block;
+  }
+
   .header-logo__name {
     position: absolute;
     top: 50%;
@@ -10,7 +15,7 @@
     z-index: -10;
   }
   @include wrap-med-screen {
-    width: 20vw;
-    max-width: 240px;
+    width: 18vw;
+    max-width: 220px;
   }
 }
