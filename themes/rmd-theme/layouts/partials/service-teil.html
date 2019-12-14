@@ -1,11 +1,24 @@
+{{ $srvTailScratch := newScratch }}
+{{ $srvTailScratch.Set "srv-icon" (.Site.Params.defServiceIcon | relURL) }}
+
+{{/* with .Resources.Match "*icon.png" */}}
+{{ with .Resources.ByType "image" }}
+  {{ range first 1 . }}
+    {{ $srvTailScratch.Set "srv-icon" (.Fit "100x70").RelPermalink }}
+  {{ end }}
+{{ end }}
+{{ $icon := $srvTailScratch.Get "srv-icon" }}
+    
 <li class="service-list__item">
-  <a href="{{ .RelPermalink }}">
-    {{ .Title }}
-    {{ with .Resources.ByType "image" }}
-      {{ range . }}
-        {{ $icon := .Fit "50x50" }}
-      <img class="service-list__icon" src="{{ $icon.Permalink }}" alt="{{ .Title }}">
-      {{ end }}
-    {{ end }}
+  <a class="service-tail" href="{{ .RelPermalink }}">
+    <article>
+      <img class="service-tail__icon"
+      src="{{ $icon }}"
+      alt="{{ .Title }} icon">
+      <h3 class="service-tail__title">{{ .Title }}</h3>
+      <div class="service-tail__dscr">
+        {{ .Summary }}
+      </div>      
+    </article>    
   </a>
 </li>

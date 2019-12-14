@@ -16,6 +16,7 @@ headerBackGround = "images/header-bcg.svg"
 bodyBackGround = "images/mmpaper.svg"
 # headerBackGround = "images/whitewall.jpg"
 defHeaderImage = "images/def-header.jpg"
+defServiceIcon = "images/srv-icon.png"
 
 [address]
   name = "RMD Bau City GmbH"

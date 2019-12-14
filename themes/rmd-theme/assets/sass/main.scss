@@ -1,7 +1,9 @@
-// @import '_common/normalize';
+@use "sass:color";
+
 $body-background-img: "{{ .Site.Params.bodyBackGround }}";
 $header-background-img: "{{ .Site.Params.headerBackGround }}";
 
+// @import '_common/normalize';
 @import "_variables";
 
 @import "_common/utils";

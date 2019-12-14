@@ -3,7 +3,7 @@ title: "Neubau SubService 1-2 EN"
 date: 2019-11-01
 draft: false
 tags: []
-categories: ["service"]
+categories: ["subservice"]
 
 menu:
   service:
