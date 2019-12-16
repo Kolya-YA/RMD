@@ -16,4 +16,4 @@ menu:
 
 ## Bau planung EN
 
-Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung 
+Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau<!--more--> planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung 
