@@ -8,18 +8,22 @@
   @import "header-logo-logo";
 
   .lang-nav  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2rem;
-    min-width: 3rem;
-    border: 3px solid lightgrey;
-    border-radius: 4px;
+    display: none;
   }
 
   @include wrap-med-screen {
     flex-direction: row;
     align-items: center;
+
+    .lang-nav  a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2rem;
+      min-width: 3rem;
+      border: 3px solid lightgrey;
+      border-radius: 4px;
+    }
   }
 }
 

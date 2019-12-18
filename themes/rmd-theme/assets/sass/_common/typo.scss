@@ -58,7 +58,7 @@ sub {
 }
 
 ::selection {
-  background: $theme-color;
+  background: $color-primary-0;
   color: #fff; 
 }
 
@@ -73,7 +73,5 @@ address {
 
 img {
   max-width: 100%;
-  height: auto;
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
 }

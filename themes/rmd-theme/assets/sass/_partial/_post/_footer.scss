@@ -25,7 +25,6 @@
 
   .post-nav {
     margin-top: 1em;
-    @include clearfix;
 
     .prev,
     .next {
@@ -38,7 +37,6 @@
     }
 
     .prev {
-      float: left;
 
       &:hover {
         color: $theme-color;
@@ -47,7 +45,6 @@
     }
 
     .next {
-      float: right;
 
       &:hover {
         color: $theme-color;

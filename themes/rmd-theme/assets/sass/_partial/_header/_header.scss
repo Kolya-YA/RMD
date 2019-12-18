@@ -1,9 +1,8 @@
 // Header
 
 .header {
-  padding: 50px 0 0; // burger button height
-  background: $white;
-  // background: linear-gradient(120deg, $rmd-color2 48%, $rmd-color1 100%);
+  padding-bottom: .5rem; // burger button height
+  background: $light-gray;
   background-image: url($header-background-img);
   box-shadow: 0 0 5px $main-background-border;
   @import 'header-logo';

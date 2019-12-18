@@ -1,9 +1,9 @@
-$bg-color: $rmd-color1;
-$el-color: $rmd-color2;
+$bg-color: $color-secondary-1-0;
+$el-color: $color-primary-2;
 
 .top-menu__toggle {
   position: absolute;
-  top: 5px;
+  top: 3px;
   right: 6px;
   height: 44px;
 }
@@ -12,9 +12,10 @@ $el-color: $rmd-color2;
   display: block;
   height: 100%;
   width: auto;
-  padding: 1px 7px 2px;
+  padding: 1px 8px;
   background-color: $bg-color;
-  border-radius: 2px;
+  border-radius: 3px;
+  border: none;
 }
 
 .toggle-button span {

@@ -22,10 +22,6 @@ $light-gray: #e6e6e6 !default;
 $gray: #cacaca !default;
 $dark-gray: #8a8a8a !default;
 
-$rmd-color1: #bedd39;
-$rmd-color2: #39bedb;
-$rmd-color3: #db39be;
-
 $rmd-col1: #b3532d;
 $rmd-col2: #ffce56;
 $rmd-col3: #40750c;
@@ -35,6 +31,23 @@ $rmd-col5: #a0cfe9;
 $light-blue: #CFEAF8;
 $light-light-blue: #F8FCFF;
 
+$color-primary-0: #34568B;	// Main Primary color */
+$color-primary-1: #7B95BF;
+$color-primary-2: #4F6EA0;
+$color-primary-3: #1F4176;
+$color-primary-4: #0E2D5E;
+
+$color-secondary-1-0: #D2B641;	// Main Secondary color (1) */
+$color-secondary-1-1: #FFEB9B;
+$color-secondary-1-2: #F2D76B;
+$color-secondary-1-3: #B39622;
+$color-secondary-1-4: #8E7309;
+
+$color-secondary-2-0: #D27C41;	// Main Secondary color (2) */
+$color-secondary-2-1: #FFC39B;
+$color-secondary-2-2: #F2A16B;
+$color-secondary-2-3: #B35D22;
+$color-secondary-2-4: #8E3F09;
 
 // Check theme color config.
 // if it does not exist, use default theme color.

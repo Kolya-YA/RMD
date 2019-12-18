@@ -1,8 +1,9 @@
-$bg-color: $rmd-col5;
-$separator-color: $rmd-col1;
-$hover-color:  #222222;
-$hover-bg-color: #e7e7e7;
-$active-bg-color: rgba(128, 128, 128, .5);
+$bg-color-m: $color-primary-0;
+$bg-color: $color-primary-2;
+$separator-color: $color-secondary-1-2;
+$hover-color:  $color-primary-4;
+$hover-bg-color: $color-primary-1;
+$active-bg-color: $color-primary-3;
 
 .top-menu {
   position: absolute;
@@ -12,13 +13,24 @@ $active-bg-color: rgba(128, 128, 128, .5);
   width: 320px;
   min-height: 100vh;
   // background-color: #8D9CAF;
-  background-color: $bg-color;
+  background-color: $bg-color-m;
   box-shadow: -2px 0 15px 0px $separator-color;
+
+  .lang-nav {
+    height: 50px;
+    padding: 5px 60px 5px 10px;
+
+    .lang-nav__br {
+      display: none;
+    }
+  }
 }
 
 .top-menu--close {
   display: none;
 }
+
+
 
 .top-menu__list, .top-menu__child-list {
   display: flex;
@@ -44,6 +56,7 @@ $active-bg-color: rgba(128, 128, 128, .5);
 .top-menu__parent {
   > a {
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -78,10 +91,14 @@ $active-bg-color: rgba(128, 128, 128, .5);
     height: auto;
     min-height: auto;
     margin-bottom: 1rem;
-    // background-color: transparent;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     box-shadow: none;
+
+    .lang-nav {
+        display: none;
+    }
   }
   
   .top-menu__nav {
@@ -106,7 +123,7 @@ $active-bg-color: rgba(128, 128, 128, .5);
     .top-menu__child-list {
       // display: none;
       // opacity: 0;
-      transition: all 1s 1s;
+      // transition: all 1s 1s;
       position: absolute;
       top: 0;
       left: 100%;
@@ -115,31 +132,32 @@ $active-bg-color: rgba(128, 128, 128, .5);
       height: 0;
       overflow: hidden;
       z-index: 10;
-      background-color: $bg-color;
     }
     &:hover, &:focus, &:active, &:focus-within {
+      width: 103%;
       .top-menu__child-list {
         // display: flex;
         // opacity: 1;
+        // transition: all 1s 1s;
         right: -350px;
         width: fit-content;
         height: auto;
-        transition: all 1s 1s;
       }
       > a::after {
         transform: rotate(-45deg);
-        transition: all .3s;
+        transition: transform .3s;
       }
     }
     > a.active::after  {
       transform: rotate(-45deg);
-      transition: all .3s;
+      transition: transform .3s;
     }
   }
  
   
   .top-menu__list li a {
     padding: 14px 18px;
+    background-color: $bg-color;
     font-size: 1.2rem;
   }
   
