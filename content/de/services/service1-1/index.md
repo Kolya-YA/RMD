@@ -7,7 +7,7 @@ categories: ["service"]
 
 menu:
   service:
-    parent: "Neubau"
+    parent: "Montage / Installation"
     name: "Smart Home"
     weight: 1
 ---
