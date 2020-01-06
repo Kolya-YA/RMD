@@ -19,7 +19,16 @@ $active-bg-color: $color-primary-3;
   .lang-nav {
     height: 50px;
     padding: 5px 60px 5px 10px;
-
+    a {
+      display: block;
+      text-align: center;
+      margin: 2px 14px;
+      padding: 3px;
+      color: $separator-color;
+      background-color: $active-bg-color;
+      border: solid 1px $separator-color;
+      border-radius: 2px;
+    }
     .lang-nav__br {
       display: none;
     }
@@ -29,8 +38,6 @@ $active-bg-color: $color-primary-3;
 .top-menu--close {
   display: none;
 }
-
-
 
 .top-menu__list, .top-menu__child-list {
   display: flex;

@@ -11,10 +11,16 @@
   <div class="header-logo__contacts">
     <div class="header-logo__direct-contacts">
       <div class="header-logo__phone">
-        <a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.phone }}">{{ .Site.Params.phone }}</a>
+        <a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.phone }}">
+          <span class="sign">✆</span>
+          <span class="text">{{ .Site.Params.phone }}</span>
+        </a>
       </div>
       <div class="header-logo__email">
-        <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+        <a href="mailto:{{ .Site.Params.email }}">
+          <span class="sign">✉</span>
+          <span class="text">{{ .Site.Params.email }}</span>
+        </a>
       </div>
     </div>
     <div class="header-logo__address">
