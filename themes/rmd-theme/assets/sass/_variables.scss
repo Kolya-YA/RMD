@@ -77,12 +77,19 @@ $global-line-height: 1.5em;
 
 // element font-size line-height margin-top margin-bottom
 $global-headings: (
-  h1 4.2222em 1.0657em .3352em .7105em, 
-  h2 2.6111em 1.1489em .5744em .5744em,
-  h3 1.6111em 1.8620em .931em 0,
-  h4 1em 1.5em 1.5em 0,
+  h1 3.3888em 1.3279em .4426em .8852em, 
+  h2 2.2778em 1.3171em .6585em .6585em,
+  h3 1.5em 1em 1em .2em,
+  h4 1.1em 1.5em 1.5em 0,
   h5 1em 1.5em 1.5em 0
 ) !default;
+// $global-headings: (
+//   h1 4.2222em 1.0657em .3352em .7105em, 
+//   h2 2.6111em 1.1489em .5744em .5744em,
+//   h3 1.6111em 1.8620em .931em 0,
+//   h4 1em 1.5em 1.5em 0,
+//   h5 1em 1.5em 1.5em 0
+// ) !default;
 
 // Global width of '<body>'.
 $global-body-width: 1080px !default;

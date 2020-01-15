@@ -11,16 +11,12 @@ menu:
     name: "About us"
 ---
 
-## Hugo is a static site engine written in Go.
+(English version) Sehr geehrte Damen und Herren,
 
+hiermit möchten wir eine kurze Beschreibung unserer Firma darstellen. Wir sind Generalunternehmer mit Fachleute für Bauausführung mit mehr als _7 Jahren_ Berufserfahrung als Unternehmer und seit _2012_ sind wir als Firma __RMD City Bau GmbH__ auf dem Baumarkt repräsentiert. Unsere Firma hat sich von Anfang an bemüht, auf hohe Standards zu achten. Bis heute können wir auf zahlreiche fertig gestellte Bauprojekte in Trockenbau, Neubau und Sanierung mit Architekten verweisen.
 
-It makes use of a variety of open source projects including:
+Dank unserer Zielstrebigkeit und gesammelten Erfahrung können wir Ihnen große Breite an Dienstleistungen für Innenraum und Außenbereich von Beratung und Planung bis zum Schlüsselfertigen Objekt mit Organisation der Gewerke und Qualitätskontrolle anbieten. Die Flexibilität im Umgang mit dem Kunden ist einer unserer Schwerpunkte. Das wichtigste dabei aber ist: Wir machen unsere Arbeit mit großem Vergnügen, der Beweis dafür sind zufriedene Kunden, die uns gern weiterempfehlen. Unser Ziel ist es, die Sorgen und Vorurteile rund ums Bauen abzunehmen. Wir tragen die komplette Verantwortung in jeder Etappe unserer Arbeit und geben _5 Jahre Garantie_ auf alles, was wir tun.
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
+Wir sind für private Auftraggeber, Unternehmen und staatliche Institutionen tätig, wie Kitas, Schulen und Ämter. Vorrang hat für uns die schnelle Auftragsausführung und ein gutes Preis-Leistungsverhältnis, da für uns qualitativ hochwertig ausgeführte Arbeit wichtig ist, auf die wir stolz sein können. Das Personal und unsere Partnerfirmen sind teilweise in Deutschland tätig, ein großer Teil aber auch EU-weit. Alle Arbeiter sind Spezialisten mit umfassender Fachkompetenz auf ihrem Gebiet, arbeiten zuverlässig, pflichtbewusst und mit reicher Erfahrung.
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
-
-Emoji: :cherries: :shit: :-1: :stuck_out_tongue_winking_eye:
+Unsere Mission ist das Bauvorhaben so angenehm wie möglich zu machen. Wir übernehmen Materialeinkauf und garantieren höhe Qualität-Standards unserer Arbeit. Wir machen Ihre Träume wahr!
