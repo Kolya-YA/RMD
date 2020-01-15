@@ -5,12 +5,18 @@
   .footer-contacts__address {
     margin-bottom: 1rem;
     .footer-contacts__name {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      margin-bottom: .2em;
       font-weight: bold;
     }
   }
-
+  
   @include wrap-med-screen {
     text-align: left;
+      .footer-contacts__address {
+        .footer-contacts__name {
+          font-size: 2rem;
+        }
+      }
   }
 }

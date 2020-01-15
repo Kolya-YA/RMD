@@ -123,6 +123,12 @@ $active-bg-color: $color-primary-3;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    p {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: white;
+      text-shadow: 0 0 1px #555, 0 0 30px #000;
+    }
   }
   
   .top-menu__parent {

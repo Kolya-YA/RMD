@@ -1,9 +1,9 @@
 .header-logo__logo {
   position: relative;
   overflow: hidden;
-  padding-right: 65px;
   height: 60px;
-
+  margin-right: .5rem;
+  
   a {
     // display: block;
     max-height: 100%;
@@ -14,7 +14,7 @@
     max-height: 100%;
     object-fit: scale-down;
   }
-
+  
   .header-logo__name {
     position: absolute;
     top: 50%;
@@ -27,5 +27,6 @@
     width: 20vw;
     max-width: 220px;
     margin: 1rem 0;
+    padding-right: 65px;
   }
 }
