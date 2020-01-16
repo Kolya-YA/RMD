@@ -3,29 +3,25 @@
 // ==============================
 
 .post {
-  padding: 3em 5em;
-  margin: 0 5em 3em;
-
+  margin: 0 0 1em;
   @import '_post/header';
   @import '_post/toc';
   @import '_post/content';
   @import '_post/footer';
   @import '_post/shortcode_notice';
 }
-
-
-@media screen and (max-width: 504px) {
+  
+@media screen and (min-width: 504px) {
   .post {
     padding: 1em 1em;
-    margin: 0 0 2em;
-  }
-
+    margin: 0 1em 2em;
+  }  
   .content-wrapper {
     padding: 1em 0 1px;
-  }
+  }  
 }
 
-@media screen and (min-width: 900px) and (max-width: 1080px) {
+@media screen and (min-width: 900px) {
   .post {
     margin: 0 2em 2em;
   }
@@ -35,14 +31,9 @@
   }
 }
 
-@media screen and (min-width: 504px) and (max-width: 899px) {
+@media screen and (min-width: 1080px) {
   .post {
-    padding: 1em 1em;
-    margin: 0 1em 2em;
+    padding: 3em 5em;
+    margin: 0 5em 3em;
   }
-
-  .content-wrapper {
-    padding: 1em 0 1px;
-  }
-
 }
