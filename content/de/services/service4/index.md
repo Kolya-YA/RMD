@@ -1,19 +1,21 @@
 ---
-title: "Fassaden & Außenbau"
-date: 2019-11-01
+title: "Innendesign"
+date: 2020-01-16
 draft: false
 categories: ["service"]
 
 menu:
   main:
     parent: "Leistungen"
-    name: "Fassaden & Außenbau"
+    name: "Innendesign"
     weight: 4
   service:
-    name: "Fassaden / Außenbau"
+    name: "Innendesign"
     weight: 4
 ---
 
-## Fassaden & Außenbau
-
-Fassaden & Außenbau Fassaden & Außenbau Fassaden & Außenbau Fassaden & Außenbau Fassaden & Außenbau Fassaden & Außenbau Fassaden & Außenbau Fassaden & Außenbau Fassaden & Außenbau Fassaden & Außenbau Fassaden & Außenbau Fassaden & Außenbau Fassaden & Außenbau Fassaden & Außenbau 
+- Innendesign
+- Spanndecken
+- LED-Beleuchtung
+- Steinteppich mit ohne Motiven
+- Baumwollentapeten

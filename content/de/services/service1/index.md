@@ -1,28 +1,24 @@
 ---
-title: "Neubau"
-date: 2019-11-01
+title: "Innenausbausanierung"
+date: 2020-01-16
 draft: false
 categories: ["service"]
 
 menu:
   main:
     parent: "Leistungen"
-    name: "Neubau"
+    name: "Innenausbausanierung"
     weight: 1
     pre: ""
   service:
-    name: "Neubau"
+    name: "Innenausbausanierung"
     weight: 1
 ---
 
-## Neubau leistugen
-
-1. EFH / MFH
-1. Dach
-1. Keller
-1. Leicht konstruktion bau
-1. Einzel werke
-    * Qq
-    * Ww
-    * Ee
-    * rr
+- Entsorgung und Abriss
+- Trockenbau
+- Maler- und Verputzungsarbeiten
+- Fliesenverlegung (Decke, Wände, Boden)
+- Tischlerarbeiten
+- Bodenbeläge
+- Abdichtungen

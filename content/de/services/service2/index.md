@@ -1,28 +1,22 @@
 ---
-title: "Sanirung"
-date: 2019-11-01
+title: "Außenarbeit"
+date: 2020-01-16
 draft: false
 categories: ["service"]
 
 menu:
   main:
     parent: "Leistungen"
-    name: "Sanirung"
+    name: "Außenarbeit"
     weight: 2
   service:
-    name: "Sanirung"
+    name: "Außenarbeit"
     weight: 2
 ---
 
-## Sanirung eistugen
-1. EFH/ MFH
-1. Dach
-1. Keller
-1. Gewerbe / Wohnung
-1. Einzel werke
-    * Qqq
-    * Www
-    * Eee
-    * Rrr
-    * Ttt
-    * Yyy
+- Fassaden
+- Gartenbau
+- Innenhofbereich
+- Terrassenbau
+- Wegebau
+- Straßenbau

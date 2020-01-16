@@ -1,21 +1,23 @@
 ---
-title: "Design & Innovation"
-date: 2019-11-01
+title: "Dachausbau"
+date: 2020-01-16
 draft: false
 categories: ["service"]
 
 menu:
   main:
     parent: "Leistungen"
-    name: "Design & nnovation"
+    name: "Dachausbau"
     weight: 5
   service:
-    name: "Design / Innovation"
+    name: "Dachausbau"
     weight: 5
 ---
 
-## Design & Innovation
-
-* Spanndecken
-* Steinteppich
-* Baumwollputz
+- Komplett Sanierung
+- Zimmermann/Tischler
+- Entkernung
+- Schrägdach mit Ziegelsteinen
+- Velux Schwingfenster
+- Flachdachbeschichtung
+- Innenausbausanierung

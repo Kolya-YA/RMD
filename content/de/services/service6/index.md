@@ -1,5 +1,5 @@
 ---
-title: "Bau planung"
+title: "Neubau"
 date: 2019-11-01
 draft: false
 categories: ["service"]
@@ -7,13 +7,16 @@ categories: ["service"]
 menu:
   main:
     parent: "Leistungen"
-    name: "Bau planung"
+    name: "Neubau"
     weight: 6
   service:
-    name: "Bau planung"
+    name: "Neubau"
     weight: 6
 ---
 
-## Bau planung
-
-Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung Bau planung 
+- Grundstücke
+- Bodenplatte
+- Mauerarbeit Stein auf Stein
+- Leichtkonstruktion aus Metallholz
+- Dachausbau
+- Innenausbau
