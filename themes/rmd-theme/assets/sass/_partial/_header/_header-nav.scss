@@ -15,6 +15,10 @@ $active-bg-color: $color-primary-3;
   // background-color: #8D9CAF;
   background-color: $bg-color-m;
   box-shadow: -2px 0 15px 0px $separator-color;
+  
+  .top-menu__img {
+    display: none;
+  }
 
   .lang-nav {
     height: 50px;
@@ -103,6 +107,24 @@ $active-bg-color: $color-primary-3;
     flex-direction: row;
     box-shadow: none;
 
+    .top-menu__img {
+      flex: 3 1 0;
+      background-color: $rmd-col4;
+      background-position: center;
+      background-origin: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin: 0.5em;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: white;
+        text-shadow: 0 0 1px #555, 0 0 30px #000;
+      }
+    }
+
     .lang-nav {
         display: none;
     }
@@ -114,22 +136,6 @@ $active-bg-color: $color-primary-3;
     max-width: 350px;
   }
 
-  .top-menu__img {
-    flex: 3 1 0;
-    background-color: $rmd-col4;
-    background-position: center;
-    background-origin: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p {
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: white;
-      text-shadow: 0 0 1px #555, 0 0 30px #000;
-    }
-  }
   
   .top-menu__parent {
     position: relative;
