@@ -3,15 +3,16 @@ title: "Dachausbau"
 date: 2020-01-16
 draft: false
 categories: ["service"]
+weight: 50
 
 menu:
   main:
     parent: "Leistungen"
     name: "Dachausbau"
-    weight: 5
+    weight: 50
   service:
     name: "Dachausbau"
-    weight: 5
+    weight: 50
 ---
 
 - Komplett Sanierung
@@ -21,3 +22,4 @@ menu:
 - Velux Schwingfenster
 - Flachdachbeschichtung
 - Innenausbausanierung
+<!--more-->

@@ -3,15 +3,16 @@ title: "Außenarbeit"
 date: 2020-01-16
 draft: false
 categories: ["service"]
+weight: 20
 
 menu:
   main:
     parent: "Leistungen"
     name: "Außenarbeit"
-    weight: 2
+    weight: 20
   service:
     name: "Außenarbeit"
-    weight: 2
+    weight: 20
 ---
 
 - Fassaden
@@ -20,3 +21,4 @@ menu:
 - Terrassenbau
 - Wegebau
 - Straßenbau
+<!--more-->

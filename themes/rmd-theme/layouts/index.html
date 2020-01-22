@@ -5,5 +5,16 @@
     </header>
     <section>{{ .Content }}</section>
   </article>
-  <div class="home-list-of-servises">List of servises</div>
+
+  <!-- <div class="home-list-of-servises">List of servises</div> -->
+
+{{- $section := "services" -}}
+
+<div class="service-list__wrapper">
+  <ul class="service-list">
+  {{ range ( where .Site.RegularPages.ByWeight "Section" $section ) }}
+    {{ partial "service-tail" . }}
+  {{ end }}
+  </ul>
+</div>
 {{ end }}

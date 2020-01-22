@@ -3,16 +3,17 @@ title: "Innenausbausanierung"
 date: 2020-01-16
 draft: false
 categories: ["service"]
+weight: 10
 
 menu:
   main:
     parent: "Leistungen"
     name: "Innenausbausanierung"
-    weight: 1
+    weight: 10
     pre: ""
   service:
     name: "Innenausbausanierung"
-    weight: 1
+    weight: 10
 ---
 
 - Entsorgung und Abriss
@@ -22,3 +23,4 @@ menu:
 - Tischlerarbeiten
 - Bodenbeläge
 - Abdichtungen
+<!--more-->

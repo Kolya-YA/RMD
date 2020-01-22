@@ -3,15 +3,16 @@ title: "Elektro"
 date: 2020-01-16
 draft: false
 categories: ["service"]
+weight: 80
 
 menu:
   main:
     parent: "Leistungen"
     name: "Elektro"
-    weight: 8
+    weight: 80
   service:
     name: "Elektro"
-    weight: 8
+    weight: 80
 ---
 
 - Vorbereitung
@@ -21,3 +22,4 @@ menu:
 - Multimediaschrank
 - Punkte Installation
 - Bestückung
+<!--more-->

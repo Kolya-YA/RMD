@@ -4,15 +4,16 @@ date: 2019-11-01
 draft: false
 tags: []
 categories: ["service"]
+weight: 30
 
 menu:
   main:
     parent: "Leistungen"
     name: "Smart Home Installation"
-    weight: 3
+    weight: 30
   service:
     name: "Smart Home Installation"
-    weight: 3
+    weight: 30
 
 headerText:
 - "Sweet smart Home"
@@ -27,11 +28,13 @@ headerText:
 - Integration mit Apple HomeKit
 - Nachhaltigkeit der Haushalt
 
+<!--more-->
+
 ## Smarte Beleuchtung von SenseHome
 
 Im eigenen zu Hause brauchen wir Licht nicht nur, um das Stolpern an Türschwellen zu vermeiden. Licht ist einer der wichtigsten Elemente im Interior Design, bei der Schaffung einer behaglichen Umgebung und damit der Gewährleistung der Lebensqualität. Um das zu erreichen, platzieren Innenausstatter heutzutage nicht selten fünf und manchmal sogar sieben Beleuchtungsgruppen in einem Raum. Eine komfortable Steuerung dieser Beleuchtungsgruppen mit einer konventionellen Elektroinstallation ist sehr aufwändig. An den Wänden entstehen ganze „Klaviertastaturen“ von Schaltern. Möchten Sie alle Beleuchtungsgruppen ausschalten, sind Sie aufgrund der Schalterplatzierung gegebenfalls gezwungen von einer Raumecke in die andere zu gehen.
 
-{{< img src="pict2" alt="" >}}
+{{< img src="iPad-HomeKit" alt="Integration mit Apple HomeKit" >}}
 
 SenseHome bietet nicht nur die effektive Nutzung der konventionellen Steuerung, sondern auch zusätzliche Möglichkeiten, die Ihr Komfortempfinden auf ein neues Niveau heben.
 
@@ -66,6 +69,8 @@ Vergessen Sie die Sorgen um nicht ausgeschaltete Haushaltsgeräte wie Bügeleise
 ## Adaptive Beleuchtung
 Mit der adaptiven Beleuchtung werden Sie die Vorteile eines intelligenten Wohnumfelds spüren. Diese Funktion ahnt mit der Hilfe von Bewegungsmeldern Ihre Route in der Wohnung oder im Haus voraus und schaltet bereits sanftes Licht in den Räumen an, die Ihr Ziel sind. Wenn Sie den Zielraum erreicht haben, wechselt das Licht in einen Standard Modus, in allen anderen Räumen wird das Licht ausgeschaltet.
 
+{{< img src="color-light" alt="Stmartes Beleuchtung" >}}
+
 Damit werden Sie nie wieder mit den Unannehmlichkeiten konfrontiert, die beim Betreten dunkler Zimmer entstehen: da das Licht sanft aufblendet. Auch wenn Sie mal keine Hand frei haben, ist durch die smarte Beleuchtung ihr Weg im richtigen Licht.
 
 Haben Sie sich lange nicht bewegt, senkt das System zunächst die Helligkeit, bevor das Licht komplett ausgeschaltet wird, damit sitzen Sie nie wieder unerwartet im Dunklen.
@@ -75,6 +80,8 @@ Diese Funktionen sind _nicht nur_ Spielerei. Denken Sie an Ihr Auto, das die Inn
 ## Smartes Klima
 
 SenseHome regelt für Sie Heizung und _Klimaanlage_ nach einem voreinstellbaren Zeitplan. Das Hoch- und Runterdrehen der Heizung oder die Suche nach der Fernbedienung der Klimaanlage gehört damit der Vergangenheit an.
+
+{{< img src="air-coditioner" alt="Klima" >}}
 
 SenseHome schaltet die Klimaanlage aus oder regelt die Heizung runter, wenn Sie das Haus verlassen, und schaltet diese rechtzeitig wieder ein, bevor Sie nach Hause kommen.
 
