@@ -8,7 +8,7 @@ description = "Theme for RMD City Bau"
 homepage = ""
 tags = ["responsive", "blog", "simple", "clean", "readable", "highlight", "multilingual"]
 features = ["responsive", "blog", "simple", "clean", "highlight", "multilingual"]
-min_version = "0.45"
+min_version = "0.62"
 
 [author]
   name = "_YA"

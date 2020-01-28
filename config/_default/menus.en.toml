@@ -1,0 +1,14 @@
+# config Main menu
+
+[[main]]
+  name = "Services"
+  weight = 40
+  identifier = "Services"
+
+# config Footer menu
+
+# [[footer]]
+#   name = "Contact"
+#   weight = 10
+#   identifier = "f-home"
+#   url = "/"

@@ -1,4 +1,5 @@
 {{ define "content" }}
+
   <article class="home-article">
     <header class="home-header">
       <h1>{{ .Title }}</h1>
@@ -6,15 +7,16 @@
     <section>{{ .Content }}</section>
   </article>
 
-  <!-- <div class="home-list-of-servises">List of servises</div> -->
+<!-- List of servises -->
 
 {{- $section := "services" -}}
 
-<div class="service-list__wrapper">
-  <ul class="service-list">
-  {{ range ( where .Site.RegularPages.ByWeight "Section" $section ) }}
-    {{ partial "service-tail" . }}
-  {{ end }}
-  </ul>
-</div>
+  <section class="service-list__wrapper">
+    <ul class="service-list">
+    {{ range ( where .Site.RegularPages.ByWeight "Section" $section ) }}
+      {{ partial "service-tail" . }}
+    {{ end }}
+    </ul>
+  </section>
+
 {{ end }}

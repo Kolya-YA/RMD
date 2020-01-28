@@ -4,7 +4,7 @@
 {{/* with .Resources.Match "*icon.png" */}}
 {{ with .Resources.ByType "image" }}
   {{ range first 1 . }}
-    {{ $srvTailScratch.Set "srv-icon" (.Fit "150x1000").RelPermalink }}
+    {{ $srvTailScratch.Set "srv-icon" (.Fit "150x100").RelPermalink }}
   {{ end }}
 {{ end }}
 {{ $icon := $srvTailScratch.Get "srv-icon" }}

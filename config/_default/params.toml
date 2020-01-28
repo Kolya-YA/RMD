@@ -1,5 +1,5 @@
-homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
-rssFullContent = true     # if false, Rss feed instead of the summary
+# homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
+# rssFullContent = true     # if false, Rss feed instead of the summary
 
 # site info
 logoTitle = "RMD Bau City"        # default: the title value

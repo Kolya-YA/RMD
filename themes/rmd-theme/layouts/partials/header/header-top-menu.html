@@ -1,10 +1,10 @@
 <ul class="top-menu__list">
   {{ $currentPage := . }}
-  {{ range first 10 .Site.Menus.main }}
+  {{ range .Site.Menus.main }}
     {{ if .HasChildren }}
     <li class="top-menu__parent">
         <!-- //ToDo add class "active" for root service page -->
-      <a href="{{ .URL }}" class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{end}}">{{ .Name }}</a>
+      <a {{ with .URL }}href="{{ . }}"{{ end }} class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{end}}">{{ .Name }}</a>
       <ul class="top-menu__child-list">
         {{ range .Children }}
         <li>

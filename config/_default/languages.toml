@@ -3,7 +3,7 @@
   lanq = "de"
   languageName = "Deutsche"
   weight = 1
-  contentDir = "content/de"
+  # contentDir = "de"
   # default_page_title = ""
   # default_page_subtitle = ""
   # description = ""
@@ -13,7 +13,7 @@
   lanq = "en"
   languageName = "English"
   weight = 2
-  contentDir = "content/en"
+  # contentDir = "en"
   # default_page_title = ""
   # default_page_subtitle = ""
   # description = ""
