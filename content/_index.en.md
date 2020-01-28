@@ -1,5 +1,5 @@
 ---
-title: "English Homepage"
+title: "RMD City Bau"
 date: 2019-08-20
 
 menu: 
@@ -7,7 +7,7 @@ menu:
     name: "Home"
     weight: 10
   footer:
-    name: "Home EN"
+    name: "Home"
 
 headerText:
   - "We're the best!"
@@ -15,9 +15,6 @@ headerText:
   - "Everybody's smarter and more humble than everybody else!"
   - "Exceeding all sorts of praise in perfection!"
 
-# resources:
-#   - name: headerImg
-#     src: himg/def-header.jpg
 ---
 
 # Styge quos repercusso caedis opus sonumque genus
