@@ -146,4 +146,23 @@ Sie lässt sich leicht aufbringen, ist haltbar und leicht zu behandeln. Wenn nur
 
 ### Flüssige Tapete: Welche Marke benutzen wir?
 
-Silk Plaster produziert flüssige Tapete schon seit mehr als 20 Jahren und ist heutzutage der größte Hersteller des seidenweichen Edelputzes (der flüssigen Tapete) in der Welt. Das Angebot des Unternehmens besteht momentan aus mehr als 20 Kollektionen der Tapete, die in 300 verschiedenen Farb- und Strukturvariationen realisiert sind. Silk Plaster ist immer noch eines der Topunternehmen nach dem Umfang der hergestellten Waren und der Zeit der erfolgreichen Arbeit. Die Kollektionen werden immer weiter erneuert. Die Zusammensetzung wird immer weiter verbessert. 
+Silk Plaster produziert flüssige Tapete schon seit mehr als 20 Jahren und ist heutzutage der größte Hersteller des seidenweichen Edelputzes (der flüssigen Tapete) in der Welt. Das Angebot des Unternehmens besteht momentan aus mehr als 20 Kollektionen der Tapete, die in 300 verschiedenen Farb- und Strukturvariationen realisiert sind. Silk Plaster ist immer noch eines der Topunternehmen nach dem Umfang der hergestellten Waren und der Zeit der erfolgreichen Arbeit. Die Kollektionen werden immer weiter erneuert. Die Zusammensetzung wird immer weiter verbessert.
+
+### Steinteppichen
+
+### Was ist ein Steinteppich?
+
+Für diejenigen, die etwas Ewiges suchen, aber nicht ewig warten wollen, ist der Steinteppich die perfekte Lösung. Heutzutage schmücken die Steinteppiche nicht nur Böden und Treppen in Schlössern und Pavillons, sondern auch in Wohnräumen, Küchen und Bädern privater Haushalte.
+
+Ein Natursteinteppich ist äußerst dekorativ und stellt eine moderne und umweltfreundliche Alternative zu herkömmlichen Fußbodenbelägen dar. Wir haben eine große Auswahl an Materialien und Farben und geben auf unser Produkt drei Jahre Garantie. Auf Wunsch installieren wir eine passende Beleuchtung.
+
+### Vorteile von Steinteppichen
+
+- **Vielseitig**  
+Ein Steinteppich ist sowohl bei der Gestaltung von Innenräumen als auch bei der Landschaftsgestaltung einsetzbar.
+- **Strapazierfähig**  
+Unser Bodenbelag ist verschleißfest, kältebeständig und verblasst in der Sonne nicht.
+- **Dekorativ**  
+Die Ausführungsmöglichkeiten der komplexesten Muster sind fast unbegrenzt, da die Größenfraktionen der Steine in der Größe von 2 bis 4 mm variieren.
+- **Funktional** 
+Ein Steinteppich ist für alle Fußbodenheizungstypen geeignet. Der Steinboden ist einfach zu reinigen und bleibt rutschhemmend auch im Nassbereich.
