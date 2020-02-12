@@ -1,0 +1,24 @@
+<ul class="post-toc-cards">
+  {{ range sort .Params.tocCards "weight" }}
+  <li class="card">
+    <a class="card-link"{{ with .link }} href="{{ . }}"{{ end }}>
+      <div class="card-content">
+          {{ with .header }}<h3 class="card-content__header">{{ . }}</h3>{{ end }}
+          {{ with .text }}<p class="card-content__text">{{ . }}</p>{{ end }}
+        <div class="card-content__cta">
+          <span>{{ i18n "readmore" }} →</span>
+        </div>
+      </div>
+      <div class="card-prise">
+        {{ with .prise }}ab {{ . }} €{{ end }}
+      </div>
+      <div class="card-img">
+        {{ if $icon := $.Resources.GetMatch (printf "**%s*" .icon)}}
+        {{ $icon := $icon.Resize "400x q50" }}
+        <img src="{{ $icon.RelPermalink }}" alt="{{ .header }} — IMG">
+        {{ end }}          
+      </div>
+    </a>
+  </li>
+  {{ end }}
+</ul>

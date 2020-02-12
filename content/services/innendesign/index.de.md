@@ -24,7 +24,38 @@ summary: >
   - Steinteppich mit ohne Motiven
   
   - Baumwollentapeten
-  
+
+tocCards:
+  Innendesign:
+    weight: 10,
+    icon: "01"
+    header: "Innendesign"
+    text: "bla bla bla"
+    prise: "128 225.60"
+  Spanndecken:
+    weight: 20,
+    icon: "111"
+    header: "Spanndecken"
+    text: "Wir bieten eine große Bandbreite an Farben, sowie die Möglichkeit individueller Drucke für Ihre Decken oder Wände. Zudem können sie wählen zwischen glänzenden Spanndecken, die den Raum visuell größer erscheinen lassen und klassischen Spanndecken mit matter oder Satinoberfläche. Ihrer Phantasie sind keine Grenzen gesetzt."
+    prise: "3 660.00"
+  LED-Beleuchtung:
+    weight: 30,
+    icon: "045"
+    header: "LED-Beleuchtung"
+    text: "LED ist LED! La-la la-la-la!"
+    prise: "802.05"
+  Steinteppich mit ohne Motiven:
+    weight: 40,
+    icon: "08"
+    header: "Steinteppich mit ohne Motiven"
+    text: "text text text"
+    prise: "74.20"
+  Baumwollentapeten:
+    weight: 50,
+    icon: "053"
+    header: "Baumwollentapeten"
+    text: "Flüssige Tapete ist erst vor 20 Jahren erschien, aber sie hat schon in der ganzen Welt an wohlverdienter Popularität gewonnen. Ein solcher Anstrich beseitigt alle Unebenheiten, er ist absolut umweltfreundlich und schadet sowohl den Bewohnern als auch der Umwelt nicht. In der Zusammensetzung der flüssigen Tapete sind Baumwoll- oder Zellulosefaser und Farb- und Klebstoff enthalten. Eine solche Tapete schützt vor Außengeräuschen und erfordert keine besondere Behandlung."
+    prise: "332.00"
 ---
 
 ## Innendesign

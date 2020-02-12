@@ -20,10 +20,6 @@
     }
   }
   
-  .header-logo__address {
-    display: none;
-  }
-  
   @include wrap-med-screen {
     flex-direction: row;
     justify-content: space-between;
@@ -46,10 +42,6 @@
       .text {
         display: inline;
       }
-    }
-
-    .header-logo__address {
-      display: block;
     }
   }
 }
