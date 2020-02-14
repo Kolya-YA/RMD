@@ -8,6 +8,10 @@
   text-align: left;
   margin-bottom: 1rem;
 
+  @include wrap-med-screen {
+    max-width: 100%;
+  }
+
   .card {
 
     &:not(:first-child) {
@@ -26,61 +30,124 @@
         box-shadow: 0 0 15px lightgrey ;
       }
 
-      .card-content {
+      @include wrap-med-screen {
+        // flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // grid-template-columns: 1fr;
+        grid-template-areas:
+        "header header header"
+        "media text text"
+        "media text text"
+        "media text text"
+        "media more price";
+        // grid-template-areas:
+        // "media"
+        // "header"
+        // "text"
+        // "more"
+        // "price";
+      }
+
+      .card-header {
         order: 1;
         flex-grow: 1;
-        background-color: #fafafa;
-
-        .card-content__header {
-          background-color: lightgrey;
+        // background-color: lightgrey;
+        * {
           margin: 0;
           padding: .5rem 1rem 1rem;
           font-weight: 700;
         }
+        @include wrap-med-screen {
+          grid-area: header;
+        }
+      }
+          
+      .card-text {
+        order: 2;
+        background-color: #fafafa;
+        margin: 0;
+        padding: 0.5rem;
 
-        .card-content__text {
-          margin: 0;
-          padding: 0.5rem;
+        @include wrap-med-screen {
+          grid-area: text;
+        }
+      }
+      
+      .card-more {
+        order: 2;
+        text-align: center;
+        background-color: #fafafa;
+
+        @include wrap-med-screen {
+          grid-area: more;
+          text-align: right;
         }
 
-        .card-content__cta {
-          text-align: center;
-
-          span {
-            display: inline-block;
-            border-radius: 6px;
-            margin: .3rem 2rem .5rem;
-            padding: .1rem 1rem;
-            background-color: rgba(121, 249, 121, 0.468);
-          }
+        span {
+          display: inline-block;
+          border-radius: 6px;
+          margin: .3rem 2rem .5rem;
+          padding: .1rem 1rem;
+          background-color: rgba(121, 249, 121, 0.468);
         }
       }
 
       .card-prise {
-        order: 2;
+        order: 3;
         width: 75%;
-        min-width: 300px;
-        margin-top: auto;
+        min-width: 220px;
+        margin-top: 4px;
         margin-left: auto;
-        padding: .5rem 2rem;
+        padding: .5rem 1rem;
         background-color: rgba(255, 255, 0, 0.393);
         text-align: right;
         font-family: $global-serif-font-family;
         font-size: 1.6rem;
         clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);
+        
+        
+        @include wrap-med-screen {
+          grid-area: price;
+          width: 85%;
+          // align-self: flex-end;
+          // margin: 0;
+          // height: 100%;
+          // padding: 2em .3em .5em;
+          // min-width: 200px;
+          // width: 200px;
+          // clip-path: none;
+          // margin-left: 4px;
+        }
       }
-
+      
       .card-img {
         order: 0;
         height: 10rem;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 1rem));
         background-color: rgba(238, 130, 238, 0.174);
+        
+        @include wrap-med-screen {
+          grid-area: media;
+          clip-path: none;
+          height: auto;
+          // flex-basis: 250px;
+          // flex-shrink: 0;
+          // align-self: center;
+          // clip-path: none;
+          // min-height: 10rem;
+          // margin-right: 4px;
+        }
 
         img {
           object-fit: cover;
           height: 100%;
           width: 100%;
           filter: grayscale(100%);
+          
+          @include wrap-med-screen {
+            object-fit: contain;
+          }
         }
       }
     }
