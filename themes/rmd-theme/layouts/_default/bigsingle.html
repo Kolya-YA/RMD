@@ -20,19 +20,24 @@
       <h3 class="post-toc-title">{{ i18n "toc" }}</h3>
       <div class="toc">{{ .TableOfContents }}</div>
     {{ end -}}
+    {{ with .Resources.ByType "page" }}
+    <hr>
+    <h2>Start Test</h2>
+    <hr>
+    <div class="sub">
+      {{ range . }}
+      <p>{{.ResourceType}}</p>
+      <h2>{{.Title}}</h2>
+      <p>{{.Content }}</p>
+      <hr>
+      <h2>Finish Test</h2>
+      <hr>
+      {{ end }}
+      </div>
+    {{ end }}
     {{ .Content }}
   </div>
 
-  {{ with .Resources.ByType "page" }}
-  <h2>Test TUT</h2>
-    <div class="sub">
-    {{ range . }}
-      <h3>{{.Title}}</h3>
-      <p>{{.Content}}</p>
-      <p>{{.ResourceType}}</p>
-    {{ end }}
-    </div>
-  {{ end }}
 </article>
 
 
