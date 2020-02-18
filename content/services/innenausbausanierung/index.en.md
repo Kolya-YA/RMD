@@ -15,13 +15,6 @@ menu:
     name: "Interior renovation"
     weight: 10
 
-headerText:
-  - "EFH / MFH"
-  - "Dach"
-  - "Keller"
-  - "Leicht konstruktion bau"
-  - "Einzel werke"
-
 summary: >
   - Entsorgung und Abriss
 
@@ -46,3 +39,9 @@ summary: >
 ## Tischlerarbeiten
 ## Bodenbeläge
 ## Abdichtungen
+
+  - "EFH / MFH"
+  - "Dach"
+  - "Keller"
+  - "Leicht konstruktion bau"
+  - "Einzel werke"

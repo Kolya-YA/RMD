@@ -9,14 +9,13 @@ menu:
     weight: 10
   footer:
     name: "Uber uns"
-
-headerText:
-  - "Uber uns – 1"
-  - "Uber uns – 2"
-  - "Uber uns – 3"
 ---
 
 Sehr geehrte Damen und Herren,
+
+  - "Uber uns – 1"
+  - "Uber uns – 2"
+  - "Uber uns – 3"
 
 hiermit möchten wir eine kurze Beschreibung unserer Firma darstellen. Wir sind Generalunternehmer mit Fachleute für Bauausführung mit mehr als _7 Jahren_ Berufserfahrung als Unternehmer und seit _2012_ sind wir als Firma __RMD City Bau GmbH__ auf dem Baumarkt repräsentiert. Unsere Firma hat sich von Anfang an bemüht, auf hohe Standards zu achten. Bis heute können wir auf zahlreiche fertig gestellte Bauprojekte in Trockenbau, Neubau und Sanierung mit Architekten verweisen.
 

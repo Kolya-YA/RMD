@@ -1,6 +1,11 @@
 <header id="header" class="header">
   <div class="root-block-wrapper">
-    {{ partial "header/header-logo" . }}
-    {{ partial "header/header-top-nav" . }}    
+    <div class="header-main">    
+      {{ partial "header/header-logo" . }}
+      {{ partial "header/header-cotacts" . }}
+      {{ partial "header/header-top-nav" . }}
+      {{ partial "header/header-toggle" . }}
+      {{ partial "lang-selector" (dict "context" . "position" "header") }}
+    </div>
   </div>
 </header>

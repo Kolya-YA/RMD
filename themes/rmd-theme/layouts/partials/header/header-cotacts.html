@@ -1,0 +1,14 @@
+<div class="header-contacts">
+  <div class="header-contacts__phone">
+    <a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.phone }}">
+      <span class="sign">✆</span>
+      <span class="text">{{ .Site.Params.phone }}</span>
+    </a>
+  </div>
+  <div class="header-contacts__email">
+    <a href="mailto:{{ .Site.Params.email }}">
+      <span class="sign">✉</span>
+      <span class="text">{{ .Site.Params.email }}</span>
+    </a>
+  </div>
+</div>

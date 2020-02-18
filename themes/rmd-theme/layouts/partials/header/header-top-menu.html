@@ -1,25 +1,25 @@
 <ul class="top-menu__list">
   {{ $currentPage := . }}
   {{ range .Site.Menus.main }}
-    {{ if .HasChildren }}
+    {{- if .HasChildren }}
     <li class="top-menu__parent">
         <!-- //ToDo add class "active" for root service page -->
       <a {{ with .URL }}href="{{ . }}"{{ end }} class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{end}}">{{ .Name }}</a>
       <ul class="top-menu__child-list">
-        {{ range .Children }}
+        {{- range .Children }}
         <li>
-          <a href="{{ .URL }}" class=" top-menu__child {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-            {{with .Pre }}{{ . }}{{ else}} — {{ end }}
-            {{ .Name }}
+          <a href="{{ .URL }}" class="top-menu__child{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+            {{- with .Pre }}{{ . }} {{ else -}}&nbsp&nbsp{{ end -}}
+            {{- .Name -}}
           </a>
         </li>
-        {{ end }}
+        {{- end }}
       </ul>
     </li>
-    {{ else }}
+    {{- else }}
     <li {{if  ($currentPage.IsMenuCurrent "main" . ) }}class="active"{{end}}>
         <a href="{{ .URL }}">{{ .Name }}</a>
     </li>
-    {{ end }}
-  {{ end }}
+    {{- end }}
+  {{ end -}}
 </ul>

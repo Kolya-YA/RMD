@@ -1,0 +1,39 @@
+.header-contacts {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  text-align: center;
+  color: $color-secondary-2-3;
+  font-size: 1.6rem;
+  
+  a {
+    margin-right: 1rem;
+    font-size: inherit;
+    font-size: 3rem;
+    color: inherit;
+  }
+  .text {
+    display: none;
+  }  
+
+  @include wrap-med-screen {
+    flex-direction: column;
+    text-align: left;
+    font-family: $global-serif-font-family;
+    line-height: 1.5em;
+    // font-weight: bold;
+
+    a {
+      margin: 0;
+      font-size: inherit;
+    }
+    .sign {
+      display: none;
+    }
+    .text {
+      display: inline;
+    }
+    
+  }
+}
+

@@ -1,28 +1,8 @@
-{{ $logoTitle := default .Site.Title .Site.Params.logoTitle -}}
+{{- $logoTitle := default .Site.Title .Site.Params.logoTitle -}}
 
 <div class="header-logo">
-  <div class="header-logo__logo">
-    <a {{ if not .IsHome }}href="{{ "/" | relLangURL }}"{{ end }}>
-      <img class="header-logo__img"src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ $logoTitle }}">
-      <h1 class="header-logo__name">{{ $logoTitle }}</h1>
-    </a>
-  </div>
-  
-  <div class="header-logo__contacts">
-    <div class="header-logo__direct-contacts">
-      <div class="header-logo__phone">
-        <a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.phone }}">
-          <span class="sign">✆</span>
-          <span class="text">{{ .Site.Params.phone }}</span>
-        </a>
-      </div>
-      <div class="header-logo__email">
-        <a href="mailto:{{ .Site.Params.email }}">
-          <span class="sign">✉</span>
-          <span class="text">{{ .Site.Params.email }}</span>
-        </a>
-      </div>
-    </div>
-  </div>
-  {{ partial "lang-selector" (dict "context" . "position" "header") }}
+  <a {{ if not .IsHome }}href="{{ "/" | relLangURL }}"{{ end }}>
+    <img class="header-logo__img"src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ $logoTitle }}">
+    <h1 class="header-logo__name">{{ $logoTitle }}</h1>
+  </a>
 </div>

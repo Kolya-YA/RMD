@@ -3,15 +3,31 @@
 .header {
   padding-bottom: .1rem; // burger button height
   background: $white;
-  background-image: url($header-background-img);
+  // background-image: url($header-background-img);
   box-shadow: 0 0 5px $main-background-border;
-  @import 'header-logo';
-  @import 'header-nav';
-  @import 'header-toggler';
-}
 
-@include wrap-med-screen {
-  .header {
+  .header-main {
+    display: flex;
+    align-items: center;
+    
+    @include wrap-med-screen {
+      justify-content: space-between;
+      padding: 0.7rem 0;
+      > *:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    @import 'header-logo';
+    @import "header-contacts";
+    @import 'header-nav';
+    @import 'header-lng';
+    @import 'header-toggler';
+  }
+  
+  @include wrap-med-screen {
     padding: 0;    
   }
+
+  
 }

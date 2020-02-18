@@ -1,0 +1,19 @@
+.lang-nav  {
+  display: none;
+  
+  @include wrap-med-screen {
+    display: block;
+    
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2rem;
+      min-width: 3rem;
+      border: 3px solid $color-primary-2;
+      border-radius: 4px;
+      font-size: 1.2rem;
+      color: $color-secondary-2-4;
+    }
+  }
+}

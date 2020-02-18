@@ -2,22 +2,18 @@
 title: "RMD City Bau"
 date: 2019-08-20
 
-menu: 
-  main:
-    name: "Home"
-    weight: 10
+menu:
   footer:
     name: "Home"
+    weight: 10
+---
 
-headerText:
+# Styge quos repercusso caedis opus sonumque genus
+
   - "We're the best!"
   - "We're all beautiful!"
   - "Everybody's smarter and more humble than everybody else!"
   - "Exceeding all sorts of praise in perfection!"
-
----
-
-# Styge quos repercusso caedis opus sonumque genus
 
 ## Lucina rogati
 

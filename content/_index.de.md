@@ -2,18 +2,15 @@
 title: "RMD City Bau"
 date: 2019-08-20
 
-menu: 
-  main:
-    name: "Startseite"
-    weight: 5
+menu:
   footer:
-    name: "Home DE"
-
-headerText:
-  - "Komplett-Sanierung mit Planung und Design"
+    name: "Startseite"
+    weight: 10
 ---
 
 ## Alles aus einer Hand mit Service und Garantie
+
+  - "Komplett-Sanierung mit Planung und Design"
 
 ### Für Sie nur das Beste
 

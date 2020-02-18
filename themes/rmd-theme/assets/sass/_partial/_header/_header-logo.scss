@@ -1,31 +1,32 @@
-// Header-logo
-
 .header-logo {
-  display: flex;
-  flex-direction: row;
-
-  @import "header-logo-contacts";
-  @import "header-logo-logo";
-
-  .lang-nav  a {
-    display: none;
+  position: relative;
+  overflow: hidden;
+  height: 60px;
+  margin-right: .5rem;
+  
+  a {
+    display: block;
+    height: 100%;
   }
-
+  
+  .header-logo__img {
+    display: block; 
+    max-height: 100%;
+    object-fit: scale-down;
+  }
+  
+  .header-logo__name {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: .3rem;
+    z-index: -10;
+  }
+  
   @include wrap-med-screen {
-    // flex-direction: row;
-    align-items: center;
-
-    .lang-nav  a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 2rem;
-      min-width: 3rem;
-      border: 3px solid $color-primary-2;
-      border-radius: 4px;
-      font-size: 1.2rem;
-      color: $color-secondary-2-4;
-    }
+    flex-grow: 0;
+    height: auto;
+    width: 14vw;
+    min-width: 128px;
   }
 }
-

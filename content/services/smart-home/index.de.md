@@ -14,9 +14,6 @@ menu:
     name: "Smart Home Installation"
     weight: 30
 
-headerText:
-- "Sweet smart Home"
-
 summary: >
     - Smart und adaptive Beleuchtung
 

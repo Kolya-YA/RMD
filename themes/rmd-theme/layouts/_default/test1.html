@@ -1,0 +1,39 @@
+{{ define "content" -}}
+
+<article class="post">
+  <!-- Header -->
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    <p>
+      {{ .WordCount }} Wörter
+    </p>
+    {{ if and (gt .WordCount 5 ) (.Params.tocCards) }}
+    {{ partial "toc-cards" . }}
+    {{ end }}
+  </header>
+
+  <!-- Content -->
+  <div class="post-content">
+    
+
+    {{- if and (gt .WordCount 100 ) }}
+      <h3 class="post-toc-title">{{ i18n "toc" }}</h3>
+      <div class="toc">{{ .TableOfContents }}</div>
+    {{ end -}}
+    {{ .Content }}
+  </div>
+
+  {{ with .Resources.ByType "page" }}
+  <h2>Test TUT</h2>
+    <div class="sub">
+    {{ range . }}
+      <h3>{{.Title}}</h3>
+      <p>{{.Content}}</p>
+      <p>{{.ResourceType}}</p>
+    {{ end }}
+    </div>
+  {{ end }}
+</article>
+
+
+{{- end }}
