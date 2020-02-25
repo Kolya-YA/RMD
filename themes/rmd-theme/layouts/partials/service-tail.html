@@ -17,13 +17,14 @@
       alt="{{ .Title }} icon">
       <h3 class="service-tail__title">{{ .Title }}</h3>
       <div class="service-tail__dscr">
-        {{ with .Params.tocCards }}
+        {{ with .Resources.ByType "page" }}
         <ul>
-          {{ range . }}
-          <li>{{ .Header }}</li>
-          {{ end }}
+        {{ range . }}
+        <li>{{ .Title }}</li>
+        {{ end }}
         </ul>
-        {{ else }}{{ .Summary | safeHTML }}
+        {{ else }}
+        {{ .Summary | safeHTML }}
         {{ end }}
       </div>      
     </article>    
