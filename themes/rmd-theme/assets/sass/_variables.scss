@@ -49,6 +49,8 @@ $color-secondary-2-2: #F2A16B;
 $color-secondary-2-3: #B35D22;
 $color-secondary-2-4: #8E3F09;
 
+$logo-blue: #0972b5;
+
 // Check theme color config.
 // if it does not exist, use default theme color.
 @if not(map-has-key($theme-color-map, $theme-color-config)) {

@@ -17,8 +17,8 @@
       </ul>
     </li>
     {{- else }}
-    <li {{if  ($currentPage.IsMenuCurrent "main" . ) }}class="active"{{end}}>
-        <a href="{{ .URL }}">{{ .Name }}</a>
+    <li>
+        <a href="{{ .URL }}" {{if  ($currentPage.IsMenuCurrent "main" . ) }}class="active"{{end}}>{{ .Name }}</a>
     </li>
     {{- end }}
   {{ end -}}
