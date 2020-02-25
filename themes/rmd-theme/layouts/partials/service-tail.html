@@ -17,7 +17,14 @@
       alt="{{ .Title }} icon">
       <h3 class="service-tail__title">{{ .Title }}</h3>
       <div class="service-tail__dscr">
-        {{ .Summary | safeHTML }}
+        {{ with .Params.tocCards }}
+        <ul>
+          {{ range . }}
+          <li>{{ .Header }}</li>
+          {{ end }}
+        </ul>
+        {{ else }}{{ .Summary | safeHTML }}
+        {{ end }}
       </div>      
     </article>    
   </a>

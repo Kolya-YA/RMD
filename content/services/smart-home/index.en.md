@@ -1,7 +1,7 @@
 ---
-title: "Smart Home Installation (EN)"
+title: "Smart Home Installation"
 date: 2020-02-18
-layout: bigsingle
+layout: service-page
 draft: false
 categories: ["service"]
 weight: 30
