@@ -19,7 +19,6 @@ $header-background-img: "{{ .Site.Params.headerBackGround }}";
 @import "_pages/service-list";
 @import "_iconfont";
 @import "_partial/post";
-@import "_partial/categories";
 @import "_partial/slideout";
 @import "_partial/hr-primary-color";
 @import "_partial/404";
