@@ -33,7 +33,7 @@
   {{- end -}}
   
   <!-- baidu & google verification  -->
-  {{ with .Site.Params.google_verification -}}<meta name="google-site-verification" content="{{.}}">{{- end -}}
+  {{ with .Site.Params.google_verification -}}<meta name="google-site-verification" content="{{ . }}">{{- end -}}
   
   <!-- Site Generator -->
   <meta name="generator" content="Hugo {{ hugo.Version }}">
@@ -47,6 +47,9 @@
   href="{{ with .OutputFormats.Get "jsonfeed" }}{{ .Permalink }}{{ end }}"
   rel="alternate" type="application/json" title="{{ .Site.Title }}">
   {{- end -}}
+
+  <!-- Font preconnect !!!usless???-->
+  <link rel="preconnect" href="https://fonts.googleapis.com/css" />
   
   <!-- Custom Favicon -->
   {{ partial "custom_favicon.html" . -}}

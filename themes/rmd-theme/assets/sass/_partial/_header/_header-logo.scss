@@ -18,9 +18,8 @@
   .header-logo__name {
     position: absolute;
     top: 50%;
-    left: 0;
-    font-size: .3rem;
-    z-index: -10;
+    left: -600px;
+    font-size: .1rem;
   }
   
   @include wrap-med-screen {

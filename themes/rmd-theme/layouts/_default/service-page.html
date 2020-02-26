@@ -5,49 +5,48 @@
   </header>
   
   <div class="post-content">
-    <p>{{ .WordCount }} Wörter</p>
     {{ .Content }}
     {{ if (.Params.tocCards) }}
     <ul class="post-toc-cards">
       {{ range sort .Params.tocCards "weight" }}
-      {{ $card := newScratch }}
-      {{ $card.SetInMap "data" "link" "" }}
-      {{ $card.SetInMap "data" "header" .header }}
-      {{ $card.SetInMap "data" "text" .text }}
-      {{ $card.SetInMap "data" "price" .prise }}
-      {{ if $icon := $.Resources.GetMatch (printf "**%s*" .icon)}}
-        {{ $icon := $icon.Resize "400x q50" }}
-        {{ $card.SetInMap "data" "icon" $icon }}
-      {{ end }}
+      {{- $card := newScratch -}}
+      {{- $card.SetInMap "data" "link" "" -}}
+      {{- $card.SetInMap "data" "header" .header -}}
+      {{- $card.SetInMap "data" "text" .text -}}
+      {{- $card.SetInMap "data" "price" .prise -}}
+      {{- if $icon := $.Resources.GetMatch (printf "**%s*" .icon)}}
+        {{- $icon := $icon.Resize "400x q50" -}}
+        {{- $card.SetInMap "data" "icon" $icon -}}
+      {{- end -}}
       {{ partial "toc-card" $card }}
-      {{ end }}
+      {{- end -}}
     </ul>
     {{ else }}
-    {{ with .Resources.ByType "page" }}
+    {{- with .Resources.ByType "page" -}}
     <ul class="post-toc-cards">
     {{ range . }}
-    {{ $card := newScratch }}
-    {{ $card.SetInMap "data" "link" "" }}
-    {{ $card.SetInMap "data" "header" .Title }}
-    {{ $card.SetInMap "data" "text" .Summary }}
-    {{ $card.SetInMap "data" "price" .Params.Price }}
-    {{ if $icon := $.Resources.GetMatch (printf "**%s*" .Params.Icon)}}
-      {{ $icon := $icon.Resize "400x q50" }}
-      {{ $card.SetInMap "data" "icon" $icon }}
-    {{ end }}
+    {{- $card := newScratch -}}
+    {{- $card.SetInMap "data" "link" "" -}}
+    {{- $card.SetInMap "data" "header" .Title -}}
+    {{- $card.SetInMap "data" "text" .Summary -}}
+    {{- $card.SetInMap "data" "price" .Params.Price -}}
+    {{- if $icon := $.Resources.GetMatch (printf "**%s*" .Params.Icon)}}
+      {{- $icon := $icon.Resize "400x q50" -}}
+      {{- $card.SetInMap "data" "icon" $icon -}}
+    {{- end -}}
     {{ partial "toc-card" $card }}
-    {{ end }}
+    {{- end -}}
     </ul>
     {{ end }}
     {{ end }}
     {{ with .Resources.ByType "page" }}
     <div class="sub">
-      {{ range . }}
+      {{- range . }}
       <h2 id="{{ anchorize .Title }}">{{ .Title }}</h2>
-      <p>{{ .Content }}</p>
-      {{ end }}
+      {{ .Content }}
+      {{- end }}
     </div>
-    {{ end }}
+    {{- end }}
   </div>
 </article>
 {{- end }}
