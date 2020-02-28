@@ -1,8 +1,8 @@
 ---
 title: "Sanitär"
-date: 2019-11-01
+date: 2020-02-28
+layout: service-page
 draft: false
-tags: []
 categories: ["service"]
 weight: 70
 
@@ -16,11 +16,4 @@ menu:
     weight: 70
 ---
 
-- Vorbereitung
-- Schlietzen und bohren
-- Hauptleitung Sanierung
-- Rohrenverlegung
-- Badsanierung
-- Armatur De- und Montage
-- Bestückung
-<!--more-->
+Wir führen Sanitärarbeiten mit modernen Materialien und Technologien durch. Qualitativ von unserem Unternehmen durchgeführte Sanitärarbeiten bieten Ihnen eine Garantie für Komfort und Zuverlässigkeit der Benutzung.
