@@ -15,6 +15,7 @@
     @content;
   }
 }
+
 @mixin wrap-max-screen($min-width: $wrap-max-width) {
   @media screen and (min-width: $min-width) {
     @content;

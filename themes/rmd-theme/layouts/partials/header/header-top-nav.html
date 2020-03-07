@@ -1,13 +1,14 @@
-
 <div id="nav-wrapper" class="top-menu top-menu--close">
-    {{ partial "lang-selector" (dict "context" . ) }}
+    <div class="top-menu__switches">
+        {{ partial "lang-selector" (dict "context" . ) }}
+        <div class="top-menu__toggle">
+            <button id="nav-toggle-close" class="toggle-button toggle-button--close" type="button">
+                <span>Close navigation</span>
+            </button>
+        </div>
+    </div>
+
     <nav class="top-menu__nav">
         {{ partial "header/header-top-menu.html" . }}
     </nav>
-
-    <div class="top-menu__toggle">
-        <button id="nav-toggle-close" class="toggle-button toggle-button--close" type="button">
-            <span>Close navigation</span>
-        </button>
-    </div>
 </div>

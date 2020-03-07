@@ -1,6 +1,4 @@
-// Variables
-
-// === Colors === //
+// === Colors ===
 
 // ========== Theme Color ========== //
 // Config here to change theme color
@@ -64,7 +62,7 @@ $theme-color: nth($theme-color-list, 1) !default;
 // Deputy theme color of the site.
 $deputy-color: nth($theme-color-list, 2) !default;
 
-// ========== Global ========== //
+// === Global ===
 // Text color of the body.
 $global-font-color: rgba(0, 0, 0, .84);
 
@@ -97,7 +95,9 @@ $global-headings-mob: (
 
 // Global width of '<body>'.
 $global-body-width: 1080px !default;
-$wrap-med-width: 768px !default;
+
+$wrap-mid-width: 768px !default;
+$wrap-med-width: 1024px !default;
 $wrap-max-width: 1640px !default;
 
 // Padding of container main
@@ -112,59 +112,29 @@ $global-container-padding: 0 20px !default;
 // Background color of the site.
 $global-background: $white !default;
 
+// === Header ===
+$header-height: 64px;
+$header-font-color: #998b85; // Warm grey 6
 
-// === Main === //
-$main-margin-top: 2rem;
+// === Main ===
+$main-margin-top: $header-height * 2 + $root-font-size  * 1.5;
+$main-margin-top-mob: $header-height + $root-font-size-mob;
 $main-margin-bottom: 2.5rem;
 $main-background-color: #f8f8f8;
 $main-background-border: #f2f2f2;
 $main-background-border: #ddd;
 
-
-// ========== Header ========== //
-// Font size of the logo.
-$logo-font-size: 36px !default;
-
-// Font family of the logo.
-$logo-font-family: sans-serif !default;
-
-// Margin of menu item.
-$menu-item-margin-left: 10px !default;
-
-// Margin of menu item in mobile.
-$menu-item-mobile-margin: 5px !default;
-
-// Font size of menu item link.
-$menu-link-font-size: 18px !default;
-
-// Height of the mobile header.
-$mobile-navbar-height: 50px !default;
-
-// ========== Post ========== //
-// Margin bottom of post list.
-$post-list-margin-bottom: 20px !default;
-
-// Padding of the post.
-$post-padding: 1.5em 0 !default;
-
-// Border top of the post + post.
-$post-border: 1px solid $light-gray !default;
-
-// Font size of post title.
-$post-title-font-size: 1.8em !default;
-
-// Font weight of post title.
-$post-title-font-weight: 400 !default;
+// === Post ===
 
 // Font size of post pagination.
 $post-nav-font-size: 18px !default;
 
-// ========== Content ========== //
+// === Content ===
 
 // Border bottom of the link when hover it.
 $content-link-border: 1px solid $theme-color !default;
 
-// === Footer === //
+// === Footer ===
 
 $footer-background-color: #152935;
 $footer-background-color-light: #223540;

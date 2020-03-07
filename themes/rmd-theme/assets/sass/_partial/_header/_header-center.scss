@@ -1,0 +1,11 @@
+
+    .header-main__center {
+      flex: 1;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      @import "header-contacts";
+      @import 'header-nav';
+    }
+    

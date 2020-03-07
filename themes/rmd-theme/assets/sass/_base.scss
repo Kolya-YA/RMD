@@ -30,6 +30,7 @@ body {
 }
 
 .root-block-wrapper {
+  min-height: 100%;
   margin: 0 3%;
 
   @include wrap-med-screen {
@@ -43,11 +44,15 @@ body {
 }
 
 .main {
-  margin-top: $main-margin-top;
+  margin-top: $main-margin-top-mob;
   margin-bottom: $main-margin-bottom;
   background-color: $main-background-color;
   box-shadow: 0 0 5px $main-background-border;
   padding: 1rem;
+  
+  @include wrap-med-screen {
+    margin-top: $main-margin-top;
+  }
 }
 
 .container {

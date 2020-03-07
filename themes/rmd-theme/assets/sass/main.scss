@@ -3,11 +3,9 @@
 $body-background-img: "{{ .Site.Params.bodyBackGround }}";
 $header-background-img: "{{ .Site.Params.headerBackGround }}";
 
-// @import '_common/normalize';
 @import "_variables";
 
-@import "_common/utils";
-@import "_common/animation";
+@import "_common/media";
 @import "_common/typo";
 
 @import "_base";
@@ -18,7 +16,6 @@ $header-background-img: "{{ .Site.Params.headerBackGround }}";
 @import "_pages/contact";
 @import "_pages/service-list";
 @import "_iconfont";
-@import "_partial/post";
+@import "_partial/_post/post";
 @import "_partial/slideout";
-@import "_partial/hr-primary-color";
 @import "_partial/404";

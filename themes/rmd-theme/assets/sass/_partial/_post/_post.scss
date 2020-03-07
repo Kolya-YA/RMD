@@ -1,21 +1,20 @@
-// ==============================
-// Post
-// ==============================
+// <== Post ==>
 
 .post {
   margin: 0 0 1em;
-  @import '_post/header';
-  @import '_post/toc';
-  @import '_post/content';
-  @import '_post/footer';
-  @import '_post/shortcode_notice';
+  @import 'header';
+  @import 'toc';
+  @import 'content';
+  @import 'footer';
+  @import 'shortcode_notice';
 }
-  
+
 @media screen and (min-width: 504px) {
   .post {
     padding: 1em 1em;
     margin: 0 1em 2em;
-  }  
+  }
+  
   .content-wrapper {
     padding: 1em 0 1px;
   }  

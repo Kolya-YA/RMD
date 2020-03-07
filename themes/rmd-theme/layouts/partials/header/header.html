@@ -2,8 +2,10 @@
   <div class="root-block-wrapper">
     <div class="header-main">    
       {{ partial "header/header-logo" . }}
-      {{ partial "header/header-cotacts" . }}
-      {{ partial "header/header-top-nav" . }}
+      <div class="header-main__center">
+        {{ partial "header/header-cotacts" . }}
+        {{ partial "header/header-top-nav" . }}
+      </div>
       {{ partial "header/header-toggle" . }}
       {{ partial "lang-selector" (dict "context" . "position" "header") }}
     </div>

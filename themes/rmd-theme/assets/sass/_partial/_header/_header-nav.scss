@@ -20,24 +20,30 @@ $wg9-color: #6b6059; // Warm grey 9
   background-color: $bg-color-m;
   box-shadow: -2px 0 15px 0px $separator-color;
 
-  .lang-nav {
-    display: block;
-    height: 50px;
-    padding: 5px 60px 5px 10px;
+  .top-menu__switches {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5em 0 1em;
+    border-bottom: 1px solid $font-color;
 
-    a {
+    .lang-nav {
       display: block;
-      text-align: center;
-      margin: 2px 14px;
-      padding: 3px;
-      color: $separator-color;
-      background-color: $active-bg-color;
-      border: solid 1px $separator-color;
-      border-radius: 2px;
-    }
-
-    .lang-nav__br {
-      display: none;
+  
+      a {
+        display: block;
+        text-align: center;
+        margin-right: 1em;
+        padding: 6px 12px;
+        color: $separator-color;
+        background-color: $active-bg-color;
+        // border: solid 1px $separator-color;
+        border-radius: 3px;
+      }
+  
+      .lang-nav__br {
+        display: none;
+      }
     }
   }
 }
@@ -70,16 +76,13 @@ $wg9-color: #6b6059; // Warm grey 9
         color: $font-hover-color;
         background-color: $hover-bg-color;
       }
-    }
-  
+    }  
   }
 
   .active {
     background-color: $active-bg-color;
   }
 }
-
-
 
 .top-menu__parent {
   
@@ -111,7 +114,7 @@ $wg9-color: #6b6059; // Warm grey 9
     display: block;
     box-shadow: none;
 
-    .lang-nav {
+    .top-menu__switches {
       display: none;
     }
 
@@ -138,8 +141,7 @@ $wg9-color: #6b6059; // Warm grey 9
             background-color: $logo-blue;
             bottom: 0;
             right: 0;
-            left: 0;
-            
+            left: 0;            
           }
         }
 
@@ -169,11 +171,9 @@ $wg9-color: #6b6059; // Warm grey 9
         .top-menu__child-list {
           position: absolute;
           right: 0;
-          // width: 0;
           transform-origin: top right;
           transform: scaleY(0);
           height: 0;
-          // height: auto;
           overflow: hidden;
           transition: transform .25s ease-in-out;
           
@@ -202,11 +202,10 @@ $wg9-color: #6b6059; // Warm grey 9
 
           >a {
             background-color: $light-gray;
-          }
-
-          >a::after {
-            transform:  translateY(4px) rotate(45deg);
-          }
+            &::after {
+              transform:  translateY(4px) rotate(45deg);
+            }
+          }          
 
           .top-menu__child-list {
             // width: fit-content;
@@ -216,9 +215,5 @@ $wg9-color: #6b6059; // Warm grey 9
         } 
       }
     }
-  }
-
-  .top-menu__toggle {
-    display: none;
   }
 }

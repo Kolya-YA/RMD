@@ -1,20 +1,20 @@
 .header {
-  padding-bottom: .1rem; // burger button height
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
   background: $white;
-  color: 	#998b85; // Warm grey 6
+  color: 	$header-font-color;
   box-shadow: 0 0 5px 2px $main-background-border;
 
-  position: sticky;
-  top: 0;
-  z-index: 50;
 
   .header-main {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     
     @include wrap-med-screen {
-      justify-content: space-between;
-      padding: 0.7rem 0;
       
       > *:not(:last-child) {
         margin-right: 1rem;
@@ -22,13 +22,16 @@
     }
 
     @import 'header-logo';
-    @import "header-contacts";
-    @import 'header-nav';
+    @import "header-center";
     @import 'header-lng';
     @import 'header-toggler';
   }
   
   @include wrap-med-screen {
     padding: 0;
+    
+    .top-menu__toggle {
+      display: none;
+    }
   }  
 }

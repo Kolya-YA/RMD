@@ -1,45 +1,53 @@
-$bg-color: $color-secondary-1-0;
+$bg-color: transparent;
 $el-color: $color-primary-2;
 
 .top-menu__toggle {
-  position: absolute;
-  top: 3px;
-  right: 6px;
-  height: 44px;
-}
 
-.toggle-button {
-  display: block;
-  height: 100%;
-  width: auto;
-  padding: 1px 8px;
-  background-color: $bg-color;
-  border-radius: 3px;
-  border: none;
-}
+  .toggle-button {
+    display: block;
+    width: auto;
+    height: $header-height;
+    padding: $header-height / 8 8px;
+    background-color: $bg-color;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    
+    span {
+      font-size: 0;
+      display: block;
+      width: $header-height * .7;
+      height: 3px;
+      background-color: $el-color;
+    }
 
-.toggle-button span {
-  font-size: 0;
-  display: block;
-  width: 38px;
-  height: 3px;
-  background-color: $el-color;
-}
-
-.toggle-button.toggle-button--open span {
-  box-shadow: $el-color 0 9px 0 0, $el-color 0 -9px 0 0;
-}
-
-.toggle-button.toggle-button--close span {
-  transform: rotate(35deg);
-}
-
-.toggle-button.toggle-button--close span::after {
-  content: "";
-  font-size: 0;
-  display: block;
-  width: 38px;
-  height: 3px;
-  background-color: $el-color;
-  transform: rotate(-70deg);
+    &.toggle-button--open {
+      
+      span {
+      box-shadow: $el-color 0 9px 0 0, $el-color 0 -9px 0 0;
+      }
+    }
+    
+    &.toggle-button--close {
+      position: absolut;
+      top: 0;
+      right: 0;
+      
+      span {
+        background-color: $color-secondary-1-2;
+        transform: rotate(35deg);
+        transition-duration: 3s;
+        
+        &:after {
+          content: "";
+          font-size: 0;
+          display: block;
+          width: $header-height * .7;
+          height: 3px;
+          background-color: $color-secondary-1-2;
+          transform: rotate(-70deg);
+        }
+      }
+    }
+  }
 }
