@@ -1,5 +1,6 @@
 html {
   font-size: $root-font-size-mob;
+  
   @include wrap-med-screen {
     font-size: $root-font-size;
   }

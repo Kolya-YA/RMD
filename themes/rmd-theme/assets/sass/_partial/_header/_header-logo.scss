@@ -24,8 +24,6 @@
   }
   
   @include wrap-med-screen {
-    // flex-grow: 0;
-    // flex-shrink: 0;
     height: $header-height * 2;
     padding-top: $header-height / 14;
     padding-bottom: $header-height / 14;
