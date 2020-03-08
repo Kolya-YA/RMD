@@ -3,7 +3,6 @@
 <div class="footer-nav">
   <nav>
     <ul>
-      {{/* range .Site.Menus.service */}}
       {{ range (index .Site.Menus $menu) }}
       {{ if .HasChildren }}
       <li class="footer-nav__first">

@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 
   @include wrap-med-screen {
     max-width: 100%;
@@ -14,20 +14,22 @@
 
   .card {
 
-    &:not(:first-child) {
-      margin-top: 1rem;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
     }
 
     .card-link {
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      border: 4px solid lightgray;
+      // border: 4px solid lightgray;
       border-radius: 8px;
-      background-color: lightgrey;
+      background-color: $white;
+      box-shadow: $card-shadow;
+      transition: $card-transition;
 
       &:hover {
-        box-shadow: 0 0 15px lightgrey ;
+        box-shadow: $card-shadow-hover;
       }
 
       @include wrap-med-screen {
@@ -42,33 +44,37 @@
         "media text text"
         "media text text"
         "media more price";
-        // grid-template-areas:
-        // "media"
-        // "header"
-        // "text"
-        // "more"
-        // "price";
       }
 
       .card-header {
         order: 1;
         flex-grow: 1;
-        // background-color: lightgrey;
+        margin-top: -1rem;
+        background-color: $card-header-bg;
+        font-size: 1.3em;
         * {
           margin: 0;
-          padding: .5rem 1rem 1rem;
+          margin-top: 1rem;
+          padding: .2rem 1rem .8rem;
           font-weight: 700;
         }
         @include wrap-med-screen {
           grid-area: header;
+          margin: 0;
+          font-size: 1.1em;
+          * {
+            margin: 0;
+            padding: .7rem 1rem;
+            font-weight: 700;
+          }
         }
       }
           
       .card-text {
         order: 2;
-        background-color: #fafafa;
+        // background-color: #fafafa;
         margin: 0;
-        padding: 0.5rem;
+        padding: 1rem 1rem .5rem;
 
         @include wrap-med-screen {
           grid-area: text;
@@ -78,7 +84,6 @@
       .card-more {
         order: 2;
         text-align: center;
-        background-color: #fafafa;
 
         @include wrap-med-screen {
           grid-area: more;
@@ -89,8 +94,8 @@
           display: inline-block;
           border-radius: 6px;
           margin: .3rem 2rem .5rem;
-          padding: .1rem 1rem;
-          background-color: rgba(121, 249, 121, 0.2);
+          padding: .15rem 1rem .1rem;
+          background-color: $card-header-bg;
         }
       }
 
@@ -98,10 +103,10 @@
         order: 3;
         width: 75%;
         min-width: 220px;
-        margin-top: 4px;
+        // margin-top: 4px;
         margin-left: auto;
         padding: .5rem 1rem;
-        background-color: rgba(255, 255, 0, 0.4);
+        background-color: $color-secondary-1-2;
         text-align: right;
         font-family: $global-serif-font-family;
         font-size: 1.6rem;
@@ -126,7 +131,7 @@
         order: 0;
         height: 10rem;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 1rem));
-        background-color: rgba(238, 130, 238, 0.1);
+        background-color: $light-gray;
         
         @include wrap-med-screen {
           grid-area: media;

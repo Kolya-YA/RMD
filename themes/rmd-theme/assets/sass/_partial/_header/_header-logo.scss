@@ -1,9 +1,8 @@
 .header-logo {
   position: relative;
   overflow: hidden;
-  height: $header-height;
-  padding-top: $header-height / 20;
-  padding-bottom: $header-height / 20;
+  height: var(--header-height);
+  padding: calc(var(--header-height)/20) 0;
   
   a {
     display: block;
@@ -24,8 +23,6 @@
   }
   
   @include wrap-med-screen {
-    height: $header-height * 2;
-    padding-top: $header-height / 14;
-    padding-bottom: $header-height / 14;
+    padding: calc(var(--header-height)/28) 0;
   }
 }

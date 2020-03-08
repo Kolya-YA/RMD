@@ -1,0 +1,33 @@
+{{ if (.Params.tocCards) }}
+  <ul class="post-toc-cards">
+    {{ range sort .Params.tocCards "weight" }}
+    {{- $card := newScratch -}}
+    {{- $card.SetInMap "data" "link" "" -}}
+    {{- $card.SetInMap "data" "header" .header -}}
+    {{- $card.SetInMap "data" "text" .text -}}
+    {{- $card.SetInMap "data" "price" .prise -}}
+    {{- if $icon := $.Resources.GetMatch (printf "**%s*" .icon)}}
+      {{- $icon := $icon.Resize "400x q50" -}}
+      {{- $card.SetInMap "data" "icon" $icon -}}
+    {{- end -}}
+    {{ partial "toc-card" $card }}
+    {{- end -}}
+  </ul>
+  {{ else }}
+  {{- with .Resources.ByType "page" -}}
+  <ul class="post-toc-cards">
+  {{ range . }}
+  {{- $card := newScratch -}}
+  {{- $card.SetInMap "data" "link" "" -}}
+  {{- $card.SetInMap "data" "header" .Title -}}
+  {{- $card.SetInMap "data" "text" .Summary -}}
+  {{- $card.SetInMap "data" "price" .Params.Price -}}
+  {{- if $icon := $.Resources.GetMatch (printf "**%s*" .Params.Icon)}}
+    {{- $icon := $icon.Resize "400x q50" -}}
+    {{- $card.SetInMap "data" "icon" $icon -}}
+  {{- end -}}
+  {{ partial "toc-card" $card }}
+  {{- end -}}
+  </ul>
+  {{ end }}
+{{ end }}

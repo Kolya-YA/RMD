@@ -1,0 +1,30 @@
+.home-article {
+  margin-bottom: 1.5rem;
+
+  .home-header {
+    h1 {
+      padding-left: 1.2em;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        left: 0rem;
+        bottom: .25em;
+        content: "";
+        display: block;
+        height: 10%;
+        width: .8em;
+        background-color: $logo-blue;
+      }
+    }
+
+    .home-header__content {
+      background-color: $white;
+      box-shadow: 0 1px 15px $light-gray;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+  }
+}
+
+@import "_pages/service-list";

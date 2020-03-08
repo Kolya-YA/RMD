@@ -1,5 +1,6 @@
 $bg-color: transparent;
 $el-color: $color-primary-2;
+$el-color-2: $color-secondary-1-2;
 
 .top-menu__toggle {
 
@@ -34,7 +35,7 @@ $el-color: $color-primary-2;
       right: 0;
       
       span {
-        background-color: $color-secondary-1-2;
+        background-color: $el-color-2;
         transform: rotate(35deg);
         transition-duration: 3s;
         
@@ -44,7 +45,7 @@ $el-color: $color-primary-2;
           display: block;
           width: $header-height * .7;
           height: 3px;
-          background-color: $color-secondary-1-2;
+          background-color: $el-color-2;
           transform: rotate(-70deg);
         }
       }

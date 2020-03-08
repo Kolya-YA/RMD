@@ -1,8 +1,8 @@
 :root {
-  --header-h: #{$header-height};
+  --header-height: #{$header-height};
 
   @include wrap-med-screen {
-    --header-h: #{$header-height * 2};
+    --header-height: #{$header-height * 2};
   }
 }
 
@@ -56,15 +56,6 @@ body {
   
   @include wrap-med-screen {
     margin-top: $main-margin-top;
-  }
-}
-
-.container {
-  margin: 0 auto;
-  width: $global-body-width;
-  
-  @include max-screen() {
-    width: 100%;
   }
 }
 

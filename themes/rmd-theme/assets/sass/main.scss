@@ -14,7 +14,7 @@ $header-background-img: "{{ .Site.Params.headerBackGround }}";
 @import "_partial/back-to-top";
 @import "_pages/toc-cards";
 @import "_pages/contact";
-@import "_pages/service-list";
+@import "_pages/home-page";
 @import "_iconfont";
 @import "_partial/_post/post";
 @import "_partial/slideout";

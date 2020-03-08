@@ -3,11 +3,22 @@
 .post-content {
   word-wrap: break-word;
 
-  .sub {
+  .sub-pages {
 
-    h2[id] {
-      scroll-margin-top: calc(var(--header-h) + #{$root-font-size}/2);
+    .sub-page {
+      background-color: $white;
+      box-shadow: 0 1px 15px $light-gray;
+      padding: 1rem;
+      border-radius: 5px;
+
+      h2[id] {
+        scroll-margin-top: calc(var(--header-height) + #{$root-font-size}/2);
+      }
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
     }
+
 
     p:nth-child(6n+2) {
       padding-right: 5%;

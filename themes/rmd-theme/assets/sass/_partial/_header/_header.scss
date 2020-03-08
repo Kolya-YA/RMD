@@ -8,7 +8,6 @@
   color: 	$header-font-color;
   box-shadow: 0 0 5px 2px $main-background-border;
 
-
   .header-main {
     display: flex;
     justify-content: space-between;
@@ -29,7 +28,7 @@
   
   @include wrap-med-screen {
     padding: 0;
-    
+
     .top-menu__toggle {
       display: none;
     }
