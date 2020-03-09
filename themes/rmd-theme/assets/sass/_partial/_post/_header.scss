@@ -4,6 +4,8 @@
   h1 {
     padding-left: 1.2em;
     position: relative;
+    transition: all .2s ease-in-out;
+    transform-origin: left;
 
     &:before {
       position: absolute;

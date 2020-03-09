@@ -49,6 +49,20 @@ $color-secondary-2-4: #8E3F09;
 
 $logo-blue: #0972b5;
 
+$warm-grey-1: #DBD5CD;
+$warm-grey-2: #CFC7C0;
+$warm-grey-3: #BEB6AF;
+$warm-grey-4: #B4ACA6;
+$warm-grey-5: #A9A19B;
+$warm-grey-6: #A29B96;
+$warm-grey-7: #968F8B;
+$warm-grey-8: #8E8884;
+$warm-grey-9: #867F7C;
+$warm-grey-10: #827C78;
+$warm-grey-11: #7D7773;
+
+$warm-red: #FF665E;
+
 // Check theme color config.
 // if it does not exist, use default theme color.
 @if not(map-has-key($theme-color-map, $theme-color-config)) {
@@ -114,7 +128,7 @@ $global-background: $white !default;
 
 // === Header ===
 $header-height: 64px; // for mobile
-$header-font-color: #998b85; // Warm grey 6
+$header-font-color: $warm-grey-11;
 $contact-font-size: 1.6rem;
 $nav-transition: all .2s ease-in-out;
 

@@ -3,6 +3,8 @@ title: "Uber uns"
 date: 2017-08-20T21:38:52+08:00
 lastmod: 2017-08-28T21:41:52+08:00
 
+toc: false
+
 menu: 
   main:
     name: "Uber uns"
@@ -11,12 +13,7 @@ menu:
     name: "Uber uns"
 ---
 
-Sehr geehrte Damen und Herren,
-
-- "Uber uns – 1"
-- "Uber uns – 2"
-- "Uber uns – 3"
-
+Sehr geehrte Damen und Herren,  
 hiermit möchten wir eine kurze Beschreibung unserer Firma darstellen. Wir sind Generalunternehmer mit Fachleute für Bauausführung mit mehr als _7 Jahren_ Berufserfahrung als Unternehmer und seit _2012_ sind wir als Firma __RMD City Bau GmbH__ auf dem Baumarkt repräsentiert. Unsere Firma hat sich von Anfang an bemüht, auf hohe Standards zu achten. Bis heute können wir auf zahlreiche fertig gestellte Bauprojekte in Trockenbau, Neubau und Sanierung mit Architekten verweisen.
 
 {{< img src="pict1.jpg" alt="Picture #01" >}}
