@@ -140,6 +140,8 @@ $main-background-color: #f8f8f8;
 $main-background-border: #f2f2f2;
 $main-background-border: #ddd;
 
+$block-radius: 5px;
+$block-gap: 1.5rem;
 
 
 // === Content ===
@@ -151,8 +153,6 @@ $card-header-bg: scale-color($logo-blue, $lightness: 85%);
 
 // Font size of post pagination.
 $post-nav-font-size: 18px !default;
-
-// === Content ===
 
 // Border bottom of the link when hover it.
 $content-link-border: 1px solid $theme-color !default;

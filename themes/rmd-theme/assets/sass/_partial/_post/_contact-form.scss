@@ -1,0 +1,118 @@
+form.contact-form {
+
+  h2 {
+    text-align: center;
+  }
+
+  label,
+  fieldset {
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  textarea {
+    padding: 7px 10px;
+    font-size: 1.1rem;
+    background-color: $light-light-blue;
+    border: 1px solid $rmd-col1;
+    border-radius: 2px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .contact-form__radio {
+
+    display: flex;
+    flex-direction: row;
+
+    input[type=radio] {
+      display: none;
+    }
+
+    input[type=radio]+label {
+      margin: 0;
+      padding: 3px 6px;
+      flex: 1;
+      background-color: $light-blue;
+      text-align: center;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    input[type=radio]:checked+label {
+      background-color: $color-secondary-2-3;
+      color: $white;
+    }
+  }
+
+  .contact-form__ds-checkbox {
+    input {
+      display: none;
+    }
+
+    span {
+      margin-left: 34px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -34px;
+        top: 0;
+        width: 22px;
+        height: 22px;
+        background-color: $light-light-blue;
+        border: 1px solid $rmd-col1;
+        border-radius: 2px;
+        transition: all .2s ease-in-out;
+      }
+    }
+
+    input:checked+span::before {
+      height: 14px;
+      background-color: transparent;
+      border-width: 2px;
+      border-top-style: none;
+      border-right-style: none;
+      border-radius: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
+    min-width: 150px;
+    font-size: 1.1rem;
+    padding: 7px 10px;
+    background-color: $light-blue;
+    border: 2px solid $rmd-col1;
+    border-radius: 2px;
+
+    &:hover,
+    &:focus {
+      background-color: $rmd-col5;
+    }
+
+    &:active {
+      background-color: $rmd-col1;
+      color: $white;
+    }
+  }
+}

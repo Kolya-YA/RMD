@@ -1,132 +1,57 @@
-// Contact form
-.contacts-wrapper {
-  display: flex;
-  flex-wrap: wrap-reverse;
-}
+// Contact page
 
-.contacts-text {
-  flex: 2;
-  @include wrap-med-screen {
-    margin-right: 1rem;
-  }
-}
+.contact-page {
 
-.contact-form {
-  flex: 1;
-  min-width: 460px;
-
-  form {
-    padding: 1rem;
-    background-color: $white;
-  }
-
-  h2 {
-    text-align: center;
-  }
-  label, fieldset {
-    display: block;
-    &:not(:last-child) {
-      margin-bottom: 1rem;
-    }
-  }
-
-  input, textarea {
-    display: block;
-    width: 100%;
-  }
-
-  input[type=text],
-  input[type=email],
-  input[type=tel],
-  textarea {
-    padding: 7px 10px;
-    font-size: 1.1rem;
-    background-color: $light-light-blue;
-    border: 1px solid $rmd-col1;
-    border-radius: 2px;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  .contact-form__radio {
+  &__top {
+    margin-bottom: $block-gap;
     
-    display: flex;
-    flex-direction: row;
-    
-    input[type=radio] {
-      display: none;
-    }
-    
-    input[type=radio] + label {
-      margin: 0;
-      padding: 3px 6px;
-      flex: 1;
-      background-color: $light-blue;
-      text-align: center;
+    .contact-page__header {
+      margin-bottom: $block-gap;
+
+      h1 {
+        @extend %page-header;
+      }
       
-      &:not(:last-child) {
-        margin-right: 1rem;
+      .contact-page__contacts {
+        @extend %white-block;
       }
     }
-    
-    input[type=radio]:checked + label {
-      background-color: $color-secondary-2-3;
-      color: $white;
+
+    .contact-page__form {
+      @extend %white-block;
+      @import "_partial/_post/contact-form";
     }
-  }
-  
-  .contact-form__ds-checkbox {
-    input {
-      display: none;
-    }
-    span {
-      margin-left: 34px;
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        left: -34px;
-        top: 0;
-        width: 22px;
-        height: 22px;
-        background-color: $light-light-blue;
-        border: 1px solid $rmd-col1;
-        border-radius: 2px;
-        transition: all .2s ease-in-out;
+
+    @include wrap-med-screen {
+      display: flex;
+      justify-content: space-between;
+
+      .contact-page__header {
+        flex-basis: 50%;
+        flex-grow: 1;
+        margin-bottom: 0;
+        margin-right: $block-gap;
+      }
+      
+      .contact-page__form {
+        flex-basis: 50%;
+        flex-grow: 1;
       }
     }
-    input:checked + span::before {
-      height: 14px;
-      background-color: transparent;
-      border-width: 2px;
-      border-top-style: none;
-      border-right-style: none;
-      border-radius: 0;
-      transform: rotate(-45deg);
-    }
+  }
 
-    
-    
+
+  &__content {
+    @extend %white-block;
+    margin-bottom: $block-gap;
   }
   
-  button {
-    display: block;
-    margin: 0 auto;
-    min-width: 150px;
-    font-size: 1.1rem;
-    padding: 7px 10px;
-    background-color: $light-blue;
-    border: 2px solid $rmd-col1;
-    border-radius: 2px;
-    &:hover, &:focus {
-      background-color: $rmd-col5;
-    }
-    &:active {
-      background-color: $rmd-col1;
-      color: $white;
-    }
-   }
-
+  &__map {
+    box-shadow: 0 1px 15px $light-gray;
+    margin: 0;
+    padding: 0;
+    border-radius: $block-radius;
+    overflow: hidden;
+  }
 }
+

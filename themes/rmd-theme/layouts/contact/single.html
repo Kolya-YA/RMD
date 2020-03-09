@@ -1,12 +1,31 @@
 {{ define "content" -}}
-  <div class="contacts-wrapper">
-    <article class="contacts-text">
-      <header class="">
-        <h1 class="">{{ .Title }}</h1>
-      </header>
-      {{ .Content }}
-      {{ partial "google-map" (dict "context" . ) }}
-    </article>
-    {{ partial "contact-form" . }}
+<article class="contact-page">
+  <div class="contact-page__top">
+    <header class="contact-page__header">
+      <h1 class="">{{ .Title }}</h1>
+      <section class="contact-page__contacts">
+        <address>
+          <span>We are here:</span><br>
+          {{ .Site.Params.Address.name }}<br>
+          {{ .Site.Params.Address.street }}<br>
+          {{ .Site.Params.Address.city }}
+        </address>
+        <div class="phones">
+          {{ i18n "phone" }}<a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.phone }}">{{ .Site.Params.phone }}</a><br>
+          {{ i18n "fax" }}<a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.fax }}">{{ .Site.Params.fax }}</a><br>
+          {{ i18n "email" }}<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+        </div>
+      </section>
+    </header>
+    <section class="contact-page__form">
+      {{ partial "contact-form" . }}
+    </section>
   </div>
+  <div class="contact-page__content">
+    {{ .Content }}
+  </div>
+  <div class="contact-page__map">
+    {{ partial "google-map" (dict "context" . ) }}
+  </div>
+</article>
 {{- end }}

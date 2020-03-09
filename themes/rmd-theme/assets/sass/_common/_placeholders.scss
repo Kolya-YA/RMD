@@ -1,0 +1,22 @@
+%page-header {
+  padding-left: 1.2em;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      left: 0rem;
+      bottom: .25em;
+      content: "";
+      display: block;
+      height: 10%;
+      width: .8em;
+      background-color: $logo-blue;
+    }
+}
+
+%white-block {
+  background-color: $white;
+  box-shadow: 0 1px 15px $light-gray;
+  padding: 1rem;
+  border-radius: $block-radius;
+}

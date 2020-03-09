@@ -2,21 +2,36 @@
 
 .footer-contacts {
   text-align: center;
+
   .footer-contacts__address {
     margin-bottom: 1rem;
+
     .footer-contacts__name {
       font-size: 1.5rem;
       margin-bottom: .2em;
       font-weight: bold;
     }
   }
+
+  .footer-contacts__map {
+    margin-bottom: $block-gap;
+    filter: grayscale(75%);
+    transition: filter 0.5s;
+    
+    &:hover,
+    &:focus {
+      filter: grayscale(0);
+    }
+  }
   
   @include wrap-med-screen {
     text-align: left;
-      .footer-contacts__address {
-        .footer-contacts__name {
-          font-size: 2rem;
-        }
+
+    .footer-contacts__address {
+
+      .footer-contacts__name {
+        font-size: 2rem;
       }
+    }
   }
 }
