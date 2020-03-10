@@ -20,3 +20,16 @@
   padding: 1rem;
   border-radius: $block-radius;
 }
+
+%content-link {
+  a:not([class]) {
+    color: inherit;
+    text-decoration: underline $logo-blue;
+    transition: all .2s ease-in-out;
+    
+    &:hover {
+      color: $logo-blue;
+      text-decoration-color: $warm-red;
+    }
+  }
+}

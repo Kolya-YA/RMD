@@ -7,21 +7,20 @@ description = "RMD beta site"
 logo = "images/logo.png"
 since = "2012"            # Site creation time
 phone = "+49 30 228 08 343"
-fax = "+49 30 228 08 (fax)"
+fax = ""
 email = "info@rmd-citybau.de"
 mapApiKey = "AIzaSyCVSQkQMnPD5A_Z9AzN6Frgei4oDgPfYAY"
 mapFooterWidth = "100%"
 mapFooterHeight = "200"
-headerBackGround = "images/header-bcg.svg"
+
 bodyBackGround = "images/mmpaper.svg"
-# headerBackGround = "images/whitewall.jpg"
 defHeaderImage = "images/def-header.jpg"
 defServiceIcon = "images/srv-icon.png"
 
 [address]
   name = "RMD Bau City GmbH"
-  street = "Arndtstraße 13"
-  city = "10965 Berlin"
+  street = "Leipziger Straße 33"
+  city = "10117 Berlin"
 
 [opentime]
   workdays = "MO – FR"

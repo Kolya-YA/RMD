@@ -12,7 +12,7 @@
         </address>
         <div class="phones">
           {{ i18n "phone" }}<a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.phone }}">{{ .Site.Params.phone }}</a><br>
-          {{ i18n "fax" }}<a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.fax }}">{{ .Site.Params.fax }}</a><br>
+          {{ if .Site.Params.fax }}{{ i18n "fax" }}<a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.fax }}">{{ .Site.Params.fax }}</a><br>{{ end }}
           {{ i18n "email" }}<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
         </div>
       </section>

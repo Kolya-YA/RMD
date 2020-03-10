@@ -1,13 +1,13 @@
 ---
-title: "Terms & Condtions (AGB)"
-date: 2019-11-01
+title: "Terms & Condtions"
+date: 2060-11-01
 
 menu: 
   law:
-    name: "Terms & Condtions (AGB)"
+    name: "Terms & Condtions"
     weight: 20
 ---
 
-AGB 
+## Terms & Condtions
 
-Bla bla bla  
+Terms & Condtions is AGB 

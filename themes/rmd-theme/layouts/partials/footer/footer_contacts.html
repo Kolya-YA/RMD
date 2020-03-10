@@ -8,7 +8,7 @@
   </div>
   <div class="footer-contacts__phones">
     <div>{{ i18n "phone" }}<a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.phone }}">{{ .Site.Params.phone }}</a></div>
-    <div>{{ i18n "fax" }}<a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.fax }}">{{ .Site.Params.fax }}</a></div>
+    {{ if .Site.Params.fax }}<div>{{ i18n "fax" }}<a href="tel:{{ replaceRE "(\\s)" "" .Site.Params.fax }}">{{ .Site.Params.fax }}</a></div>{{ end }}
     <div>{{ i18n "email" }}<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></div>
   </div>
   <div class="footer-contacts__hours">
