@@ -8,7 +8,7 @@ $font-hover-color: $black;
 $separator-color: $warm-grey-4;
 $shadow-color: $warm-red;
 
-$hover-bg-color: $warm-grey-2;
+$hover-bg-color: $warm-grey-1;
 $active-bg-color: $warm-grey-3;
 
 .top-menu--close {
@@ -154,7 +154,7 @@ $active-bg-color: $warm-grey-3;
 
           &:hover,
           &:focus {
-            background-color: $warm-grey-1;
+            background-color: $hover-bg-color;
 
             &::after {
               transform: translateY(6px) rotate(45deg);

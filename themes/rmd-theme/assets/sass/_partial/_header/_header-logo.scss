@@ -7,13 +7,34 @@
   a {
     display: block;
     height: 100%;
+    
+    svg {
+      display: block; 
+      max-height: 100%;
+      width: auto;
+
+      * {
+        transition: all 300ms;
+      }
+      
+      &:hover {
+        
+        #roof {
+          fill: lighten($logo-blue, 10%);
+        }
+
+        #gmbh {
+          fill: #333;
+        }
+      }
+    }
   }
   
-  .header-logo__img {
-    display: block; 
-    max-height: 100%;
-    object-fit: scale-down;
-  }
+  // .header-logo__img {
+  //   display: block; 
+  //   max-height: 100%;
+  //   object-fit: scale-down;
+  // }
   
   .header-logo__name {
     position: absolute;

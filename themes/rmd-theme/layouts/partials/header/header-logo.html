@@ -2,7 +2,8 @@
 
 <div class="header-logo">
   <a {{ if not .IsHome }}href="{{ "/" | relLangURL }}"{{ end }}>
-    <img class="header-logo__img"src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ $logoTitle }}">
+    <!-- <img class="header-logo__img" src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="{{ $logoTitle }}"> -->
+    {{ partial "svg/logoRMD.svg" }}
     <h1 class="header-logo__name">{{ $logoTitle }}</h1>
   </a>
 </div>

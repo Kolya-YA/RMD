@@ -1,10 +1,19 @@
 {{ define "content" }}
 
   <article class="home-article">
-    <header class="home-header">
+    <header class="home-article__header">
       <h1>{{ .Title }}</h1>
       <section class="home-header__content">{{ .Content }}</section>
     </header>
+    {{ with .Resources.GetMatch "header"}}
+    <section class="home-article__poster">
+      {{ $image := .Resize "880x q78"}}
+      <img 
+        src="{{ $image.RelPermalink }}"
+        alt="{{ $.Title }}"
+        srcset="">
+    </section>
+    {{ end }}
   </article>
 
 <!-- List of servises -->

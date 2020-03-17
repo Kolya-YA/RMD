@@ -1,13 +1,53 @@
 .home-article {
   margin-bottom: 1.5rem;
 
-  .home-header {
+  &__header {
+    margin-bottom: $block-gap;
+
     h1 {
       @extend %page-header;
     }
 
     .home-header__content {
       @extend %white-block;
+    }
+  }
+
+  &__poster {
+    @extend %white-block;
+    padding: 0;
+    overflow: hidden;
+    min-height: 20rem;
+    height: 20rem;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      min-width: 100%;
+      object-position: center bottom;
+    }
+  }
+
+  @include wrap-med-screen {
+    display: flex;
+    justify-content: space-between;
+
+    &__header {
+      flex-basis: 50%;
+      flex-grow: 1;
+      margin-bottom: 0;
+      margin-right: $block-gap;
+    }
+    
+    &__poster {
+      flex-basis: 50%;
+      flex-grow: 1;
+      height: auto;
+
+      img {
+        // height: 100%;
+        width: 100%;
+      }
     }
   }
 }

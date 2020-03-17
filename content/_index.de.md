@@ -2,6 +2,10 @@
 title: "RMD City Bau"
 date: 2019-08-20
 
+resources:
+- name: header
+  src: header.png
+
 menu:
   footer:
     name: "Startseite"
