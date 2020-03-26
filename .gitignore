@@ -3,3 +3,5 @@ gh-pages.pub
 gh-pages
 /public/
 /resources/_gen/
+/node_modules/
+/themes/rmd-theme/assets/js/
