@@ -17,8 +17,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '13.x'
-    - run: yarn
-    - run: yarn build
+    - name: Install dep.
+      run: yarn
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
@@ -27,7 +27,8 @@ jobs:
         extended: true
 
     - name: Build
-      run: hugo --minify --cleanDestinationDir --gc
+      # run: hugo --minify --cleanDestinationDir --gc
+    - run: yarn build
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.5.0

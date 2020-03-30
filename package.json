@@ -4,7 +4,7 @@
     "start:hugo": "hugo server -D -F",
     "start:webpack": "webpack --mode=development --watch",
     "build": "run-s build:webpack build:hugo",
-    "build:hugo": "hugo",
+    "build:hugo": "hugo --minify --cleanDestinationDir --gc",
     "build:webpack": "webpack --mode=production"
   },
   "devDependencies": {
