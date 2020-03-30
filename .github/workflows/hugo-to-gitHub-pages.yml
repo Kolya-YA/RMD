@@ -7,7 +7,7 @@ on:
 
 jobs:
   webpack-build-deploy:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
     - name: Master checkout
       uses: actions/checkout@v2
