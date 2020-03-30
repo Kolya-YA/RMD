@@ -20,13 +20,16 @@ jobs:
         hugo-version: 'latest'
         extended: true
 
-    - name: Build with Node.js
+    - name: Setup Node.js
       uses: actions/setup-node@v1
       with:
         node-version: '13.x'
-    - run: yarn
-      # run: hugo --minify --cleanDestinationDir --gc
-    - run: yarn build
+
+    - name: Install dependencies (yarn)
+      run: yarn
+      
+    - name: Build Webpack & Hugo
+      run: yarn build
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.5.0
