@@ -6,15 +6,22 @@ on:
     - master
 
 jobs:
-  build-deploy:
-    runs-on: ubuntu-18.04
+  webpack-build-deploy:
+    runs-on: ubuntu-lastest
     steps:
-    - uses: actions/checkout@master
+    - name: Master checkout
+      uses: actions/checkout@v2
       # with:
       #   submodules: true
+    - name: Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '13.x'
+    - run: npm install
+    - run: npm run build
 
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2.2.4
+      uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: 'latest'
         extended: true
