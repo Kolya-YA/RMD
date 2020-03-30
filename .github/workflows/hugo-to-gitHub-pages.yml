@@ -17,8 +17,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '13.x'
-    - run: npm install
-    - run: npm run build
+    - run: yarn
+    - run: yarn build
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
