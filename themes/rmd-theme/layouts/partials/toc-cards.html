@@ -19,6 +19,7 @@
   {{ range . }}
   {{- $card := newScratch -}}
   {{- $card.SetInMap "data" "link" "" -}}
+  {{- $card.SetInMap "data" "content" .Content -}}
   {{- $card.SetInMap "data" "header" .Title -}}
   {{- $card.SetInMap "data" "text" .Summary -}}
   {{- $card.SetInMap "data" "price" .Params.Price -}}

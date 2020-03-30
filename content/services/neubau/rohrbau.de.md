@@ -8,5 +8,3 @@ summary: "Monolithische Wände sind eine großartige Alternative zu Ziegeln, da 
 price: "80 594.70"
 icon: "045"
 ---
-
-Monolithische Wände sind eine großartige Alternative zu Ziegeln, da sie haltbarer und langlebiger sowie hinsichtlich der Wärmeleitfähigkeit weniger anspruchsvoller sind. Ein wesentlicher Faktor ist der Preis für monolithische Stahlbetonwände - er ist viel niedriger als für Ziegelmauer.

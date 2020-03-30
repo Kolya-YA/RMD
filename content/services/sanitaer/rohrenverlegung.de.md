@@ -8,5 +8,3 @@ summary: "Einer der wichtigen Schritte beim Bau eines Abwassersystems ist das Ve
 price: "112 109.50"
 icon: "045"
 ---
-
-Einer der wichtigen Schritte beim Bau eines Abwassersystems ist das Verlegen von Rohren. Wir installieren alle erforderlichen Rohrleitungen.

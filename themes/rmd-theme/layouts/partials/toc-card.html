@@ -1,25 +1,25 @@
-  {{ $card := .Get "data" }}
-  
-  <li class="card">
-    <a class="card-link"{{ with $card.header }} href="#{{ anchorize . }}"{{ end }}>
-      <div class="card-header">
-          {{ with $card.header }}<h3>{{ . }}</h3>{{ end }}
-      </div>
+{{- $card := .Get "data" -}}
 
-      <div class="card-text">{{ $card.text }}</div>
+<li class="card">
+  <a class="card-link"{{ if $card.content }}{{ with $card.header }} href="#{{ anchorize . }}"{{ end }}{{ end }}>
+    <div class="card-header">
+        {{ with $card.header }}<h3>{{ . }}</h3>{{ end }}
+    </div>
 
-      <div class="card-more">
-        <span>{{ i18n "readmore" }} →</span>
-      </div>
+    <div class="card-text">{{ $card.text }}</div>
 
-      <div class="card-prise">
-        {{ with $card.price }}ab {{ . }} €{{ end }}
-      </div>
+    <div class="card-more">
+      {{ if $card.content }}<span>{{ i18n "readmore" }} →</span>{{ end }}
+    </div>
 
-      <div class="card-img">
-        {{ with $card.icon }}
-        <img src="{{ .RelPermalink }}" alt="{{ $card.header }} — image">
-        {{ end }}          
-      </div>
-    </a>
-  </li>
+    <div class="card-prise">
+      {{- with $card.price }}ab {{ . }} €{{ end -}}
+    </div>
+
+    <div class="card-img">
+      {{ with $card.icon }}
+      <img src="{{ .RelPermalink }}" alt="{{ $card.header }} — image">
+      {{ end }}          
+    </div>
+  </a>
+</li>

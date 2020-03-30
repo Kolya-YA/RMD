@@ -8,5 +8,3 @@ summary: "Dies ist eine moderne und beliebte Art, ein Hausdach zu bauen. Unser U
 price: "328 595.20"
 icon: "045"
 ---
-
-Dies ist eine moderne und beliebte Art, ein Hausdach zu bauen. Unser Unternehmen verfügt über umfangreiche Erfahrung im Bau eines Flachdachs. Wir garantieren die Zuverlässigkeit und Langlebigkeit eines solchen Daches.

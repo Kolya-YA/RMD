@@ -8,5 +8,3 @@ summary: "Die Firma RMD City Bau GmbH erledigt eine ganze Reihe von Reparaturarb
 price: "5 049.50"
 icon: "045"
 ---
-
-Die Firma RMD City Bau GmbH erledigt eine ganze Reihe von Reparaturarbeiten für Badezimmer und Toiletten: Design, Vorbereitung, Demontage, Fliesen, Sanitär, Elektrik, Zimmerei, Müllentsorgung.

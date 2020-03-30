@@ -8,5 +8,3 @@ summary: "Wir arbeiten mit erfahrenen Maklern in Berlin und Branderburg zusammen
 price: "801 499.63"
 icon: "045"
 ---
-
-Wir arbeiten mit erfahrenen Maklern in Berlin und Branderburg zusammen und stellen Grundstücke mit Baugenehmigungen zur Verfügung.
