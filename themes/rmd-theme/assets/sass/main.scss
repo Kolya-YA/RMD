@@ -12,6 +12,7 @@ $body-background-img: "{{ .Site.Params.bodyBackGround }}";
 @import "_partial/_header/header";
 @import "_partial/_footer/footer";
 @import "_partial/back-to-top";
+@import "_partial/cookie-counter";
 @import "_pages/contact";
 @import "_pages/home-page";
 @import "_iconfont";

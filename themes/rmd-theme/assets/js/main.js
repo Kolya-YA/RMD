@@ -98,6 +98,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./themes/rmd-theme/src/js/cookie-alert.js":
+/*!*************************************************!*\
+  !*** ./themes/rmd-theme/src/js/cookie-alert.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ((function() {\n  const onLoadDelay = 5;\n  const cookieCounter = document.querySelector('#cookie-counter');\n  // const cookiePanel = document.querySelector('#cookie-panel');\n  // const cPanelOkBtn = cookiePanel.querySelector('#cookie-panel-ok');\n  // const cPanelCloseBtn = cookiePanel.querySelector('#cookie-panel-close');\n  \n  const showAlert = (delay = 10 ) => {\n    console.log(`Cookie alert in ${delay} sec!`);\n    cookieCounter.classList.remove('cookie-counter--hidden')\n    let cur = delay;\n    const countDown = () => {\n      if (cur > 0) {\n        console.log('Cur-- :', cur);\n        cookieCounter.innerHTML = cur;\n        // Show countdown window\n        setTimeout(countDown, 1000);\n      }\n      else {\n        // Close coundown window\n        cookieCounter.classList.add('cookie-counter--hidden')\n        // Show cookie alert\n        console.log('Start!', cur);\n      }\n      cur--;\n    }\n\n    setTimeout(countDown, 1000);\n  }\n  \n  window.onload = showAlert(onLoadDelay);\n\n})());\n\n//# sourceURL=webpack:///./themes/rmd-theme/src/js/cookie-alert.js?");
+
+/***/ }),
+
 /***/ "./themes/rmd-theme/src/js/nav-toggler.js":
 /*!************************************************!*\
   !*** ./themes/rmd-theme/src/js/nav-toggler.js ***!
@@ -118,7 +130,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav_toggler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav-toggler */ \"./themes/rmd-theme/src/js/nav-toggler.js\");\n/* harmony import */ var _back_to_top__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./back-to-top */ \"./themes/rmd-theme/src/js/back-to-top.js\");\n// <== === nav toggler === ==>\n\n    \n// <== === back to top === ==>\n\n\n// <== === current active menu === ==>\n\n// const lastActive = document.querySelectorAll('.active')\n// lastActive.length && console.log(\"__Active: \", lastActive[lastActive.length - 1].textContent)\n\n//# sourceURL=webpack:///./themes/rmd-theme/src/js/start.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav_toggler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav-toggler */ \"./themes/rmd-theme/src/js/nav-toggler.js\");\n/* harmony import */ var _back_to_top__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./back-to-top */ \"./themes/rmd-theme/src/js/back-to-top.js\");\n/* harmony import */ var _cookie_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cookie-alert */ \"./themes/rmd-theme/src/js/cookie-alert.js\");\n// <== === nav toggler === ==>\n\n    \n// <== === back to top === ==>\n\n\n// <== === Cookie alert === ==>\n\n\n// <== === current active menu === ==>\n\n// const lastActive = document.querySelectorAll('.active')\n// lastActive.length && console.log(\"__Active: \", lastActive[lastActive.length - 1].textContent)\n\n//# sourceURL=webpack:///./themes/rmd-theme/src/js/start.js?");
 
 /***/ }),
 

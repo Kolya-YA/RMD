@@ -4,6 +4,9 @@ import './nav-toggler';
 // <== === back to top === ==>
 import './back-to-top';
 
+// <== === Cookie alert === ==>
+import './cookie-alert';
+
 // <== === current active menu === ==>
 
 // const lastActive = document.querySelectorAll('.active')
