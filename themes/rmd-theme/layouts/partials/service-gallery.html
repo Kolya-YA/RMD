@@ -1,0 +1,11 @@
+<h2 class="gallery__title">In vier Jahren wird es eine Fotogalerie geben</h2>
+<div class="gallery__wrapper">
+  {{ range . }}
+  <figure class="gallery__item">
+    <picture>
+      <img src="{{ .RelPermalink }}" alt="{{ .Name }}">
+    </picture>
+    <figcaption>{{ .Name }}{{ with .Title }} — <cite>{{ . }}</cite>{{ end }}</figcaption>
+  </figure>
+  {{ end }}
+</div>

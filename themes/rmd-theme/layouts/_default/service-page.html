@@ -6,16 +6,11 @@
   </header>
 
   {{ partial "toc-cards" . }}
-  <section class="post__gallery">
   {{ with .Resources.ByType "image" }}
-  <h2>
-    Hier bauen wir die Galerie.
-  </h2>
-  {{ range . }}
-  {{ .Name }} — {{ .Title }}<br>
-  {{ end }}
-  {{ end }}
+  <section class="post__gallery">
+    {{ partial "service-gallery" . }}
   </section>
+  {{ end }}
   <section class="post-content">
     {{ with .Resources.ByType "page" }}
     <div class="sub-pages">

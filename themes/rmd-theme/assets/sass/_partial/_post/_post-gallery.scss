@@ -1,0 +1,33 @@
+.post__gallery {
+
+  .gallery__title {
+    text-align: center;
+  }
+
+  .gallery__wrapper {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+    .gallery__item {      
+      position: relative; 
+      margin: 0;     
+      margin-right: auto;
+      margin-left: auto;        
+
+      figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        padding: .5rem 1rem;
+        background-color: #4448;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        color: #fff;
+        font-weight: 800;
+        // font-size: 1.2rem;
+      }
+    }
+  }
+}
