@@ -32,6 +32,14 @@
 
 - id: author_item
   translation: "Autor: "
+  
+# Coockie
+
+- id: cookie_more_info
+  translation: Datenschutzklärung
+
+- id: cookie_ok
+  translation: Ich akzeptiere
 
 # posts
 - id: prev

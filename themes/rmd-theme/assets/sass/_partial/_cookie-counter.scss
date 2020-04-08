@@ -7,6 +7,7 @@ $counter-height: 2.5rem;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
   height: $counter-height;
   width: 3rem;
   display: flex;
@@ -15,11 +16,6 @@ $counter-height: 2.5rem;
   background-color: rgba(180, 180, 180, .5);
   border-top-right-radius: 30%;
   border-top-left-radius: 30%;
-  transition-property: transform;
-  transition-timing-function: ease-out;
-  transition-duration: 0.3s;
-  z-index: 10;
-  cursor: pointer;
   transition: bottom 1s ease-out;
   
   &--hidden {
