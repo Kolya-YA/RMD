@@ -34,6 +34,12 @@
 
 # Coockie
 
+- id: cookie_attention
+  translation: "Attention!"
+
+- id: cookie_text
+  translation: "This website uses cookies to ensure you get the best experience on our website."
+
 - id: cookie_more_info
   translation: Read more
 

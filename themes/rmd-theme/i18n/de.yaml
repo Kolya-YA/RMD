@@ -34,7 +34,12 @@
   translation: "Autor: "
   
 # Coockie
+- id: cookie_attention
+  translation: "Achtung!"
 
+- id: cookie_text
+  translation: "Cookie, Cookie, Cookie, Cookie, Cookie!"
+  
 - id: cookie_more_info
   translation: Datenschutzklärung
 

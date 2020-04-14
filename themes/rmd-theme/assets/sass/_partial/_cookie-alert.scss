@@ -35,6 +35,12 @@ $transition-time: 1s;
     a {
       color: inherit;
       text-decoration: underline $rmd-col2;
+      transition-duration: .3s;
+
+      &:hover {
+        color: darken($rmd-col2, 25%);;
+        text-decoration: underline darken($rmd-col2, 25%);
+      }
     }
   }
 
@@ -44,6 +50,8 @@ $transition-time: 1s;
     font-size: 1.2rem;
     background-color: $rmd-col2;
     border-radius: 3px;
+    transition-duration: .3s;
+    cursor: pointer;
     
     &:hover {
       background-color: darken($rmd-col2, 15%);
