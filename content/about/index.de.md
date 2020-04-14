@@ -13,7 +13,24 @@ menu:
     name: "Uber uns"
 ---
 
-Sehr geehrte Damen und Herren,  
+## Wer wir sind
+
+Herzlich Willkommen zu uns. Wir freuen uns Ihnen Firma __RMD City Bau GmbH__ zu Präsentieren.
+
+Wir sind eine Baufirma auch als GU _(Generalunternehmer)_ bezeichnet, weil wir alle werke aus einer Hand anbieten,
+damit Sie weniger Sorgen und Stress auf die Baustelle haben. Wir Beraten, Plannen, Realisiren und tragen
+Verantwortung mit Garantie. Unsere Richtungen sind Neubau von Hause und Lager aus Metall, Stein, Holz, Beton,
+auch mit Neu Technogien und Alternativen, auch Komplett Sanierung von, MFH, EFH, Dachgeschoss, Wohnung,
+Gewerbe oder Bungalow. Durch unsere Erfarung vermeideen wir die Fähler welche andere noch machen und Führen
+jedes Bauvorhaben bis zu Schlüsselfertig ist.
+
+Wir legen Ständig große Wert auf Ihren Komfort in Bauprozess, Qualitativ ausgeführte Arbeitsleistungen mit
+Garantie, Ständige Kontrolle von Mitarbeitern Dienstleistung durch Bauleitern, Oberbauleitern, Ingenieuren und
+Architekten, Kommunikation durch Unterschiedlichen Methoden damit jede ihre Wunsch Realisiert wird, Jede
+Baustelle Prinzipiell und Grundsätzlich wird bis Ende durchgeführt und nur in Weniger Fällen stellen wir Nachträge,
+wir arbeiten mit Festpreis.
+
+## Sehr geehrte Damen und Herren,  
 hiermit möchten wir eine kurze Beschreibung unserer Firma darstellen. Wir sind Generalunternehmer mit Fachleute für Bauausführung mit mehr als _7 Jahren_ Berufserfahrung als Unternehmer und seit _2012_ sind wir als Firma __RMD City Bau GmbH__ auf dem Baumarkt repräsentiert. Unsere Firma hat sich von Anfang an bemüht, auf hohe Standards zu achten. Bis heute können wir auf zahlreiche fertig gestellte Bauprojekte in Trockenbau, Neubau und Sanierung mit Architekten verweisen.
 
 {{< img src="pict1.jpg" alt="Picture #01" >}}
