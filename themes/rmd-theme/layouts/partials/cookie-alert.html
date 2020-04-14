@@ -1,6 +1,6 @@
 <div id="cookie-counter" class="cookie-counter cookie-counter--hidden"></div>
-<div id="cookie-alert" class="cookie-alert cookie-alert--hidden">
-  <p>
+<div id="cookie-alert" class="cookie-alert cookie-alert--hidden" role="dialog" aria-label="cookie-hinweis" aria-describedby="cookie-desc" aria-live="polite">
+  <p id="cookie-desc">
     <span>Achtung!</span> Cookie, Cookie, Cookie, Cookie, Cookie!<br>
     <a{{ with .Site.GetPage "/officials/datenschutz" }} href="{{ .RelPermalink }}"{{ end }}>{{ i18n "cookie_more_info" }}</a>.
   </p>

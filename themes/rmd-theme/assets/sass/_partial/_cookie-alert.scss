@@ -15,9 +15,17 @@ $transition-time: 1s;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   transition: bottom $transition-time ease-out;
+  text-align: center;
+  
+  @include wrap-med-screen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   
   p {
     margin: 0;
+    text-align: left;
     color: $white;
 
     span {
@@ -35,5 +43,14 @@ $transition-time: 1s;
     padding: .5rem 1rem .7rem;
     font-size: 1.2rem;
     background-color: $rmd-col2;
+    border-radius: 3px;
+    
+    &:hover {
+      background-color: darken($rmd-col2, 15%);
+    }
+
+    @include wrap-med-screen {
+      margin: 0;
+    }
   }
 }

@@ -1,6 +1,6 @@
 export default (function() {
 
-  const onLoadDelay = 5 // Cookie alert delay
+  const onLoadDelay = 3 // Cookie alert delay
   const rmdCookie = 'rmdCookie=1';
   const rmdCookieExpires = 180; // days
   const rmdCookieExist = document.cookie.split(';').filter(item => item.includes(rmdCookie)).length;
@@ -35,7 +35,7 @@ export default (function() {
       }
       else {
         cookieCounter.classList.add('cookie-counter--hidden')
-        cookieAlert.style.bottom = '0' // Show cookie alert
+        cookieAlert.style.bottom = '-1px' // Show cookie alert
       }
 
       cur--;
