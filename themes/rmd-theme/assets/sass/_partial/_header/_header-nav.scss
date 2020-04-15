@@ -1,15 +1,16 @@
-$bg-color-m: $warm-grey-8;
-$bg-color: $warm-red;
-$bg-color-back-m: $warm-grey-11;
+$bg-color-back-m: darken($logo-blue, 15%);
+$bg-color-m: darken($logo-blue, 10%);
 
-$font-color: $black;
-$font-hover-color: $black;
-
-$separator-color: $warm-grey-4;
+$separator-color: darken($logo-blue, 25%);
 $shadow-color: $warm-red;
 
-$hover-bg-color: $warm-grey-1;
-$active-bg-color: $warm-grey-3;
+$font-color: lighten($logo-blue, 60%);
+$font-hover-color: $black;
+
+
+$hover-bg-color-m: rgba($logo-blue, 0.8);
+$hover-bg-color: rgba($logo-blue, 0.3);
+$active-bg-color: lighten($logo-blue, 1%);
 
 .top-menu--close {
   display: none;
@@ -21,12 +22,14 @@ $active-bg-color: $warm-grey-3;
   top: 0;
   z-index: 100;
   min-height: 100vh;
+  min-width: 80%;
   background-color: $bg-color-back-m;
-  box-shadow: -2px 0 15px 0px $shadow-color;
+  box-shadow: -2px 0 15px 0px $bg-color-back-m;
 
   @include wrap-med-screen {
     position: static;
     min-height: auto;
+    min-width: auto;
     background-color: transparent;
     display: block;
     box-shadow: none;
@@ -73,24 +76,25 @@ $active-bg-color: $warm-grey-3;
     li {
       margin: 0;
       padding: 0;
+      color: $font-color;
+      background-color: $bg-color-m;
+      transition: $nav-transition;
+      
+      &.active {
+        background-color: $active-bg-color;
+      }
+
+      &:hover {
+        background-color: $hover-bg-color-m;
+      }
 
       a {
         padding: 12px 15px;
         display: block;
-        color: $font-color;
+        color: inherit;
         text-decoration: none;
-        background-color: $bg-color-m;
         border-bottom: 1px solid $separator-color;
-        transition: $nav-transition;
-
-        &:hover {
-          color: $font-hover-color;
-          background-color: $hover-bg-color;
-        }
-
-        &.active {
-          background-color: $active-bg-color;
-        }
+        
       }
 
       &.top-menu__parent>a {
@@ -112,8 +116,8 @@ $active-bg-color: $warm-grey-3;
         }
       }
 
-      &.top-menu__child>a {
-        margin-left: 1em;
+      &.top-menu__child {
+        border-left: 1em solid $bg-color-back-m
       }
     }
   }
@@ -124,37 +128,45 @@ $active-bg-color: $warm-grey-3;
 
     .top-menu__list {
       flex-direction: row;
-
+      
       li {
+        background-color: transparent;
+        color: inherit;
+
+        &.active {
+          position: relative;
+          background-color: transparent;
+
+          &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: $logo-blue;
+            bottom: 0;
+            right: 0;
+            left: 0;
+          }
+
+        }
+        
+        &:hover,
+        &:focus {
+          background-color: $hover-bg-color;
+
+        }
+
         a {
           padding: 16px 18px 18px;
-          background-color: transparent;
           color: inherit;
           font-size: 1.5rem;
           font-family: $global-serif-font-family;
           white-space: nowrap;
           border: none;
 
-          &.active {
-            position: relative;
-            background-color: transparent;
-
-            &:before {
-              content: "";
-              position: absolute;
-              display: block;
-              width: 100%;
-              height: 4px;
-              background-color: $logo-blue;
-              bottom: 0;
-              right: 0;
-              left: 0;
-            }
-          }
-
           &:hover,
           &:focus {
-            background-color: $hover-bg-color;
 
             &::after {
               transform: translateY(6px) rotate(45deg);
@@ -184,16 +196,17 @@ $active-bg-color: $warm-grey-3;
           &:hover,
           &:focus,
           &:focus-within {
-            background-color: $warm-grey-1;
+            background-color: $hover-bg-color;
 
             .top-menu__child-list {
               height: auto;
               transform: scaleY(1);
+
             }
           }
         }
-
-
+        
+        
       }
       
       .top-menu__child-list {
@@ -204,9 +217,13 @@ $active-bg-color: $warm-grey-3;
         height: 0;
         overflow: hidden;
         transition: $nav-transition;
+        
+        .top-menu__child {
+          border: none;
+          background-color: $warm-grey-2;
+        }
 
         a {
-          background-color: $warm-grey-2;
           position: relative;
 
           &:hover,

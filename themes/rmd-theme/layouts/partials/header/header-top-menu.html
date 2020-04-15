@@ -2,12 +2,12 @@
   {{ $currentPage := . }}
   {{ range .Site.Menus.main }}
     {{- if .HasChildren }}
-    <li class="top-menu__parent">
-      <a{{ if $currentPage.HasMenuCurrent "main" . }} class="active"{{ else }} {{ with .URL }}href="{{ . }}"{{ end }}{{end}} tabindex="0">{{ .Name }}</a>
+    <li class="top-menu__parent{{ if $currentPage.HasMenuCurrent "main" . }} active {{ end }}">
+      <a{{ if $currentPage.HasMenuCurrent "main" . }} tabindex="0"{{ else }} {{ with .URL }}href="{{ . }}"{{ end }}{{end}}>{{ .Name }}</a>
       <ul class="top-menu__child-list">
         {{- range .Children }}
-        <li class="top-menu__child">
-          <a{{ if $currentPage.IsMenuCurrent "main" . }} class="active" tabindex="0"{{ else }} href="{{ .URL }}"{{ end }}>
+        <li class="top-menu__child{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+          <a{{ if $currentPage.IsMenuCurrent "main" . }} tabindex="0"{{ else }} href="{{ .URL }}"{{ end }}>
             {{- with .Pre }}{{ . }}{{ end -}}{{- .Name -}}
           </a>
         </li>

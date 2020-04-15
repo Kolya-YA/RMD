@@ -12,13 +12,15 @@ $theme-color-map: (
   'Cobalt Blue': #0047AB #f0f2f5,
   'Hot Pink': #FF69B4 #f8f5f5,
   'Dark Violet': #9932CC #f5f4fa
-);
-
+  );
+  
 $black: #0a0a0a !default;
 $white: #fefefe !default;
 $light-gray: #ececec !default;
 $gray: #cacaca !default;
 $dark-gray: #8a8a8a !default;
+
+$logo-blue: #0972b5;
 
 $rmd-col1: #b3532d;
 $rmd-col2: #ffce56;
@@ -47,18 +49,17 @@ $color-secondary-2-2: #F2A16B;
 $color-secondary-2-3: #B35D22;
 $color-secondary-2-4: #8E3F09;
 
-$logo-blue: #0972b5;
 
-$warm-grey-1: #DBD5CD;
+// $warm-grey-1: #DBD5CD;
 $warm-grey-2: #CFC7C0;
 $warm-grey-3: #BEB6AF;
 $warm-grey-4: #B4ACA6;
-$warm-grey-5: #A9A19B;
-$warm-grey-6: #A29B96;
-$warm-grey-7: #968F8B;
+// $warm-grey-5: #A9A19B;
+// $warm-grey-6: #A29B96;
+// $warm-grey-7: #968F8B;
 $warm-grey-8: #8E8884;
-$warm-grey-9: #867F7C;
-$warm-grey-10: #827C78;
+// $warm-grey-9: #867F7C;
+// $warm-grey-10: #827C78;
 $warm-grey-11: #7D7773;
 
 $warm-red: #FF665E;
