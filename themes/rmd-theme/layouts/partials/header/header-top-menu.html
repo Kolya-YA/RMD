@@ -1,13 +1,15 @@
 <ul class="top-menu__list">
   {{ $currentPage := . }}
   {{ range .Site.Menus.main }}
+    {{- $hasActive := $currentPage.HasMenuCurrent "main" . -}}
     {{- if .HasChildren }}
-    <li class="top-menu__parent{{ if $currentPage.HasMenuCurrent "main" . }} active {{ end }}">
-      <a{{ if $currentPage.HasMenuCurrent "main" . }} tabindex="0"{{ else }} {{ with .URL }}href="{{ . }}"{{ end }}{{end}}>{{ .Name }}</a>
+    <li class="top-menu__parent{{ if $hasActive }} active{{ end }}">
+      <a{{ if $hasActive }} tabindex="0"{{ else }} {{ with .URL }}href="{{ . }}"{{ end }}{{end}}>{{ .Name }}</a>
       <ul class="top-menu__child-list">
         {{- range .Children }}
-        <li class="top-menu__child{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
-          <a{{ if $currentPage.IsMenuCurrent "main" . }} tabindex="0"{{ else }} href="{{ .URL }}"{{ end }}>
+        {{- $subIsActive := $currentPage.IsMenuCurrent "main" . -}}
+        <li class="top-menu__child{{ if $subIsActive }} active{{ end }}">
+          <a {{ if $subIsActive }}tabindex="0"{{ else }}href="{{ .URL }}"{{ end }}>
             {{- with .Pre }}{{ . }}{{ end -}}{{- .Name -}}
           </a>
         </li>
@@ -15,8 +17,9 @@
       </ul>
     </li>
     {{- else }}
-    <li class="top-menu__no-child">
-        <a{{if $currentPage.IsMenuCurrent "main" . }} class="active" tabindex="0"{{ else }} href="{{ .URL }}"{{end}}>{{ .Name }}</a>
+    {{- $isActive := $currentPage.IsMenuCurrent "main" . -}}
+    <li class="top-menu__no-child{{ if $isActive }} active{{ end }}">
+        <a {{if $isActive }}tabindex="0"{{ else }}href="{{ .URL }}"{{end}}>{{ .Name }}</a>
     </li>
     {{- end }}
   {{ end -}}
