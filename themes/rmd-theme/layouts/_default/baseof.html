@@ -9,6 +9,11 @@
     </title>
   </head>
 <body>
+  <!-- Google Tag Manager -->
+  {{/*- if and (not .Site.IsServer) .Site.Params.GoogleTagManager -*/}}
+  {{- if .Site.Params.GoogleTagManager -}}
+  {{ partial "common/gtm-body.html" .Site.Params.GoogleTagManager }}
+  {{- end -}}
 
   {{ partial "header/header.html" . }}
 

@@ -9,6 +9,7 @@ since = "2012"            # Site creation time
 phone = "+49 30 228 08 343"
 fax = ""
 email = "info@rmd-citybau.de"
+googleTagManager = "GTM-WFJV5L9"      # GTM-WFJV5L9
 mapApiKey = "AIzaSyCVSQkQMnPD5A_Z9AzN6Frgei4oDgPfYAY"
 mapFooterWidth = "100%"
 mapFooterHeight = "200"

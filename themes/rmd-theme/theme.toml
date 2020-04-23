@@ -6,9 +6,9 @@ license = "MIT"
 licenselink = ""
 description = "Theme for RMD City Bau"
 homepage = ""
-tags = ["responsive", "blog", "simple", "clean", "readable", "highlight", "multilingual"]
+tags = ["responsive", "clean", "readable", "highlight", "multilingual"]
 features = ["responsive", "blog", "simple", "clean", "highlight", "multilingual"]
-min_version = "0.62"
+min_version = "0.68"
 
 [author]
   name = "_YA"

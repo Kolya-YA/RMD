@@ -14,6 +14,7 @@ theme = "rmd-theme"
 paginate = 3              # Number of articles displayed on the homepage
 rssLimit = 20             # Limit Entry Count to Rss file
 googleAnalytics = ""      # UA-XXXXXXXX-X
+googleTagManager = ""      # UA-XXXXXXXX-X
 copyright = "RMD Bau City"            # default: author.name ↓ 
 
 [author]                  # essential

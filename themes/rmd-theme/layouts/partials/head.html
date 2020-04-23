@@ -32,7 +32,7 @@
   <meta name="description" content="{{ .Site.Params.description | safeHTML }}" />
   {{- end -}}
   
-  <!-- baidu & google verification  -->
+  <!-- google verification  -->
   {{ with .Site.Params.google_verification -}}<meta name="google-site-verification" content="{{ . }}">{{- end -}}
   
   <!-- Site Generator -->
@@ -82,7 +82,8 @@
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->` | safeHTML }}
       
-  <!-- Analytics -->
-  {{- if and (not .Site.IsServer) .Site.GoogleAnalytics -}}
-  {{ template "_internal/google_analytics_async.html" . }}
+  <!-- Google Tag Manager -->
+  {{/*- if and (not .Site.IsServer) .Site.Params.GoogleTagManager -*/}}
+  {{- if .Site.Params.GoogleTagManager -}}
+  {{ partial "common/gtm-head.html" .Site.Params.GoogleTagManager }}
   {{- end -}}
